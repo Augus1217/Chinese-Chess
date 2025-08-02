@@ -684,7 +684,7 @@ function startCustomGame(mode) {
 }
 
 // WebSocket connection
-const ws = new WebSocket('ws://localhost:3000'); // Assuming server runs on port 3000
+const ws = new WebSocket('wss://augus-github-drkz2uk8m-augus1217s-projects.vercel.app/'); // Assuming server runs on port 3000
 
 ws.onopen = () => {
     console.log('WebSocket connected.');
