@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中華象棋 - 最终完美版</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js?v=1.1" defer></script>
+</head>
+<body>
+    <div id="game-wrapper">
+            <div id="start-screen" class="screen-overlay">
+            <h1>中華象棋</h1>
+            <div class="mode-selection"><p>請選擇遊戲模式</p>
+                <table><tr>
+                    <td>
+                        <button onclick="setupMode('pvp')">雙人對戰</button>
+                    </td><td>
+                        <button onclick="setupMode('pve')">人機對戰</button>
+                    </td><td>
+                        <button onclick="showSetupScreen()">自訂局面</button>
+                    </td>
+               </tr></table>
+            </div>
+
+            <div id="difficulty-selection" class="hidden pve-setup">
+                <p>請選擇AI難度</p>
+                <table><tr>
+                    <td>                    
+                        <button onclick="selectDifficulty('easy')">簡單</button>
+                    </td><td>
+                        <button onclick="selectDifficulty('medium')">中級</button>
+                    </td><td>
+                        <button onclick="selectDifficulty('hard')">高級</button>
+                    </td><td>
+                        <button onclick="selectDifficulty('expert')">專家</button>
+                    </td><td>
+                        <button onclick="selectDifficulty('custom')">自訂</button>
+                    </td>
+               </tr></table>
+            </div>
+
+            <div id="custom-difficulty-selection" class="hidden pve-setup">
+                <p>請設定AI思考時間 (1-500ms)</p>
+                <div>
+                    <input type="range" id="movetime-slider" min="1" max="500" value="100" style="vertical-align: middle;">
+                    <input type="number" id="movetime-input" min="1" max="500" value="100" style="width: 60px;">
+                    <span style="vertical-align: middle;">ms</span>
+                </div>
+                <button onclick="confirmCustomDifficulty()">確定</button>
+            </div>
+
+            <div class="color-selection hidden pve-setup">
+                <label>請選擇您要執行的棋子: 
+                    <select id="pve-color-select">
+                        <option value="red" selected>執紅棋 (先手)</option>
+                        <option value="black">執黑棋 (後手)</option>
+                    </select>
+                </label>
+                <button onclick="startPveGame()">開始對戰</button>
+            </div>
+        </div>
+        <div id="checkmate-overlay" class="screen-overlay hidden">
+            <h1 id="endgame-title">絕殺</h1>
+            <h2 id="winner-message"></h2>
+            <button onclick="location.reload()">重新開始</button>
+            <button onclick="hideCheckmateOverlay()">顯示棋盤</button>
+        </div>
+
+        <div id="custom-pve-overlay" class="screen-overlay hidden">
+            <h2>人機對戰設定</h2>
+            <div class="pve-setup">
+                <label>請選擇您要執行的棋子: 
+                    <select id="custom-pve-color-select-popup">
+                        <option value="red" selected>執紅棋 (先手)</option>
+                        <option value="black">執黑棋 (後手)</option>
+                    </select>
+                </label>
+                <label>請選擇AI難度: 
+                    <select id="custom-pve-difficulty-select-popup">
+                        <option value="easy" selected>簡單</option>
+                        <option value="medium">中級</option>
+                        <option value="hard">高級</option>
+                        <option value="expert">專家</option>
+                        <option value="custom">自訂</option>
+                    </select>
+                </label>
+                <div id="custom-pve-movetime-wrapper" class="hidden">
+                    <label>請設定AI思考時間 (1-500ms):</label>
+                    <div>
+                        <input type="range" id="custom-pve-movetime-slider" min="1" max="500" value="100" style="vertical-align: middle;">
+                        <input type="number" id="custom-pve-movetime-input" min="1" max="500" value="100" style="width: 60px;">
+                        <span style="vertical-align: middle;">ms</span>
+                    </div>
+                </div>
+                <button onclick="confirmCustomPveStart()">開始對戰</button>
+                <button onclick="document.getElementById('custom-pve-overlay').classList.add('hidden')">取消</button>
+            </div>
+        </div>
+
+        <div id="game-container" class="hidden">
+            <div class="main-panel">
+                <div id="status"></div>
+                <div class="board-wrapper"><div id="board"></div></div>
+                <div id="controls"><button id="undoBtn" onclick="undoMove()">悔棋</button><button id="restartBtn" onclick="location.reload()">返回主選單</button></div>
+            </div>
+        </div>
+        <div id="setup-container" class="hidden">
+            <div class="main-panel">
+                <h2>自訂局面</h2>
+                <div class="board-wrapper"><div id="setup-board"></div></div>
+            </div>
+            <div id="setup-panel">
+                <h3>棋子面板</h3>
+                <button id="delete-piece-btn" onclick="selectPieceForPlacement('delete', this)">刪除棋子</button>
+                <div id="piece-palette"></div>
+                <div class="setup-controls">
+                    <label>先手方: <select id="start-player-select"><option value="red" selected>紅方</option><option value="black">黑方</option></select></label>
+                    
+                    <button onclick="startCustomGame('pvp')" class="start-btn">開始雙人對戰</button><button onclick="promptCustomPve()" class="start-btn">開始人機對戰</button>
+                    <button onclick="clearSetupBoard()">清空棋盤</button><button onclick="location.reload()">返回主選單</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

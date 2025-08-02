@@ -1,0 +1,102 @@
+/* --- General & Layout --- */
+        body { font-family: 'Microsoft YaHei', 'PingFang TC', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background-color: #e4cda9; overflow: hidden; }
+        #game-wrapper { position: relative; }
+        .hidden { display: none !important; }
+
+        /* --- Screens & Overlays --- */
+        .screen-overlay { position: absolute; background: rgba(40, 20, 0, 0.85); backdrop-filter: blur(8px); top: 0; left: 0; right: 0; bottom: 0; z-index: 100; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white;}
+        #checkmate-overlay { background: rgba(40, 20, 0, 0.75); }
+        .screen-overlay h1 { font-size: 3em; color: #ffc; text-shadow: 0 0 15px #f90, 0 0 30px #f60; margin-bottom: 15px; }
+        #checkmate-overlay h1 { font-size: 6em; animation: checkmate-thump 0.5s ease-out; }
+        @keyframes checkmate-thump { from { transform: scale(0.5); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        .screen-overlay h2 { font-size: 2em; color: #fff; margin-top: 10px; }
+        .screen-overlay button { padding: 10px 20px; font-size: 16px; margin: 8px; cursor: pointer; background-color: #8b694b; color: white; border: 2px solid #b99976; border-radius: 5px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2); transition: all 0.2s; }
+        .screen-overlay button:hover { background-color: #6d543c; border-color: #fff; }
+        .pve-setup { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 10px;} 
+        
+        /* --- Main Game & Setup Layout --- */
+        #game-container, #setup-container { display: flex; align-items: flex-start; gap: 20px; }
+        .main-panel { display: flex; flex-direction: column; align-items: center; }
+        
+        /* --- Final Layered Board --- */
+        .board-wrapper {
+            width: 570px; height: 630px; 
+            padding: 0; box-sizing: border-box; 
+            display: flex; justify-content: center; align-items: center;
+            border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            background-color: #382d26;
+        }
+        #board, #setup-board {
+            width: 540px; height: 600px;
+            display: grid;
+            grid-template-columns: repeat(9, 60px);
+            grid-template-rows: repeat(10, 60px);
+            position: relative;
+            background-color: #f3dcb3;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='600'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.5'%3E%3Cpath d='M30,30 H510 M30,90 H510 M30,150 H510 M30,210 H510 M30,270 H510 M30,330 H510 M30,390 H510 M30,450 H510 M30,510 H510 M30,570 H510'/%3E%3Cpath d='M30,30 V270 M90,30 V270 M150,30 V270 M210,30 V270 M270,30 V270 M330,30 V270 M390,30 V270 M450,30 V270 M510,30 V270'/%3E%3Cpath d='M30,330 V570 M90,330 V570 M150,330 V570 M210,330 V570 M270,330 V570 M330,330 V570 M390,330 V570 M450,330 V570 M510,330 V570'/%3E%3Cpath d='M210,30 L330,150 M330,30 L210,150 M210,450 L330,570 M330,450 L210,570'/%3E%3Cg stroke-width='1.5'%3E%3Cpath d='M86,146 v-8 h-8 M94,146 v-8 h8 M86,154 v8 h-8 M94,154 v8 h8'/%3E%3Cpath d='M446,146 v-8 h-8 M454,146 v-8 h8 M446,154 v8 h-8 M454,154 v8 h8'/%3E%3Cpath d='M86,446 v-8 h-8 M94,446 v-8 h8 M86,154 v8 h-8 M94,154 v8 h8'/%3E%3Cpath d='M446,446 v-8 h-8 M454,446 v-8 h8 M446,454 v8 h-8 M454,454 v8 h8'/%3E%3Cpath d='M26,206 v-8 h8 M26,214 v8 h8 M514,206 v-8 h-8 M514,214 v8 h-8'/%3E%3Cpath d='M146,206 v-8 h-8 M154,206 v-8 h8 M146,214 v8 h-8 M154,214 v8 h8'/%3E%3Cpath d='M266,206 v-8 h-8 M274,206 v-8 h8 M266,214 v8 h-8 M274,214 v8 h8'/%3E%3Cpath d='M386,206 v-8 h-8 M394,206 v-8 h8 M386,214 v8 h-8 M394,214 v8 h8'/%3E%3Cpath d='M26,386 v-8 h8 M26,394 v8 h8 M514,386 v-8 h-8 M514,394 v8 h-8'/%3E%3Cpath d='M146,386 v-8 h-8 M154,386 v-8 h8 M146,394 v8 h-8 M154,394 v8 h8'/%3E%3Cpath d='M266,386 v-8 h-8 M274,386 v-8 h8 M266,394 v8 h-8 M274,394 v8 h8'/%3E%3Cpath d='M386,386 v-8 h-8 M394,386 v-8 h8 M386,394 v8 h-8 M394,394 v8 h8'/%3E%3C/g%3E%3C/g%3E%3Ctext x='120' y='325' font-size='38' font-family='KaiTi, STKaiti, sans-serif' fill='%23000'%3E楚 河%3C/text%3E%3Ctext x='360' y='325' font-size='38' font-family='KaiTi, STKaiti, sans-serif' fill='%23000'%3E漢 界%3C/text%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .square { 
+            width: 60px;
+            height: 60px;
+            position: relative; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+
+        /* --- Image-based Pieces --- */
+        .piece { 
+            width: 54px; height: 54px; 
+            cursor: pointer;
+            transition: transform 0.2s, filter 0.2s;
+            z-index: 10;
+        }
+        .piece img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            pointer-events: none;
+        }
+
+        .selected { transform: scale(1.1); filter: drop-shadow(0 0 8px #0f0); }
+        .valid-move-indicator { width: 56px; height: 56px; background-color: rgba(0, 255, 0, 0.3); border: 2px dashed #0a0; border-radius: 50%; position: absolute; z-index: 5; box-sizing: border-box; }
+        
+        .moving-piece { z-index: 1000; position: absolute; transition: transform 0.25s ease-in-out; pointer-events: none; }
+        .piece.is-moving { visibility: hidden; }
+        .in-check { animation: pulse-red 1s infinite; border-radius: 50%; }
+        @keyframes pulse-red { 0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); } 70% { box-shadow: 0 0 15px 15px rgba(255, 0, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); } }
+        .capture-effect-standalone { position: absolute; width: 70px; height: 70px; border-radius: 50%; z-index: 20; border: 4px solid #f00; animation: shockwave 0.4s ease-out; pointer-events: none; transform: translate(-50%, -50%); }
+        @keyframes shockwave { from { transform: translate(-50%, -50%) scale(0.5); opacity: 1; } to { transform: translate(-50%, -50%) scale(1.5); opacity: 0; } }
+        
+        #controls { display: flex; gap: 20px; margin-top: 20px;}
+        #controls button { padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #8b694b; color: white; border: none; border-radius: 5px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2); }
+        #controls button:disabled { background-color: #9e8a78; cursor: not-allowed; }
+
+        #setup-panel { background: #f3dcb3; border: 2px solid #66432d; padding: 10px; text-align: center; }
+        #piece-palette { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 10px; }
+        #piece-palette .piece { margin: auto; }
+        #piece-palette .piece.selected-for-placement { filter: drop-shadow(0 0 8px #0f0); }
+        .setup-controls { display: flex; flex-direction: column; gap: 10px; }
+        .setup-controls label { font-weight: bold; }
+        .setup-controls button, #delete-piece-btn { background-color: #5a9; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; }
+        .setup-controls button:hover, #delete-piece-btn:hover { background-color: #498; }
+        .setup-controls .start-btn { background-color: #5a5; }
+        .setup-controls .start-btn:hover { background-color: #494; }
+        
+        #delete-piece-btn.active-tool {
+            background-color: #e74c3c;
+            box-shadow: 0 0 10px #e74c3c;
+            border: 1px solid #fff;
+        }
+
+@media (max-width: 920px), (max-height: 780px) {
+    #scalable-container {
+        transform: scale(0.85);
+    }
+}
+
+    
