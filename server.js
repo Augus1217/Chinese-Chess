@@ -16,7 +16,7 @@ const wss = new WebSocket.Server({ server });
 
 // Resolve the path to the engine executable bundled with the deployment
 // IMPORTANT: The engine must be included in your repository
-const enginePath = path.resolve(__dirname, 'Pikafish.exe'); 
+const enginePath = path.resolve(__dirname, 'pikafish-sse41-popcnt'); 
 const nnuePath = path.resolve(__dirname, 'pikafish.nnue');
 
 // --- WebSocket Connection Handling ---
