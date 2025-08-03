@@ -8,18 +8,21 @@ const fs = require('fs');
 // Create Express app
 const app = express();
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
+// --- Static File Serving ---
+// Serve files from the 'public' directory at the root level
+const publicPath = path.resolve(__dirname, '../public');
+app.use(express.static(publicPath));
 
 // Create an HTTP server from the Express app
 const server = http.createServer(app);
 
-// Create a WebSocket server and attach it to the HTTP server
+// --- WebSocket Server Setup ---
+// We attach the WebSocket server to the same HTTP server
 const wss = new WebSocket.Server({ server });
 
-// Resolve the path to the engine executable
-const enginePath = path.resolve(__dirname, 'pikafish-sse41-popcnt');
-const nnuePath = path.resolve(__dirname, 'pikafish.nnue');
+// Resolve paths relative to the project root, not the /api directory
+const enginePath = path.resolve(__dirname, '../pikafish-sse41-popcnt');
+const nnuePath = path.resolve(__dirname, '../pikafish.nnue');
 
 // --- WebSocket Connection Handling ---
 wss.on('connection', (ws) => {
@@ -27,7 +30,6 @@ wss.on('connection', (ws) => {
     let engineProcess = null;
 
     const startEngine = () => {
-        // --- Pre-flight checks ---
         console.log('--- [Engine Start] Pre-flight Checks ---');
         console.log(`[Check 1] Current working directory: ${process.cwd()}`)
         console.log(`[Check 2] Resolved engine path: ${enginePath}`);
@@ -38,14 +40,8 @@ wss.on('connection', (ws) => {
         console.log(`[Check 4] Does engine file exist? ${engineExists}`);
         console.log(`[Check 5] Does NNUE file exist? ${nnueExists}`);
 
-        if (!engineExists) {
-            const errorMsg = 'FATAL: Engine executable not found at path.';
-            console.error(errorMsg);
-            ws.send(JSON.stringify({ type: 'error', data: errorMsg }));
-            return;
-        }
-        if (!nnueExists) {
-            const errorMsg = 'FATAL: NNUE file not found at path.';
+        if (!engineExists || !nnueExists) {
+            const errorMsg = `FATAL: Asset not found. Engine: ${engineExists}, NNUE: ${nnueExists}`;
             console.error(errorMsg);
             ws.send(JSON.stringify({ type: 'error', data: errorMsg }));
             return;
@@ -79,7 +75,6 @@ wss.on('connection', (ws) => {
             engineProcess.stderr.on('data', (data) => {
                 const output = data.toString().trim();
                 console.error(`[Engine STDERR] ${output}`);
-                // Send engine startup errors to the client for immediate feedback
                 ws.send(JSON.stringify({ type: 'error', data: `Engine STDERR: ${output}` }));
             });
 
@@ -88,7 +83,6 @@ wss.on('connection', (ws) => {
                 engineProcess = null;
             });
 
-            // Initialize engine
             console.log('[Engine] Sending UCI initialization commands.');
             engineProcess.stdin.write('uci\n');
             engineProcess.stdin.write(`setoption name EvalFile value ${nnuePath}\n`);
@@ -106,16 +100,12 @@ wss.on('connection', (ws) => {
         try {
             const msg = JSON.parse(message);
             if (msg.type === 'getmove' && engineProcess && engineProcess.stdin.writable) {
-                console.log(`[FEN] Received: ${msg.fen}`);
-                const movetime = msg.movetime || 2000;
                 const command = `position fen ${msg.fen}\n`;
-                const goCommand = `go movetime ${movetime}\n`;
-                console.log(`[Engine Command] ${command.trim()}`);
-                console.log(`[Engine Command] ${goCommand.trim()}`);
+                const goCommand = `go movetime ${msg.movetime || 2000}\n`;
                 engineProcess.stdin.write(command);
                 engineProcess.stdin.write(goCommand);
             } else {
-                 console.log('[WebSocket] Received message, but engine process is not ready or message type is not getmove.');
+                 console.log('[WebSocket] Received message, but engine process is not ready.');
             }
         } catch (error) {
             console.error('[WebSocket] Error parsing message:', error);
@@ -135,13 +125,5 @@ wss.on('connection', (ws) => {
     });
 });
 
-// --- Vercel Serverless Function Entry Point ---
+// Export the server for Vercel's runtime
 module.exports = server;
-
-// --- Local Development Startup ---
-if (require.main === module) {
-    const PORT = process.env.PORT || 3000;
-    server.listen(PORT, () => {
-        console.log(`Server is listening on port ${PORT}`);
-    });
-}

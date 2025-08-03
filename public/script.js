@@ -687,7 +687,7 @@ function startCustomGame(mode) {
 // WebSocket connection
 const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
 const wsHost = window.location.host;
-const wsUrl = `${wsProtocol}//${wsHost}/api/websocket`;
+const wsUrl = `${wsProtocol}//${wsHost}`;
 console.log(`Connecting to WebSocket at: ${wsUrl}`);
 const ws = new WebSocket(wsUrl);
 
