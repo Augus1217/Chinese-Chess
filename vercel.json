@@ -1,18 +1,3 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/websocket.js",
-      "use": "@vercel/node",
-      "config": {
-        "experimental_allowQuery": true
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/websocket",
-      "dest": "api/websocket.js"
-    }
-  ]
+  "version": 2
 }
