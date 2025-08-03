@@ -1,12 +1,16 @@
 {
   "version": 2,
   "builds": [
+    { "src": "api/websocket.js", "use": "@vercel/node" }
+  ],
+  "routes": [
     {
-      "src": "api/websocket.js",
-      "use": "@vercel/node",
-      "config": {
-        "experimental_allowQuery": true
-      }
+      "src": "/api/websocket",
+      "dest": "/api/websocket.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
     }
   ]
 }
