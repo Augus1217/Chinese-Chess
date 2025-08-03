@@ -62,6 +62,63 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('custom-pve-movetime-wrapper').classList.toggle('hidden', e.target.value !== 'custom');
         });
     }
+
+    // --- WebSocket connection ---
+    console.log('[Script.js] DOM fully loaded and parsed.');
+    console.log('[Script.js] Attempting to establish WebSocket connection...');
+    const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const wsHost = window.location.host;
+    const wsUrl = `${wsProtocol}//${wsHost}`;
+    console.log(`[Script.js] Connecting to WebSocket at: ${wsUrl}`);
+    
+    const ws = new WebSocket(wsUrl);
+
+    ws.onopen = () => {
+        console.log('[Script.js] WebSocket connection established.');
+    };
+
+    ws.onmessage = (event) => {
+        const message = JSON.parse(event.data);
+        console.log('[Script.js] Message from server:', message);
+
+        if (message.type === 'engineMove') {
+            console.log('[Script.js] Engine move received:', message.move);
+            // Convert UCI move (e.g., "e2e4") to {from, to} format
+            const uciMove = message.move;
+            const fromCol = uciMove.charCodeAt(0) - 'a'.charCodeAt(0);
+            const fromRow = 9 - (parseInt(uciMove.charAt(1), 10) - 0); // UCCI rank 0 is board row 9
+            const toCol = uciMove.charCodeAt(2) - 'a'.charCodeAt(0);
+            const toRow = 9 - (parseInt(uciMove.charAt(3), 10) - 0);   // UCCI rank 9 is board row 0
+
+            const move = {
+                from: { r: fromRow, c: fromCol },
+                to: { r: toRow, c: toCol }
+            };
+
+            isAiThinking = false;
+            undoBtn.disabled = (moveHistory.length === 0);
+            statusDisplay.textContent = `${currentPlayer === 'red' ? '紅方' : '黑方'}回合`; // Restore status
+
+            animateAndMovePiece(move.from, move.to);
+
+        } else if (message.type === 'error') {
+            console.error('[Script.js] Server error:', message.data);
+            alert('Server error: ' + message.data);
+            isAiThinking = false;
+            statusDisplay.textContent = "AI錯誤，請刷新頁面";
+        }
+    };
+
+    ws.onclose = (event) => {
+        console.log(`[Script.js] WebSocket disconnected. Code: ${event.code}, Reason: ${event.reason}`);
+    };
+
+    ws.onerror = (error) => {
+        console.error('[Script.js] WebSocket error:', error);
+    };
+
+    // Make ws globally available for makeAiMove function
+    window.ws = ws;
 });
 
 function setupMode(mode) {
@@ -789,9 +846,13 @@ function makeAiMove() {
     // Convert boardState to FEN for the engine
     const fen = boardToFen(boardState, currentPlayer);
 
-    ws.send(JSON.stringify({
-        type: 'getmove',
-        fen: fen,
-        movetime: getMovetimeForDifficulty(aiDifficulty)
-    }));
+    if (window.ws && window.ws.readyState === WebSocket.OPEN) {
+        window.ws.send(JSON.stringify({
+            type: 'getmove',
+            fen: fen,
+            movetime: getMovetimeForDifficulty(aiDifficulty)
+        }));
+    } else {
+        console.error('[Script.js] WebSocket is not open. Cannot send move.');
+    }
 }
