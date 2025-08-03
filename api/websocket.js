@@ -9,7 +9,6 @@ const fs = require('fs');
 const app = express();
 
 // --- Static File Serving ---
-// Serve files from the 'public' directory at the root level
 const publicPath = path.resolve(__dirname, '../public');
 app.use(express.static(publicPath));
 
@@ -17,7 +16,6 @@ app.use(express.static(publicPath));
 const server = http.createServer(app);
 
 // --- WebSocket Server Setup ---
-// We attach the WebSocket server to the same HTTP server
 const wss = new WebSocket.Server({ server });
 
 // Resolve paths relative to the project root, not the /api directory
@@ -26,19 +24,27 @@ const nnuePath = path.resolve(__dirname, '../pikafish.nnue');
 
 // --- WebSocket Connection Handling ---
 wss.on('connection', (ws) => {
-    console.log('[WebSocket] Client connected.');
+    console.log('[WebSocket] Client connected. Engine logic is currently disabled for testing.');
     let engineProcess = null;
 
     const startEngine = () => {
-        console.log('--- [Engine Start] Pre-flight Checks ---');
-        console.log(`[Check 1] Current working directory: ${process.cwd()}`)
-        console.log(`[Check 2] Resolved engine path: ${enginePath}`);
-        console.log(`[Check 3] Resolved NNUE path: ${nnuePath}`);
+        /*
+        // --- Pre-flight checks ---
+        console.log('--- [Engine Start] Pre-flight Checks ---
+');
+        console.log(`[Check 1] Current working directory: ${process.cwd()}
+`);
+        console.log(`[Check 2] Resolved engine path: ${enginePath}
+`);
+        console.log(`[Check 3] Resolved NNUE path: ${nnuePath}
+`);
 
         const engineExists = fs.existsSync(enginePath);
         const nnueExists = fs.existsSync(nnuePath);
-        console.log(`[Check 4] Does engine file exist? ${engineExists}`);
-        console.log(`[Check 5] Does NNUE file exist? ${nnueExists}`);
+        console.log(`[Check 4] Does engine file exist? ${engineExists}
+`);
+        console.log(`[Check 5] Does NNUE file exist? ${nnueExists}
+`);
 
         if (!engineExists || !nnueExists) {
             const errorMsg = `FATAL: Asset not found. Engine: ${engineExists}, NNUE: ${nnueExists}`;
@@ -46,14 +52,17 @@ wss.on('connection', (ws) => {
             ws.send(JSON.stringify({ type: 'error', data: errorMsg }));
             return;
         }
-        console.log('--- [Engine Start] Pre-flight Checks Passed ---');
+        console.log('--- [Engine Start] Pre-flight Checks Passed ---
+');
 
         try {
-            console.log(`[Engine] Spawning engine process...`);
+            console.log(`[Engine] Spawning engine process...
+`);
             engineProcess = spawn(enginePath, [], { cwd: path.dirname(enginePath) });
 
             engineProcess.on('spawn', () => {
-                console.log('[Engine] Spawn event triggered. Process should be running.');
+                console.log('[Engine] Spawn event triggered. Process should be running.
+');
             });
 
             engineProcess.on('error', (err) => {
@@ -63,7 +72,8 @@ wss.on('connection', (ws) => {
 
             engineProcess.stdout.on('data', (data) => {
                 const output = data.toString().trim();
-                console.log(`[Engine STDOUT] ${output}`);
+                console.log(`[Engine STDOUT] ${output}
+`);
                 if (output.startsWith('bestmove')) {
                     const uciMove = output.split(' ')[1];
                     if (uciMove && uciMove !== '(none)') {
@@ -74,16 +84,19 @@ wss.on('connection', (ws) => {
 
             engineProcess.stderr.on('data', (data) => {
                 const output = data.toString().trim();
-                console.error(`[Engine STDERR] ${output}`);
+                console.error(`[Engine STDERR] ${output}
+`);
                 ws.send(JSON.stringify({ type: 'error', data: `Engine STDERR: ${output}` }));
             });
 
             engineProcess.on('close', (code, signal) => {
-                console.log(`[Engine] Process exited with code: ${code}, signal: ${signal}`);
+                console.log(`[Engine] Process exited with code: ${code}, signal: ${signal}
+`);
                 engineProcess = null;
             });
 
-            console.log('[Engine] Sending UCI initialization commands.');
+            console.log('[Engine] Sending UCI initialization commands.
+');
             engineProcess.stdin.write('uci\n');
             engineProcess.stdin.write(`setoption name EvalFile value ${nnuePath}\n`);
             engineProcess.stdin.write('isready\n');
@@ -92,30 +105,22 @@ wss.on('connection', (ws) => {
             console.error("[Engine] FATAL: Failed to spawn process inside try/catch block.", e);
             ws.send(JSON.stringify({ type: 'error', data: 'Failed to start engine on server (catch block).' }));
         }
+        */
     };
 
-    startEngine();
+    // startEngine(); // Engine start is disabled for testing
 
     ws.on('message', (message) => {
-        try {
-            const msg = JSON.parse(message);
-            if (msg.type === 'getmove' && engineProcess && engineProcess.stdin.writable) {
-                const command = `position fen ${msg.fen}\n`;
-                const goCommand = `go movetime ${msg.movetime || 2000}\n`;
-                engineProcess.stdin.write(command);
-                engineProcess.stdin.write(goCommand);
-            } else {
-                 console.log('[WebSocket] Received message, but engine process is not ready.');
-            }
-        } catch (error) {
-            console.error('[WebSocket] Error parsing message:', error);
-        }
+        console.log('[WebSocket] Message received, but engine is disabled.
+');
+        // We can optionally send a message back to the client
+        ws.send(JSON.stringify({ type: 'error', data: 'Engine is currently disabled for testing.' }));
     });
 
     ws.on('close', () => {
-        console.log('[WebSocket] Client disconnected.');
+        console.log('[WebSocket] Client disconnected.
+');
         if (engineProcess) {
-            console.log('[Engine] Killing engine process due to WebSocket disconnect.');
             engineProcess.kill();
         }
     });
@@ -127,3 +132,11 @@ wss.on('connection', (ws) => {
 
 // Export the server for Vercel's runtime
 module.exports = server;
+
+// --- Local Development Startup ---
+if (require.main === module) {
+    const PORT = process.env.PORT || 3000;
+    server.listen(PORT, () => {
+        console.log(`Server is listening on port ${PORT}`);
+    });
+}
