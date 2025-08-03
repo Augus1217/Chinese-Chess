@@ -2,11 +2,11 @@
   "name": "xiangqi-interface",
   "version": "1.0.0",
   "description": "A web-based interface for Chinese Chess engines.",
-  "main": "server.js",
+  "main": "api/websocket.js",
   "scripts": {
     "build": "chmod +x ./pikafish-sse41-popcnt",
     "vercel-build": "chmod +x ./pikafish-sse41-popcnt",
-    "start": "node server.js"
+    "start": "node api/websocket.js"
   },
   "dependencies": {
     "express": "^4.18.2",
