@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "chmod +x ./pikafish-sse41-popcnt",
-    "vercel-build": "echo Hello",
+    "vercel-build": "chmod +x ./pikafish-sse41-popcnt",
     "start": "node server.js"
   },
   "dependencies": {
