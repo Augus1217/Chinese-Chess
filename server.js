@@ -1,22 +1,23 @@
 const http = require('http');
+const path = require('path');
+const express = require('express');
 const WebSocket = require('ws');
 const { spawn } = require('child_process');
-const path = require('path');
 
-// Create an HTTP server
-const server = http.createServer((req, res) => {
-    // Vercel handles static file serving based on vercel.json
-    // This function can be left empty or handle specific API requests if needed.
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('This is the WebSocket server. Static files are served separately.');
-});
+// Create Express app
+const app = express();
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Create an HTTP server from the Express app
+const server = http.createServer(app);
 
 // Create a WebSocket server and attach it to the HTTP server
 const wss = new WebSocket.Server({ server });
 
-// Resolve the path to the engine executable bundled with the deployment
-// IMPORTANT: The engine must be included in your repository
-const enginePath = path.resolve(__dirname, 'pikafish-sse41-popcnt'); 
+// Resolve the path to the engine executable
+const enginePath = path.resolve(__dirname, 'pikafish-sse41-popcnt');
 const nnuePath = path.resolve(__dirname, 'pikafish.nnue');
 
 // --- WebSocket Connection Handling ---
@@ -27,7 +28,6 @@ wss.on('connection', (ws) => {
     const startEngine = () => {
         console.log(`[Engine] Spawning engine from: ${enginePath}`);
         try {
-            // Vercel's environment requires us to be specific about paths
             engineProcess = spawn(enginePath, [], { cwd: path.dirname(enginePath) });
 
             engineProcess.on('error', (err) => {
@@ -86,5 +86,16 @@ wss.on('connection', (ws) => {
     });
 });
 
-// Export the server for Vercel's runtime
+// --- Vercel Serverless Function Entry Point ---
+// Vercel will use this exported server to handle requests.
 module.exports = server;
+
+// --- Local Development Startup ---
+// This block allows you to run the server directly with `node server.js` for local testing.
+// It will not be executed in the Vercel environment.
+if (require.main === module) {
+    const PORT = process.env.PORT || 3000;
+    server.listen(PORT, () => {
+        console.log(`Server is listening on port ${PORT}`);
+    });
+}
