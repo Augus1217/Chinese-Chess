@@ -2,11 +2,19 @@
   "name": "xiangqi-interface",
   "version": "1.0.0",
   "description": "A web-based interface for Chinese Chess engines.",
+<<<<<<< HEAD
   "author": "Augus <imlindora@gmail.com>",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
+=======
+  "main": "api/websocket.js",
+  "scripts": {
+    "build": "chmod +x ./pikafish-sse41-popcnt",
+    "vercel-build": "chmod +x ./pikafish-sse41-popcnt",
+    "start": "node api/websocket.js"
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
   },
   "engines": {
     "node": "18.x"
@@ -14,6 +22,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "ws": "^8.12.0"
+<<<<<<< HEAD
   },
   "devDependencies": {
     "electron": "28.0.0",
@@ -48,3 +57,7 @@
     }
   }
 }
+=======
+  }
+}
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801

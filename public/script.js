@@ -20,13 +20,17 @@ let pieceToPlace = null;
 let customBoardState = [];
 let pieceCounts = {};
 let pieceToMove = null;
+<<<<<<< HEAD
 let translations = {};
+=======
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
 
 // --- Data & Tables ---
 const initialBoard = [
     ['bR', 'bN', 'bB', 'bA', 'bK', 'bA', 'bB', 'bN', 'bR'], [null, null, null, null, null, null, null, null, null], [null, 'bC', null, null, null, null, null, 'bC', null], ['bP', null, 'bP', null, 'bP', null, 'bP', null, 'bP'], [null, null, null, null, null, null, null, null, null],
     [null, null, null, null, null, null, null, null, null], ['rP', null, 'rP', null, 'rP', null, 'rP', null, 'rP'], [null, 'rC', null, null, null, null, null, 'rC', null], [null, null, null, null, null, null, null, null, null], ['rR', 'rN', 'rB', 'rA', 'rK', 'rA', 'rB', 'rN', 'rR']
 ];
+<<<<<<< HEAD
 
 // --- Translation & Language ---
 async function loadTranslations(lang) {
@@ -69,6 +73,21 @@ document.addEventListener('DOMContentLoaded', () => {
         loadTranslations(lang);
     });
 
+=======
+const pieceNames = { 'r': { 'K': '帥', 'A': '仕', 'B': '相', 'N': '傌', 'R': '俥', 'C': '炮', 'P': '兵' }, 'b': { 'K': '將', 'A': '士', 'B': '象', 'N': '馬', 'R': '車', 'C': '包', 'P': '卒' } };
+
+const PST_A = Array(10).fill().map(() => Array(9).fill(0));
+PST_A[7][3] = PST_A[7][5] = PST_A[9][3] = PST_A[9][5] = 1; PST_A[8][4] = 3;
+const PST_E = Array(10).fill().map(() => Array(9).fill(0)); // Corresponds to 'B' for Bishop/Elephant
+PST_E[5][2] = PST_E[5][6] = PST_E[7][0] = PST_E[7][4] = PST_E[7][8] = 2;
+const PST_K = Array(10).fill().map(() => Array(9).fill(0));
+PST_K[7][4] = PST_K[9][4] = 1; PST_K[8][3] = PST_K[8][5] = 2;
+
+const PST = { 'P': [ [0,0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0,0], [7,7,7,7,7,7,7,7,7], [15,15,15,15,15,15,15,15,15], [20,25,28,30,32,30,28,25,20], [25,30,33,35,38,35,33,30,25], [30,35,40,45,50,45,40,35,30], [35,40,48,55,60,55,48,40,35], [80,85,90,100,120,100,90,85,80] ], 'C': [ [1,1,0,-2,-2,-2,0,1,1], [1,1,0,-1,-1,-1,0,1,1], [1,1,1,0,0,0,1,1,1], [2,2,3,4,5,4,3,2,2], [3,3,4,5,6,5,4,3,3], [4,4,5,6,7,6,5,4,4], [5,5,6,7,8,7,6,5,5], [6,6,6,8,9,8,6,6,6], [7,7,6,8,9,8,6,7,7], [6,7,6,7,8,7,6,7,6] ], 'N': [ [0,-2,0,0,0,0,0,-2,0], [0,0,4,6,8,6,4,0,0], [2,4,8,10,12,10,8,4,2], [4,6,10,12,14,12,10,6,4], [6,8,12,14,16,14,12,8,6], [4,6,10,12,14,12,10,6,4], [2,4,8,10,12,10,8,4,2], [4,2,80,60,100,60,80,2,4], [0,0,4,8,80,8,4,0,0], [0,-2,0,4,0,4,0,-2,0] ], 'R': [ [6,6,6,6,80,6,6,6,6], [8,10,10,10,12,10,10,10,8], [8,10,10,11,12,11,10,10,8], [8,10,11,12,14,12,11,10,8], [10,12,12,14,15,14,12,12,10], [12,14,14,15,16,15,14,14,12], [12,14,14,15,16,15,14,14,12], [10,12,12,14,15,14,12,12,10], [8,10,10,11,12,11,10,10,8], [80,10,10,10,12,10,10,10,80] ], 'A': PST_A, 'B': PST_E, 'K': PST_K };
+
+// --- Game Setup & Core Logic ---
+document.addEventListener('DOMContentLoaded', () => {
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
     // Main screen sliders
     const slider = document.getElementById('movetime-slider');
     const input = document.getElementById('movetime-input');
@@ -96,7 +115,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- WebSocket connection ---
     console.log('[Script.js] DOM fully loaded and parsed.');
     console.log('[Script.js] Attempting to establish WebSocket connection...');
+<<<<<<< HEAD
     const wsUrl = 'ws://localhost:3000';
+=======
+    const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const wsHost = window.location.host;
+    const wsUrl = `${wsProtocol}//${wsHost}`;
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
     console.log(`[Script.js] Connecting to WebSocket at: ${wsUrl}`);
     
     const ws = new WebSocket(wsUrl);
@@ -125,25 +150,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
             isAiThinking = false;
             undoBtn.disabled = (moveHistory.length === 0);
+<<<<<<< HEAD
             statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
+=======
+            statusDisplay.textContent = `${currentPlayer === 'red' ? '紅方' : '黑方'}回合`; // Restore status
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
 
             animateAndMovePiece(move.from, move.to);
 
         } else if (message.type === 'error') {
             console.error('[Script.js] Server error:', message.data);
+<<<<<<< HEAD
             showNotification('server_error_ai');
             isAiThinking = false;
             statusDisplay.textContent = translations.server_error_ai;
+=======
+            alert('Server error: ' + message.data);
+            isAiThinking = false;
+            statusDisplay.textContent = "AI錯誤，請刷新頁面";
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
         }
     };
 
     ws.onclose = (event) => {
         console.log(`[Script.js] WebSocket disconnected. Code: ${event.code}, Reason: ${event.reason}`);
+<<<<<<< HEAD
         setTimeout(() => {
             console.log('[Script.js] Reconnecting to WebSocket...');
             const ws = new WebSocket(wsUrl);
             window.ws = ws;
         }, 1000);
+=======
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
     };
 
     ws.onerror = (error) => {
@@ -177,7 +215,11 @@ function confirmCustomDifficulty() {
     const input = document.getElementById('movetime-input');
     customMovetime = parseInt(input.value, 10);
     if (isNaN(customMovetime) || customMovetime < 1 || customMovetime > 500) {
+<<<<<<< HEAD
         showNotification("invalid_movetime");
+=======
+        alert("請輸入1到500之間的有效數字！");
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
         return;
     }
     document.getElementById('custom-difficulty-selection').classList.add('hidden');
@@ -193,11 +235,19 @@ function startGame(mode, pColor = 'red', customSetup = null) {
 function initGame(customSetup = null) {
     if (customSetup) { boardState = customSetup.board; currentPlayer = customSetup.player; } else { boardState = initialBoard.map(row => [...row]); currentPlayer = 'red'; }
     selectedPiece = null; validMoves = []; gameEnded = false; isAiThinking = false; moveHistory = []; undoBtn.disabled = true;
+<<<<<<< HEAD
     statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
     renderBoard(board);
     checkForEndOfGame();
     if (!gameEnded && gameMode === 'pve' && currentPlayer === aiColor) {
         isAiThinking = true; undoBtn.disabled = true; statusDisplay.textContent = translations.ai_thinking; setTimeout(makeAiMove, 100);
+=======
+    statusDisplay.textContent = `${currentPlayer === 'red' ? '紅方' : '黑方'}回合`;
+    renderBoard(board);
+    checkForEndOfGame();
+    if (!gameEnded && gameMode === 'pve' && currentPlayer === aiColor) {
+        isAiThinking = true; undoBtn.disabled = true; statusDisplay.textContent = 'AI思考中...'; setTimeout(makeAiMove, 100);
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
     }
 }
 function getPieceInfo(piece) {
@@ -206,8 +256,16 @@ function getPieceInfo(piece) {
     }
     const colorChar = piece.charAt(0);
     const type = piece.charAt(1);
+<<<<<<< HEAD
     const color = colorChar === 'r' ? 'red' : 'black';
     const name = translations.piece_names ? (translations.piece_names[piece] || type) : type;
+=======
+    if (!pieceNames[colorChar] || !pieceNames[colorChar][type]) {
+        return null;
+    }
+    const color = colorChar === 'r' ? 'red' : 'black';
+    const name = pieceNames[colorChar][type];
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
     return { color, type, name };
 }
 
@@ -442,14 +500,21 @@ function checkForEndOfGame() {
     if (!hasAnyValidMoves(boardState, currentPlayer)) {
         gameEnded = true;
         const inCheck = isKingInCheck(boardState, currentPlayer);
+<<<<<<< HEAD
         if (inCheck) { endgameTitle.textContent = translations.checkmate; } else { endgameTitle.textContent = translations.stalemate; }
         checkmateOverlay.classList.remove('hidden');
         const winner = currentPlayer === 'red' ? translations.black_wins : translations.red_wins;
         winnerMessage.textContent = winner;
+=======
+        if (inCheck) { endgameTitle.textContent = "絕殺"; } else { endgameTitle.textContent = "困斃"; }
+        checkmateOverlay.classList.remove('hidden');
+        winnerMessage.textContent = `${currentPlayer === 'red' ? '黑方' : '紅方'}獲勝！`;
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
     }
 }
 
 // --- UI, Animation, and Undo ---
+<<<<<<< HEAD
 function showNotification(key, options = {}) {
     let message = translations[key] || key;
     for (const placeholder in options) {
@@ -469,6 +534,8 @@ function showNotification(key, options = {}) {
     }, 3000);
 }
 
+=======
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
 function renderBoard(boardElement, boardData = boardState, interactionHandler = onSquareClick) {
     boardElement.innerHTML = '';
     for (let r = 0; r < ROWS; r++) {
@@ -483,7 +550,10 @@ function renderBoard(boardElement, boardData = boardState, interactionHandler = 
                 const pieceElement = document.createElement('div');
                 pieceElement.classList.add('piece');
                 const img = document.createElement('img');
+<<<<<<< HEAD
                 img.draggable = false;
+=======
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
                 const imgName = pieceCode.charAt(0) + '_' + pieceCode.charAt(1).toLowerCase() + '.png';
                 img.src = 'images/' + imgName;
                 img.alt = pieceInfo.name;
@@ -509,10 +579,15 @@ function onSquareClick(r, c) {
 
     const clickedPieceInfo = getPieceInfo(boardState[r][c]);
 
+<<<<<<< HEAD
+=======
+    // If a piece is selected
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
     if (selectedPiece) {
         const isSamePiece = selectedPiece.r === r && selectedPiece.c === c;
         const isValidMove = validMoves.find(m => m.to.r === r && m.to.c === c);
 
+<<<<<<< HEAD
         if (isValidMove) {
             if (isRepetitiveCheckViolation(isValidMove, boardState, currentPlayer)) {
                 showNotification("repetitive_check_violation");
@@ -541,6 +616,41 @@ function onSquareClick(r, c) {
     } else { 
         if (clickedPieceInfo && clickedPieceInfo.color === currentPlayer) {
             selectPiece(r, c);
+=======
+        // 1. Clicked on a valid move square
+        if (isValidMove) {
+            if (isRepetitiveCheckViolation(isValidMove, boardState, currentPlayer)) {
+                alert("違反規則：不能使用同一棋子連續將軍超過五次！");
+                return;
+            }
+            animateAndMovePiece(isValidMove.from, isValidMove.to);
+            return; // Action complete
+        }
+
+        // 2. Clicked on the same piece again (deselect)
+        if (isSamePiece) {
+            selectedPiece = null;
+            validMoves = [];
+            renderBoard(board); // Render to remove highlights
+            return;
+        }
+
+        // 3. Clicked on another of your own pieces (switch selection)
+        if (clickedPieceInfo && clickedPieceInfo.color === currentPlayer) {
+            selectPiece(r, c); // selectPiece calls renderBoard
+            return;
+        }
+
+        // 4. Clicked on an empty square or opponent piece (deselect)
+        selectedPiece = null;
+        validMoves = [];
+        renderBoard(board); // Render to remove highlights
+
+    } else { // No piece is selected
+        // 5. Clicked on your own piece (select it)
+        if (clickedPieceInfo && clickedPieceInfo.color === currentPlayer) {
+            selectPiece(r, c); // selectPiece calls renderBoard
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
         }
     }
 }
@@ -583,11 +693,19 @@ function animateAndMovePiece(from, to) {
         movingPiece.remove();
         boardState[to.r][to.c] = boardState[from.r][from.c]; boardState[from.r][from.c] = null;
         currentPlayer = (currentPlayer === 'red') ? 'black' : 'red';
+<<<<<<< HEAD
         statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
         renderBoard(board); 
         checkForEndOfGame();
         if (!gameEnded && gameMode === 'pve' && currentPlayer === aiColor) {
             isAiThinking = true; undoBtn.disabled = true; statusDisplay.textContent = translations.ai_thinking; setTimeout(makeAiMove, 100);
+=======
+        statusDisplay.textContent = `${currentPlayer === 'red' ? '紅方' : '黑方'}回合`;
+        renderBoard(board); 
+        checkForEndOfGame();
+        if (!gameEnded && gameMode === 'pve' && currentPlayer === aiColor) {
+            isAiThinking = true; undoBtn.disabled = true; statusDisplay.textContent = 'AI思考中...'; setTimeout(makeAiMove, 100);
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
         }
     }, { once: true });
 }
@@ -606,7 +724,11 @@ function undoMove() {
         checkmateOverlay.classList.add('hidden');
         selectedPiece = null;
         validMoves = [];
+<<<<<<< HEAD
         statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
+=======
+        statusDisplay.textContent = `${currentPlayer === 'red' ? '紅方' : '黑方'}回合`;
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
         renderBoard(board);
     }
     undoBtn.disabled = moveHistory.length === 0;
@@ -619,7 +741,11 @@ function hideCheckmateOverlay() {
 
 // --- Custom Setup Logic ---
 function showSetupScreen() { startScreen.classList.add('hidden'); setupContainer.classList.remove('hidden'); clearSetupBoard(); populatePalette(); }
+<<<<<<< HEAD
 function populatePalette() { piecePalette.innerHTML = ''; const pieces = ['rK','rA','rB','rN','rR','rC','rP', 'bK','bA','bB','bN','bR','bC','bP']; pieces.forEach(code => { const pieceInfo = getPieceInfo(code); const pieceElement = document.createElement('div'); pieceElement.classList.add('piece'); const img = document.createElement('img'); img.draggable = false; const imgName = code.charAt(0) + '_' + code.charAt(1).toLowerCase() + '.png'; img.src = 'images/' + imgName; img.alt = pieceInfo.name; pieceElement.appendChild(img); pieceElement.dataset.pieceCode = code; pieceElement.addEventListener('click', () => selectPieceForPlacement(code, pieceElement)); piecePalette.appendChild(pieceElement); }); }
+=======
+function populatePalette() { piecePalette.innerHTML = ''; const pieces = ['rK','rA','rB','rN','rR','rC','rP', 'bK','bA','bB','bN','bR','bC','bP']; pieces.forEach(code => { const pieceInfo = getPieceInfo(code); const pieceElement = document.createElement('div'); pieceElement.classList.add('piece'); const img = document.createElement('img'); const imgName = code.charAt(0) + '_' + code.charAt(1).toLowerCase() + '.png'; img.src = 'images/' + imgName; img.alt = pieceInfo.name; pieceElement.appendChild(img); pieceElement.dataset.pieceCode = code; pieceElement.addEventListener('click', () => selectPieceForPlacement(code, pieceElement)); piecePalette.appendChild(pieceElement); }); }
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
 function selectPieceForPlacement(code, element) {
     pieceToMove = null;
     document.querySelectorAll('#piece-palette .piece').forEach(p => p.classList.remove('selected-for-placement'));
@@ -650,7 +776,11 @@ function onSetupSquareClick(r, c) {
                     const info = getPieceInfo(targetPiece);
                     pieceCounts[info.type + info.color]++;
                 }
+<<<<<<< HEAD
                 showNotification("invalid_placement");
+=======
+                alert("不合理的棋子位置！");
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
             }
             pieceToMove = null;
         }
@@ -677,7 +807,11 @@ function onSetupSquareClick(r, c) {
                    const info = getPieceInfo(currentPieceOnSquare);
                    pieceCounts[info.type + info.color]++;
                 }
+<<<<<<< HEAD
                 showNotification("invalid_placement_or_limit");
+=======
+                alert("不合理的棋子位置或數量超出限制！");
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
             }
         }
         pieceToPlace = null;
@@ -698,11 +832,16 @@ function isValidPlacement(code, r, c, isMove = false) {
     const limits = { K: 1, A: 2, B: 2, N: 2, R: 2, C: 2, P: 5 };
     if (!isMove && (pieceCounts[key] || 0) >= limits[info.type]) return false;
     switch(info.type) {
+<<<<<<< HEAD
         case 'K':
+=======
+        case 'K': case 'A':
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
             if (c < 3 || c > 5) return false;
             if (info.color === 'red' && r < 7) return false;
             if (info.color === 'black' && r > 2) return false;
             break;
+<<<<<<< HEAD
         case 'A':
             if (info.color === 'red') {
                 const validPos = [[7,3],[7,5],[8,4],[9,3],[9,5]];
@@ -712,6 +851,8 @@ function isValidPlacement(code, r, c, isMove = false) {
                 if (!validPos.some(p => p[0] === r && p[1] === c)) return false;
             }
             break;
+=======
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
         case 'B':
             if (info.color === 'red') {
                 const validPos = [[5,2],[5,6],[7,0],[7,4],[7,8],[9,2],[9,6]];
@@ -737,6 +878,7 @@ function promptCustomPve() {
     const redKingCount = customBoardState.flat().filter(p => p === 'rK').length;
     const blackKingCount = customBoardState.flat().filter(p => p === 'bK').length;
     if (redKingCount !== 1 || blackKingCount !== 1) {
+<<<<<<< HEAD
         showNotification("must_have_one_king");
         return;
     }
@@ -746,6 +888,17 @@ function promptCustomPve() {
     }
     if (isKingInCheck(customBoardState, 'black')) {
         showNotification("black_king_in_check");
+=======
+        alert("局面必須包含且僅包含一個帥和一個將！");
+        return;
+    }
+    if (isKingInCheck(customBoardState, 'red')) {
+        alert("開局時，紅方(帥)不能處於被將軍狀態！");
+        return;
+    }
+    if (isKingInCheck(customBoardState, 'black')) {
+        alert("開局時，黑方(將)不能處於被將軍狀態！");
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
         return;
     }
     document.getElementById('custom-pve-overlay').classList.remove('hidden');
@@ -761,7 +914,11 @@ function confirmCustomPveStart() {
         const input = document.getElementById('custom-pve-movetime-input');
         customMovetime = parseInt(input.value, 10);
         if (isNaN(customMovetime) || customMovetime < 1 || customMovetime > 500) {
+<<<<<<< HEAD
             showNotification("invalid_movetime");
+=======
+            alert("請輸入1到500之間的有效數字！");
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
             return;
         }
     }
@@ -779,6 +936,7 @@ function startCustomGame(mode) {
     }
     const redKingCount = customBoardState.flat().filter(p => p === 'rK').length;
     const blackKingCount = customBoardState.flat().filter(p => p === 'bK').length;
+<<<<<<< HEAD
     if (redKingCount !== 1 || blackKingCount !== 1) { showNotification("must_have_one_king"); return; }
 
     if (isKingInCheck(customBoardState, 'red')) {
@@ -787,14 +945,81 @@ function startCustomGame(mode) {
     }
     if (isKingInCheck(customBoardState, 'black')) {
         showNotification("black_king_in_check");
+=======
+    if (redKingCount !== 1 || blackKingCount !== 1) { alert("局面必須包含且僅包含一個帥和一個將！"); return; }
+
+    if (isKingInCheck(customBoardState, 'red')) {
+        alert("開局時，紅方(帥)不能處於被將軍狀態！");
+        return;
+    }
+    if (isKingInCheck(customBoardState, 'black')) {
+        alert("開局時，黑方(將)不能處於被將軍狀態！");
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
         return;
     }
     const startPlayer = startPlayerSelect.value;
     const customSetup = { board: customBoardState.map(row => [...row]), player: startPlayer };
+<<<<<<< HEAD
     startGame('pvp', 'red', customSetup);
 }
 
 
+=======
+    startGame('pvp', 'red', customSetup); // pColor doesn't matter much in pvp
+}
+
+// WebSocket connection
+// WebSocket connection
+const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+const wsHost = window.location.host;
+const wsUrl = `${wsProtocol}//${wsHost}`;
+console.log(`Connecting to WebSocket at: ${wsUrl}`);
+const ws = new WebSocket(wsUrl);
+
+ws.onopen = () => {
+    console.log('WebSocket connected.');
+};
+
+ws.onmessage = (event) => {
+    const message = JSON.parse(event.data);
+    console.log('Message from server:', message);
+
+    if (message.type === 'engineMove') {
+        console.log('Engine move received:', message.move);
+        // Convert UCI move (e.g., "e2e4") to {from, to} format
+        const uciMove = message.move;
+        const fromCol = uciMove.charCodeAt(0) - 'a'.charCodeAt(0);
+        const fromRow = 9 - (parseInt(uciMove.charAt(1), 10) - 0); // UCCI rank 0 is board row 9
+        const toCol = uciMove.charCodeAt(2) - 'a'.charCodeAt(0);
+        const toRow = 9 - (parseInt(uciMove.charAt(3), 10) - 0);   // UCCI rank 9 is board row 0
+
+        const move = {
+            from: { r: fromRow, c: fromCol },
+            to: { r: toRow, c: toCol }
+        };
+
+        isAiThinking = false;
+        undoBtn.disabled = (moveHistory.length === 0);
+        statusDisplay.textContent = `${currentPlayer === 'red' ? '紅方' : '黑方'}回合`; // Restore status
+
+        animateAndMovePiece(move.from, move.to);
+
+    } else if (message.type === 'error') {
+        console.error('Server error:', message.data);
+        alert('Server error: ' + message.data);
+        isAiThinking = false;
+        statusDisplay.textContent = "AI錯誤，請刷新頁面";
+    }
+};
+
+ws.onclose = () => {
+    console.log('WebSocket disconnected.');
+};
+
+ws.onerror = (error) => {
+    console.error('WebSocket error:', error);
+};
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
 
 // Helper to convert board state to FEN
 function boardToFen(board, player) {
@@ -813,7 +1038,11 @@ function boardToFen(board, player) {
                     rowFen += emptyCount;
                     emptyCount = 0;
                 }
+<<<<<<< HEAD
                 rowFen += fenMap[piece] || '';
+=======
+                rowFen += fenMap[piece] || ''; // Use the map
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
             } else {
                 emptyCount++;
             }
@@ -826,7 +1055,11 @@ function boardToFen(board, player) {
             fen += '/';
         }
     }
+<<<<<<< HEAD
     fen += ` ${player === 'red' ? 'w' : 'b'} - - 0 1`;
+=======
+    fen += ` ${player === 'red' ? 'w' : 'b'} - - 0 1`; // Standard FEN for player turn
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
     return fen;
 }
 
@@ -844,9 +1077,16 @@ function getMovetimeForDifficulty(difficulty) {
 
 function makeAiMove() {
     isAiThinking = true;
+<<<<<<< HEAD
     statusDisplay.textContent = translations.ai_thinking;
     undoBtn.disabled = true;
 
+=======
+    statusDisplay.textContent = 'AI思考中...';
+    undoBtn.disabled = true;
+
+    // Convert boardState to FEN for the engine
+>>>>>>> 34b6b680595575bff0983153c0368b6cb6f10801
     const fen = boardToFen(boardState, currentPlayer);
 
     if (window.ws && window.ws.readyState === WebSocket.OPEN) {
