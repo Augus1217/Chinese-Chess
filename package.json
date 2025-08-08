@@ -47,7 +47,7 @@
       "oneClick": false,
       "perMachine": true,
       "allowToChangeInstallationDirectory": true,
-      "requestedExecutionLevel": "requireAdministrator"
+      "allowElevation": true
     }
   }
 }
