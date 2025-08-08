@@ -1,5 +1,5 @@
 {
-  "name": "Chinese chess",
+  "name": "chinese-chess",
   "version": "1.1.0",
   "description": "A web-based interface for Chinese Chess engines.",
   "author": "Augus <imlindora@gmail.com>",
@@ -17,7 +17,7 @@
     "electron-builder": "^24.9.1"
   },
   "build": {
-    "appId": "com.example.Chinese chess",
+    "appId": "com.example.chinese-chess",
     "productName": "中華象棋",
     "files": [
       "main.js",
