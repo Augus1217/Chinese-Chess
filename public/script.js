@@ -61,9 +61,10 @@ function updateUI() {
 }
 
 // --- Game Setup & Core Logic ---
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('language') || 'zh';
-    loadTranslations(savedLang);
+document.addEventListener('DOMContentLoaded', async () => {
+    const savedLang = localStorage.getItem('language');
+    const initialLang = savedLang || await window.electronAPI.getInitialLanguage();
+    loadTranslations(initialLang);
 
     window.electronAPI.onSwitchLanguage((_event, lang) => {
         loadTranslations(lang);

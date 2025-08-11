@@ -75,6 +75,11 @@ app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit();
 });
 
+ipcMain.handle('get-initial-language', () => {
+    const locale = app.getLocale();
+    return locale.startsWith('zh') ? 'zh' : 'en';
+});
+
 ipcMain.on('update-menu', (event, menuTranslations) => {
     createMenu(menuTranslations);
 });
