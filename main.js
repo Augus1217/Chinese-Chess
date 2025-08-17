@@ -22,7 +22,7 @@ function createMenu(translations) {
             ]
         },
         {
-            label: 'Language',
+            label: translations.language,
             submenu: [
                 {
                     label: translations.zh,
@@ -34,6 +34,12 @@ function createMenu(translations) {
                     label: translations.en,
                     click: () => {
                         mainWindow.webContents.send('switch-language', 'en');
+                    }
+                },
+                {
+                    label: translations.vi,
+                    click: () => {
+                        mainWindow.webContents.send('switch-language', 'vi');
                     }
                 }
             ]
@@ -77,7 +83,9 @@ app.on('window-all-closed', function () {
 
 ipcMain.handle('get-initial-language', () => {
     const locale = app.getLocale();
-    return locale.startsWith('zh') ? 'zh' : 'en';
+    if (locale.startsWith('zh')) return 'zh';
+    if (locale.startsWith('vi')) return 'vi';
+    return 'en';
 });
 
 ipcMain.on('update-menu', (event, menuTranslations) => {

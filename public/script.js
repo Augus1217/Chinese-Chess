@@ -9,6 +9,7 @@ const checkmateOverlay = document.getElementById('checkmate-overlay');
 const endgameTitle = document.getElementById('endgame-title');
 const winnerMessage = document.getElementById('winner-message');
 const undoBtn = document.getElementById('undoBtn');
+const flipBoardBtn = document.getElementById('flipBoardBtn');
 const piecePalette = document.getElementById('piece-palette');
 const startPlayerSelect = document.getElementById('start-player-select');
 const pveColorSelect = document.getElementById('pve-color-select');
@@ -21,6 +22,7 @@ let customBoardState = [];
 let pieceCounts = {};
 let pieceToMove = null;
 let translations = {};
+let boardFlipped = false;
 
 // --- Data & Tables ---
 const initialBoard = [
@@ -153,6 +155,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Make ws globally available for makeAiMove function
     window.ws = ws;
+
+    flipBoardBtn.addEventListener('click', () => {
+        boardFlipped = !boardFlipped;
+        renderBoard(board);
+    });
 });
 
 function setupMode(mode) {
@@ -472,17 +479,25 @@ function showNotification(key, options = {}) {
 
 function renderBoard(boardElement, boardData = boardState, interactionHandler = onSquareClick) {
     boardElement.innerHTML = '';
-    for (let r = 0; r < ROWS; r++) {
-        for (let c = 0; c < COLS; c++) {
+    for (let disp_r = 0; disp_r < ROWS; disp_r++) {
+        for (let disp_c = 0; disp_c < COLS; disp_c++) {
+            const r = boardFlipped ? ROWS - 1 - disp_r : disp_r;
+            const c = boardFlipped ? COLS - 1 - disp_c : disp_c;
+
             const square = document.createElement('div');
             square.classList.add('square');
-            square.dataset.r = r; square.dataset.c = c;
-            square.addEventListener('click', () => interactionHandler(r, c));
+            square.dataset.r = disp_r; 
+            square.dataset.c = disp_c;
+            square.addEventListener('click', () => interactionHandler(disp_r, disp_c));
+            
             const pieceCode = boardData[r][c];
             if (pieceCode) {
                 const pieceInfo = getPieceInfo(pieceCode);
                 const pieceElement = document.createElement('div');
                 pieceElement.classList.add('piece');
+                if (boardFlipped) {
+                    pieceElement.classList.add('flipped');
+                }
                 const img = document.createElement('img');
                 img.draggable = false;
                 const imgName = pieceCode.charAt(0) + '_' + pieceCode.charAt(1).toLowerCase() + '.png';
@@ -490,10 +505,20 @@ function renderBoard(boardElement, boardData = boardState, interactionHandler = 
                 img.alt = pieceInfo.name;
                 pieceElement.appendChild(img);
                 square.appendChild(pieceElement);
-                if (boardElement === board && isKingInCheck(boardState, pieceInfo.color) && pieceInfo.type === 'K') { pieceElement.classList.add('in-check'); }
-                if (boardElement === setupBoard && pieceToMove && r === pieceToMove.r && c === pieceToMove.c) { pieceElement.classList.add('selected');}
+
+                if (boardElement === board && isKingInCheck(boardState, pieceInfo.color) && pieceInfo.type === 'K') {
+                    pieceElement.classList.add('in-check');
+                }
+                if (boardElement === setupBoard && pieceToMove && r === pieceToMove.r && c === pieceToMove.c) {
+                    pieceElement.classList.add('selected');
+                }
             }
-            if (boardElement === board && validMoves.some(move => move.to.r === r && move.to.c === c)) {
+
+            if (boardElement === board && validMoves.some(move => {
+                const visualToR = boardFlipped ? ROWS - 1 - move.to.r : move.to.r;
+                const visualToC = boardFlipped ? COLS - 1 - move.to.c : move.to.c;
+                return visualToR === disp_r && visualToC === disp_c;
+            })) {
                 const moveIndicator = document.createElement('div');
                 moveIndicator.classList.add('valid-move-indicator');
                 if (boardData[r][c]) moveIndicator.style.backgroundColor = "rgba(255, 0, 0, 0.4)";
@@ -502,11 +527,21 @@ function renderBoard(boardElement, boardData = boardState, interactionHandler = 
             boardElement.appendChild(square);
         }
     }
-     if (boardElement === board && selectedPiece) { boardElement.children[selectedPiece.r * COLS + selectedPiece.c]?.querySelector('.piece')?.classList.add('selected'); }
+
+    if (boardElement === board && selectedPiece) {
+        const visualSelectedR = boardFlipped ? ROWS - 1 - selectedPiece.r : selectedPiece.r;
+        const visualSelectedC = boardFlipped ? COLS - 1 - selectedPiece.c : selectedPiece.c;
+        const squareIndex = visualSelectedR * COLS + visualSelectedC;
+        boardElement.children[squareIndex]?.querySelector('.piece')?.classList.add('selected');
+    }
 }
 
-function onSquareClick(r, c) {
+
+function onSquareClick(disp_r, disp_c) {
     if (gameEnded || isAiThinking || (gameMode === 'pve' && currentPlayer === aiColor)) return;
+
+    const r = boardFlipped ? ROWS - 1 - disp_r : disp_r;
+    const c = boardFlipped ? COLS - 1 - disp_c : disp_c;
 
     const clickedPieceInfo = getPieceInfo(boardState[r][c]);
 
@@ -569,26 +604,58 @@ function animateAndMovePiece(from, to) {
         isCheck: isCheckAfterMove
     });
     undoBtn.disabled = isAiThinking;
-    const fromSquare = board.children[from.r * COLS + from.c];
-    const toSquare = board.children[to.r * COLS + to.c];
+
+    const visualFromR = boardFlipped ? ROWS - 1 - from.r : from.r;
+    const visualFromC = boardFlipped ? COLS - 1 - from.c : from.c;
+    const visualToR = boardFlipped ? ROWS - 1 - to.r : to.r;
+    const visualToC = boardFlipped ? COLS - 1 - to.c : to.c;
+
+    const fromSquare = board.children[visualFromR * COLS + visualFromC];
+    const toSquare = board.children[visualToR * COLS + visualToC];
     const pieceElement = fromSquare.querySelector('.piece');
+
     if (!pieceElement) return;
-    const fromRect = fromSquare.getBoundingClientRect(); const toRect = toSquare.getBoundingClientRect();
-    const movingPiece = pieceElement.cloneNode(true); movingPiece.classList.add('moving-piece'); document.body.appendChild(movingPiece);
-    movingPiece.style.left = `${fromRect.left}px`; movingPiece.style.top = `${fromRect.top}px`;
+
+    const fromRect = fromSquare.getBoundingClientRect(); 
+    const toRect = toSquare.getBoundingClientRect();
+    
+    const movingPiece = pieceElement.cloneNode(true); 
+    movingPiece.classList.add('moving-piece'); 
+    document.body.appendChild(movingPiece);
+    movingPiece.style.left = `${fromRect.left}px`; 
+    movingPiece.style.top = `${fromRect.top}px`;
+    
     pieceElement.classList.add('is-moving');
-    selectedPiece = null; validMoves = []; renderBoard(board); 
-    if (boardState[to.r][to.c]) { const effect = document.createElement('div'); effect.classList.add('capture-effect-standalone'); document.body.appendChild(effect); effect.style.left = `${toRect.left + toRect.width / 2}px`; effect.style.top = `${toRect.top + toRect.height / 2}px`; setTimeout(() => effect.remove(), 400); }
-    requestAnimationFrame(() => { movingPiece.style.transform = `translate(${toRect.left - fromRect.left}px, ${toRect.top - fromRect.top}px)`; });
+    selectedPiece = null; 
+    validMoves = []; 
+    renderBoard(board); 
+
+    if (boardState[to.r][to.c]) { 
+        const effect = document.createElement('div'); 
+        effect.classList.add('capture-effect-standalone'); 
+        document.body.appendChild(effect); 
+        effect.style.left = `${toRect.left + toRect.width / 2}px`; 
+        effect.style.top = `${toRect.top + toRect.height / 2}px`; 
+        setTimeout(() => effect.remove(), 400); 
+    }
+
+    requestAnimationFrame(() => { 
+        movingPiece.style.transform = `translate(${toRect.left - fromRect.left}px, ${toRect.top - fromRect.top}px)`; 
+    });
+
     movingPiece.addEventListener('transitionend', () => {
         movingPiece.remove();
-        boardState[to.r][to.c] = boardState[from.r][from.c]; boardState[from.r][from.c] = null;
+        boardState[to.r][to.c] = boardState[from.r][from.c]; 
+        boardState[from.r][from.c] = null;
         currentPlayer = (currentPlayer === 'red') ? 'black' : 'red';
         statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
         renderBoard(board); 
         checkForEndOfGame();
         if (!gameEnded && gameMode === 'pve' && currentPlayer === aiColor) {
-            isAiThinking = true; undoBtn.disabled = true; statusDisplay.textContent = translations.ai_thinking; setTimeout(makeAiMove, 100);
+            isAiThinking = true; 
+            undoBtn.disabled = true; 
+            statusDisplay.textContent = translations.ai_thinking; 
+            setTimeout(makeAiMove, 100);
         }
     }, { once: true });
 }

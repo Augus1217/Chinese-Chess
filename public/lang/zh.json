@@ -32,6 +32,7 @@
     "status_red_turn": "紅方回合",
     "status_black_turn": "黑方回合",
     "undo": "悔棋",
+    "flip_board": "翻轉棋盤",
     "back_to_menu": "返回主選單",
     "custom_board_setup": "自訂局面",
     "piece_palette": "棋子面板",
@@ -61,7 +62,8 @@
         "zoomOut": "縮小",
         "togglefullscreen": "切換全螢幕",
         "zh": "繁體中文",
-        "en": "English"
+        "en": "English",
+        "vi": "越南語"
     },
     "piece_names": {
         "rK": "帥", "rA": "仕", "rB": "相", "rN": "傌", "rR": "俥", "rC": "炮", "rP": "兵",

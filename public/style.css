@@ -33,7 +33,7 @@
             grid-template-rows: repeat(10, 60px);
             position: relative;
             background-color: #f3dcb3;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='600'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.5'%3E%3Cpath d='M30,30 H510 M30,90 H510 M30,150 H510 M30,210 H510 M30,270 H510 M30,330 H510 M30,390 H510 M30,450 H510 M30,510 H510 M30,570 H510'/%3E%3Cpath d='M30,30 V270 M90,30 V270 M150,30 V270 M210,30 V270 M270,30 V270 M330,30 V270 M390,30 V270 M450,30 V270 M510,30 V270'/%3E%3Cpath d='M30,330 V570 M90,330 V570 M150,330 V570 M210,330 V570 M270,330 V570 M330,330 V570 M390,330 V570 M450,330 V570 M510,330 V570'/%3E%3Cpath d='M210,30 L330,150 M330,30 L210,150 M210,450 L330,570 M330,450 L210,570'/%3E%3Cg stroke-width='1.5'%3E%3Cpath d='M86,146 v-8 h-8 M94,146 v-8 h8 M86,154 v8 h-8 M94,154 v8 h8'/%3E%3Cpath d='M446,146 v-8 h-8 M454,146 v-8 h8 M446,154 v8 h-8 M454,154 v8 h8'/%3E%3Cpath d='M86,446 v-8 h-8 M94,446 v-8 h8 M86,154 v8 h-8 M94,154 v8 h8'/%3E%3Cpath d='M446,446 v-8 h-8 M454,446 v-8 h8 M446,454 v8 h-8 M454,454 v8 h8'/%3E%3Cpath d='M26,206 v-8 h8 M26,214 v8 h8 M514,206 v-8 h-8 M514,214 v8 h-8'/%3E%3Cpath d='M146,206 v-8 h-8 M154,206 v-8 h8 M146,214 v8 h-8 M154,214 v8 h8'/%3E%3Cpath d='M266,206 v-8 h-8 M274,206 v-8 h8 M266,214 v8 h-8 M274,214 v8 h8'/%3E%3Cpath d='M386,206 v-8 h-8 M394,206 v-8 h8 M386,214 v8 h-8 M394,214 v8 h8'/%3E%3Cpath d='M26,386 v-8 h8 M26,394 v8 h8 M514,386 v-8 h-8 M514,394 v8 h-8'/%3E%3Cpath d='M146,386 v-8 h-8 M154,386 v-8 h8 M146,394 v8 h-8 M154,394 v8 h8'/%3E%3Cpath d='M266,386 v-8 h-8 M274,386 v-8 h8 M266,394 v8 h-8 M274,394 v8 h8'/%3E%3Cpath d='M386,386 v-8 h-8 M394,386 v-8 h8 M386,394 v8 h-8 M394,394 v8 h8'/%3E%3C/g%3E%3C/g%3E%3Ctext x='120' y='325' font-size='38' font-family='KaiTi, STKaiti, sans-serif' fill='%23000'%3E楚 河%3C/text%3E%3Ctext x='360' y='325' font-size='38' font-family='KaiTi, STKaiti, sans-serif' fill='%23000'%3E漢 界%3C/text%3E%3C/svg%3E");
+            background-image: url('images/board.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -120,3 +120,4 @@
     top: 50px;
     opacity: 1;
 }
+

@@ -32,6 +32,7 @@
     "status_red_turn": "Red's Turn",
     "status_black_turn": "Black's Turn",
     "undo": "Undo",
+    "flip_board": "Flip Board",
     "back_to_menu": "Back to Menu",
     "custom_board_setup": "Custom Board Setup",
     "piece_palette": "Piece Palette",
@@ -61,7 +62,8 @@
         "zoomOut": "Zoom Out",
         "togglefullscreen": "Toggle Fullscreen",
         "zh": "繁體中文",
-        "en": "English"
+        "en": "English",
+        "vi": "Vietnamese"
     },
     "piece_names": {
         "rK": "King", "rA": "Advisor", "rB": "Bishop", "rN": "Knight", "rR": "Rook", "rC": "Cannon", "rP": "Pawn",
