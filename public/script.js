@@ -15,7 +15,7 @@ const startPlayerSelect = document.getElementById('start-player-select');
 const pveColorSelect = document.getElementById('pve-color-select');
 const ROWS = 10, COLS = 9;
 let boardState = [], selectedPiece = null, currentPlayer = 'red', validMoves = [], gameEnded = false, isAiThinking = false;
-let gameMode = 'pvp', playerColor = 'red', aiColor = 'black', aiDifficulty = 'easy', customMovetime = 100;
+let gameMode = 'pvp', playerColor = 'red', aiColor = 'black', aiDifficulty = 'easy', customElo = 1300;
 let moveHistory = []; 
 let pieceToPlace = null;
 let customBoardState = [];
@@ -73,16 +73,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     // Main screen sliders
-    const slider = document.getElementById('movetime-slider');
-    const input = document.getElementById('movetime-input');
+    const slider = document.getElementById('elo-slider');
+    const input = document.getElementById('elo-input');
     if (slider && input) {
         slider.addEventListener('input', (e) => { input.value = e.target.value; });
         input.addEventListener('input', (e) => { slider.value = e.target.value; });
     }
 
     // Custom PVE popup sliders
-    const customPveSlider = document.getElementById('custom-pve-movetime-slider');
-    const customPveInput = document.getElementById('custom-pve-movetime-input');
+    const customPveSlider = document.getElementById('custom-pve-elo-slider');
+    const customPveInput = document.getElementById('custom-pve-elo-input');
     if (customPveSlider && customPveInput) {
         customPveSlider.addEventListener('input', (e) => { customPveInput.value = e.target.value; });
         customPveInput.addEventListener('input', (e) => { customPveSlider.value = e.target.value; });
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const customPveDifficultySelect = document.getElementById('custom-pve-difficulty-select-popup');
     if (customPveDifficultySelect) {
         customPveDifficultySelect.addEventListener('change', (e) => {
-            document.getElementById('custom-pve-movetime-wrapper').classList.toggle('hidden', e.target.value !== 'custom');
+            document.getElementById('custom-pve-elo-wrapper').classList.toggle('hidden', e.target.value !== 'custom');
         });
     }
 
@@ -182,12 +182,13 @@ function selectDifficulty(level) {
 }
 
 function confirmCustomDifficulty() {
-    const input = document.getElementById('movetime-input');
-    customMovetime = parseInt(input.value, 10);
-    if (isNaN(customMovetime) || customMovetime < 1 || customMovetime > 500) {
-        showNotification("invalid_movetime");
+    const input = document.getElementById('elo-input');
+    const eloValue = parseInt(input.value, 10);
+    if (isNaN(eloValue) || eloValue < 1280 || eloValue > 3133) {
+        showNotification("invalid_elo");
         return;
     }
+    customElo = eloValue;
     document.getElementById('custom-difficulty-selection').classList.add('hidden');
     document.querySelector('.color-selection').classList.remove('hidden');
 }
@@ -422,22 +423,38 @@ function isRepetitiveCheckViolation(move, board, player) {
     const REPETITION_LIMIT = 5;
     const pieceCode = board[move.from.r][move.from.c];
     if (!pieceCode) return false;
+
     const tempBoard = board.map(r => [...r]);
     tempBoard[move.to.r][move.to.c] = pieceCode;
     tempBoard[move.from.r][move.from.c] = null;
     if (!isKingInCheck(tempBoard, (player === 'red' ? 'black' : 'red'))) {
         return false;
     }
+
     let consecutiveCount = 1;
     if (moveHistory.length < 2) return false;
+
+    // Let's track the position of the piece making the checks.
+    // It starts at the 'from' position of the current move.
+    let lastPiecePos = move.from;
+
     for (let i = moveHistory.length - 2; i >= 0; i -= 2) {
         const historyEntry = moveHistory[i];
         if (historyEntry.player !== player || !historyEntry.isCheck) {
             break;
         }
+
         const historicPieceCode = historyEntry.board[historyEntry.move.from.r][historyEntry.move.from.c];
-        if (historicPieceCode === pieceCode) {
+        
+        // The piece that made the historic check ended at historyEntry.move.to
+        // The piece that made the *next* check (the one closer to the present) started at lastPiecePos
+        // So, we check if these positions match.
+        if (historicPieceCode === pieceCode && 
+            lastPiecePos.r === historyEntry.move.to.r && 
+            lastPiecePos.c === historyEntry.move.to.c) {
             consecutiveCount++;
+            // For the next iteration, the piece we are tracking started at the 'from' of this historic move.
+            lastPiecePos = historyEntry.move.from;
         } else {
             break;
         }
@@ -826,12 +843,13 @@ function confirmCustomPveStart() {
     aiDifficulty = selectedDifficulty;
 
     if (aiDifficulty === 'custom') {
-        const input = document.getElementById('custom-pve-movetime-input');
-        customMovetime = parseInt(input.value, 10);
-        if (isNaN(customMovetime) || customMovetime < 1 || customMovetime > 500) {
-            showNotification("invalid_movetime");
+        const input = document.getElementById('custom-pve-elo-input');
+        const eloValue = parseInt(input.value, 10);
+        if (isNaN(eloValue) || eloValue < 1280 || eloValue > 3133) {
+            showNotification("invalid_elo");
             return;
         }
+        customElo = eloValue;
     }
 
     const startPlayer = startPlayerSelect.value;
@@ -900,12 +918,14 @@ function boardToFen(board, player) {
 // Helper to get movetime based on difficulty
 function getMovetimeForDifficulty(difficulty) {
     switch (difficulty) {
-        case 'easy': return 1;
-        case 'medium': return 25;
-        case 'hard': return 100;
-        case 'expert': return 250;
-        case 'custom': return customMovetime;
-        default: return 25;
+        case 'easy':
+        case 'medium':
+        case 'hard':
+        case 'expert':
+        case 'custom':
+            return 3000;
+        default:
+            return 3000;
     }
 }
 
@@ -915,13 +935,19 @@ function makeAiMove() {
     undoBtn.disabled = true;
 
     const fen = boardToFen(boardState, currentPlayer);
+    const payload = {
+        type: 'getmove',
+        fen: fen,
+        movetime: getMovetimeForDifficulty(aiDifficulty),
+        difficulty: aiDifficulty
+    };
+
+    if (aiDifficulty === 'custom') {
+        payload.customElo = customElo;
+    }
 
     if (window.ws && window.ws.readyState === WebSocket.OPEN) {
-        window.ws.send(JSON.stringify({
-            type: 'getmove',
-            fen: fen,
-            movetime: getMovetimeForDifficulty(aiDifficulty)
-        }));
+        window.ws.send(JSON.stringify(payload));
     } else {
         console.error('[Script.js] WebSocket is not open. Cannot send move.');
     }

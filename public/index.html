@@ -34,11 +34,10 @@
                 </table>
             </div>
             <div id="custom-difficulty-selection" class="hidden pve-setup">
-                <p data-i18n="set_movetime">請設定AI思考時間 (1-500ms)</p>
+                <p data-i18n="set_elo">請設定AI ELO (1280-3133)</p>
                 <div>
-                    <input type="range" id="movetime-slider" min="1" max="500" value="100" style="vertical-align: middle;">
-                    <input type="number" id="movetime-input" min="1" max="500" value="100" style="width: 60px;">
-                    <span style="vertical-align: middle;">ms</span>
+                    <input type="range" id="elo-slider" min="1280" max="3133" value="1300" style="vertical-align: middle;">
+                    <input type="number" id="elo-input" min="1280" max="3133" value="1300" style="width: 60px;">
                 </div>
                 <button onclick="confirmCustomDifficulty()" data-i18n="confirm">確定</button>
             </div>
@@ -76,12 +75,11 @@
                         <option value="custom" data-i18n="custom_difficulty">自訂</option>
                     </select>
                 </label>
-                <div id="custom-pve-movetime-wrapper" class="hidden">
-                    <label><span data-i18n="custom_pve_movetime">請設定AI思考時間 (1-500ms)</span>:</label>
+                <div id="custom-pve-elo-wrapper" class="hidden">
+                    <label><span data-i18n="custom_pve_elo">請設定AI ELO (1280-3133)</span>:</label>
                     <div>
-                        <input type="range" id="custom-pve-movetime-slider" min="1" max="500" value="100" style="vertical-align: middle;">
-                        <input type="number" id="custom-pve-movetime-input" min="1" max="500" value="100" style="width: 60px;">
-                        <span style="vertical-align: middle;">ms</span>
+                        <input type="range" id="custom-pve-elo-slider" min="1280" max="3133" value="1300" style="vertical-align: middle;">
+                        <input type="number" id="custom-pve-elo-input" min="1280" max="3133" value="1300" style="width: 60px;">
                     </div>
                 </div>
                 <button onclick="confirmCustomPveStart()" data-i18n="start_pve">開始人機對戰</button>

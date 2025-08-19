@@ -91,6 +91,7 @@ wss.on('connection', (ws) => {
 
             engineProcess.stdin.write('uci\n');
             engineProcess.stdin.write(`setoption name EvalFile value ${nnueName}\n`);
+            engineProcess.stdin.write('setoption name UCI_LimitStrength value true\n');
             engineProcess.stdin.write('isready\n');
 
         } catch (e) {
@@ -105,8 +106,29 @@ wss.on('connection', (ws) => {
         try {
             const msg = JSON.parse(message);
             if (msg.type === 'getmove' && engineProcess) {
+                // Handle custom ELO
+                if (msg.difficulty === 'custom' && msg.customElo) {
+                    const customElo = parseInt(msg.customElo, 10);
+                    // Basic validation to ensure it's within a reasonable range
+                    if (customElo >= 1280 && customElo <= 3133) {
+                        engineProcess.stdin.write(`setoption name UCI_Elo value ${customElo}\n`);
+                    }
+                } else {
+                    // Handle standard difficulties
+                    const eloMap = {
+                        'easy': 1280,
+                        'medium': 1400,
+                        'hard': 1600,
+                        'expert': 1800
+                    };
+                    const elo = eloMap[msg.difficulty];
+                    if (elo) {
+                        engineProcess.stdin.write(`setoption name UCI_Elo value ${elo}\n`);
+                    }
+                }
+
                 engineProcess.stdin.write(`position fen ${msg.fen}\n`);
-                engineProcess.stdin.write(`go movetime ${msg.movetime || 2000}\n`);
+                engineProcess.stdin.write(`go movetime ${msg.movetime || 3000}\n`);
             }
         } catch (e) {
             console.error('[WebSocket] Error parsing message:', e);
