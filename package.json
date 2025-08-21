@@ -1,6 +1,6 @@
 {
   "name": "Chinese-chess",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "A web-based interface for Chinese Chess engines.",
   "author": "Augus <imlindora@gmail.com>",
   "main": "main.js",
@@ -32,7 +32,10 @@
       }
     ],
     "win": {
-      "target": "portable",
+      "target": [
+        "portable",
+        "nsis"
+      ],
       "icon": "assets/icon.ico"
     },
     "linux": {

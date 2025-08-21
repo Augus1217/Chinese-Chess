@@ -211,6 +211,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     const settingsCloseBtn = document.getElementById('settings-close-btn');
     const bgm = document.getElementById('bgm');
 
+    // Load settings from localStorage
+    const savedVolume = localStorage.getItem('bgmVolume');
+    if (savedVolume !== null) {
+        bgm.volume = savedVolume;
+        bgmVolumeSlider.value = savedVolume;
+    } else {
+        bgm.volume = 0.5;
+        bgmVolumeSlider.value = 0.5;
+    }
+
+    const savedSoundPreference = localStorage.getItem('userSoundPreference');
+    if (savedSoundPreference !== null) {
+        userSoundPreference = JSON.parse(savedSoundPreference);
+        soundEffectsEnabled = userSoundPreference;
+        soundEffectsToggle.checked = userSoundPreference;
+    } else {
+        userSoundPreference = true;
+        soundEffectsEnabled = true;
+        soundEffectsToggle.checked = true;
+    }
+
+
     window.electronAPI.onOpenSettings(() => {
         isSettingsOpen = true;
         settingsOverlay.classList.remove('hidden');
@@ -230,16 +252,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     bgmVolumeSlider.addEventListener('input', (e) => {
         bgm.volume = e.target.value;
+        localStorage.setItem('bgmVolume', e.target.value);
     });
 
     soundEffectsToggle.addEventListener('change', (e) => {
         soundEffectsEnabled = e.target.checked;
         userSoundPreference = e.target.checked;
+        localStorage.setItem('userSoundPreference', e.target.checked);
     });
 
-    // Set initial values
-    bgmVolumeSlider.value = bgm.volume;
-    soundEffectsToggle.checked = soundEffectsEnabled;
+    
 });
 
 function setupMode(mode) {
