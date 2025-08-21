@@ -23,6 +23,32 @@ let pieceCounts = {};
 let pieceToMove = null;
 let translations = {};
 let boardFlipped = false;
+let soundEffectsEnabled = true;
+let userSoundPreference = true;
+let isSettingsOpen = false;
+let queuedAiMove = null;
+
+// --- Sound Effects ---
+const sounds = {
+    capture: new Audio('sounds/吃.mp3'),
+    check: new Audio('sounds/將軍.mp3'),
+    another_check: new Audio('sounds/再將.mp3'),
+    continue_check: new Audio('sounds/繼續將.mp3')
+};
+
+function playSound(soundName) {
+    if (!soundEffectsEnabled) return;
+    const currentLang = localStorage.getItem('language');
+    if (currentLang !== 'zh') {
+        return;
+    }
+
+    const sound = sounds[soundName];
+    if (sound) {
+        sound.currentTime = 0;
+        sound.play().catch(e => console.error("Error playing sound:", e));
+    }
+}
 
 // --- Data & Tables ---
 const initialBoard = [
@@ -41,6 +67,18 @@ async function loadTranslations(lang) {
         localStorage.setItem('language', lang);
         window.electronAPI.updateMenu(translations.menu);
         updateUI();
+
+        const soundEffectsToggle = document.getElementById('sound-effects-toggle');
+        if (lang !== 'zh') {
+            soundEffectsToggle.checked = false;
+            soundEffectsToggle.disabled = true;
+            soundEffectsEnabled = false;
+        } else {
+            soundEffectsToggle.disabled = false;
+            soundEffectsEnabled = userSoundPreference;
+            soundEffectsToggle.checked = userSoundPreference;
+        }
+
     } catch (error) {
         console.error("Failed to load translations:", error);
     }
@@ -126,6 +164,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 to: { r: toRow, c: toCol }
             };
 
+            if (isSettingsOpen) {
+                queuedAiMove = move;
+                return;
+            }
+
             isAiThinking = false;
             undoBtn.disabled = (moveHistory.length === 0);
             statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
@@ -160,9 +203,51 @@ document.addEventListener('DOMContentLoaded', async () => {
         boardFlipped = !boardFlipped;
         renderBoard(board);
     });
+
+    // --- Settings Panel Logic ---
+    const settingsOverlay = document.getElementById('settings-overlay');
+    const bgmVolumeSlider = document.getElementById('bgm-volume-slider');
+    const soundEffectsToggle = document.getElementById('sound-effects-toggle');
+    const settingsCloseBtn = document.getElementById('settings-close-btn');
+    const bgm = document.getElementById('bgm');
+
+    window.electronAPI.onOpenSettings(() => {
+        isSettingsOpen = true;
+        settingsOverlay.classList.remove('hidden');
+    });
+
+    settingsCloseBtn.addEventListener('click', () => {
+        isSettingsOpen = false;
+        settingsOverlay.classList.add('hidden');
+        if (queuedAiMove) {
+            isAiThinking = false;
+            undoBtn.disabled = (moveHistory.length === 0);
+            statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
+            animateAndMovePiece(queuedAiMove.from, queuedAiMove.to);
+            queuedAiMove = null;
+        }
+    });
+
+    bgmVolumeSlider.addEventListener('input', (e) => {
+        bgm.volume = e.target.value;
+    });
+
+    soundEffectsToggle.addEventListener('change', (e) => {
+        soundEffectsEnabled = e.target.checked;
+        userSoundPreference = e.target.checked;
+    });
+
+    // Set initial values
+    bgmVolumeSlider.value = bgm.volume;
+    soundEffectsToggle.checked = soundEffectsEnabled;
 });
 
 function setupMode(mode) {
+    const bgm = document.getElementById('bgm');
+    bgm.volume = 0.5;
+    if (bgm.paused) {
+        bgm.play().catch(e => console.error("BGM play failed:", e));
+    }
     gameMode = mode;
     document.querySelector('.mode-selection').classList.add('hidden');
     if (mode === 'pvp') {
@@ -648,6 +733,9 @@ function animateAndMovePiece(from, to) {
     renderBoard(board); 
 
     if (boardState[to.r][to.c]) { 
+        if (!isCheckAfterMove) {
+            playSound('capture');
+        }
         const effect = document.createElement('div'); 
         effect.classList.add('capture-effect-standalone'); 
         document.body.appendChild(effect); 
@@ -666,6 +754,21 @@ function animateAndMovePiece(from, to) {
         boardState[from.r][from.c] = null;
         currentPlayer = (currentPlayer === 'red') ? 'black' : 'red';
         statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
+        
+        if (isCheckAfterMove) {
+            const historyLen = moveHistory.length;
+            const lastPlayerMove = (historyLen >= 3) ? moveHistory[historyLen - 3] : null;
+            const secondLastPlayerMove = (historyLen >= 5) ? moveHistory[historyLen - 5] : null;
+
+            if (secondLastPlayerMove && secondLastPlayerMove.isCheck && lastPlayerMove && lastPlayerMove.isCheck) {
+                playSound('continue_check');
+            } else if (lastPlayerMove && lastPlayerMove.isCheck) {
+                playSound('another_check');
+            } else {
+                playSound('check');
+            }
+        }
+
         renderBoard(board); 
         checkForEndOfGame();
         if (!gameEnded && gameMode === 'pve' && currentPlayer === aiColor) {
@@ -703,7 +806,14 @@ function hideCheckmateOverlay() {
 }
 
 // --- Custom Setup Logic ---
-function showSetupScreen() { startScreen.classList.add('hidden'); setupContainer.classList.remove('hidden'); clearSetupBoard(); populatePalette(); }
+function showSetupScreen() { 
+    const bgm = document.getElementById('bgm');
+    bgm.volume = 0.5;
+    if (bgm.paused) {
+        bgm.play().catch(e => console.error("BGM play failed:", e));
+    }
+    startScreen.classList.add('hidden'); setupContainer.classList.remove('hidden'); clearSetupBoard(); populatePalette(); 
+}
 function populatePalette() { piecePalette.innerHTML = ''; const pieces = ['rK','rA','rB','rN','rR','rC','rP', 'bK','bA','bB','bN','bR','bC','bP']; pieces.forEach(code => { const pieceInfo = getPieceInfo(code); const pieceElement = document.createElement('div'); pieceElement.classList.add('piece'); const img = document.createElement('img'); img.draggable = false; const imgName = code.charAt(0) + '_' + code.charAt(1).toLowerCase() + '.png'; img.src = 'images/' + imgName; img.alt = pieceInfo.name; pieceElement.appendChild(img); pieceElement.dataset.pieceCode = code; pieceElement.addEventListener('click', () => selectPieceForPlacement(code, pieceElement)); piecePalette.appendChild(pieceElement); }); }
 function selectPieceForPlacement(code, element) {
     pieceToMove = null;

@@ -122,5 +122,26 @@
         </div>
     </div>
     <div id="notification"></div>
+    <div id="settings-overlay" class="screen-overlay hidden">
+        <div id="settings-panel">
+            <h2 data-i18n="settings"></h2>
+            <div class="setting-item">
+                <label for="bgm-volume-slider" data-i18n="bgm_volume"></label>
+                <input type="range" id="bgm-volume-slider" min="0" max="1" step="0.1" value="0.5">
+            </div>
+            <div class="setting-item">
+                <label for="sound-effects-toggle" data-i18n="sound_effects"></label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="sound-effects-toggle" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button id="settings-close-btn" data-i18n="close"></button>
+        </div>
+    </div>
+    <audio id="bgm" loop>
+        <source src="sounds/bgm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 </html>

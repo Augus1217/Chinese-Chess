@@ -43,6 +43,12 @@ function createMenu(translations) {
                     }
                 }
             ]
+        },
+        {
+            label: translations.settings,
+            click: () => {
+                mainWindow.webContents.send('open-settings');
+            }
         }
     ];
 
