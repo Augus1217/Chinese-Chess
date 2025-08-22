@@ -266,7 +266,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 function setupMode(mode) {
     const bgm = document.getElementById('bgm');
-    bgm.volume = 0.5;
     if (bgm.paused) {
         bgm.play().catch(e => console.error("BGM play failed:", e));
     }
@@ -830,7 +829,6 @@ function hideCheckmateOverlay() {
 // --- Custom Setup Logic ---
 function showSetupScreen() { 
     const bgm = document.getElementById('bgm');
-    bgm.volume = 0.5;
     if (bgm.paused) {
         bgm.play().catch(e => console.error("BGM play failed:", e));
     }
