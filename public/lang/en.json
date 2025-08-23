@@ -51,6 +51,7 @@
     "ai_thinking": "AI is thinking...",
     "server_error_ai": "AI Error, please refresh the page",
     "repetitive_check_violation": "Violation: Cannot checkmate with the same piece more than 5 times in a row!",
+    "notation": "Notation",
     "settings": "Settings",
     "bgm_volume": "BGM Volume",
     "sound_effects": "Sound Effects",

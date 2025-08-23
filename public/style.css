@@ -93,6 +93,55 @@
             border: 1px solid #fff;
         }
 
+/* --- Notation Panel --- */
+#notation-panel {
+    width: 200px;
+    height: 630px; /* Same as board-wrapper */
+    background: #f3dcb3;
+    border: 2px solid #66432d;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#notation-panel h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #4a382a;
+    border-bottom: 1px solid #8b694b;
+    padding-bottom: 5px;
+}
+
+#notation-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    font-size: 16px;
+    color: #333;
+    padding-right: 5px; /* For scrollbar spacing */
+}
+
+.notation-move {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.notation-move-number {
+    font-weight: bold;
+    width: 30px;
+}
+
+.notation-move-red {
+    width: 80px;
+}
+
+.notation-move-black {
+    width: 80px;
+}
+
 @media (max-width: 920px), (max-height: 780px) {
     #scalable-container {
         transform: scale(0.85);

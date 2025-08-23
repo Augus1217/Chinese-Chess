@@ -27,6 +27,7 @@ let soundEffectsEnabled = true;
 let userSoundPreference = true;
 let isSettingsOpen = false;
 let queuedAiMove = null;
+let notationHistory = [];
 
 // --- Sound Effects ---
 const sounds = {
@@ -307,9 +308,10 @@ function startGame(mode, pColor = 'red', customSetup = null) {
 }
 function initGame(customSetup = null) {
     if (customSetup) { boardState = customSetup.board; currentPlayer = customSetup.player; } else { boardState = initialBoard.map(row => [...row]); currentPlayer = 'red'; }
-    selectedPiece = null; validMoves = []; gameEnded = false; isAiThinking = false; moveHistory = []; undoBtn.disabled = true;
+    selectedPiece = null; validMoves = []; gameEnded = false; isAiThinking = false; moveHistory = []; notationHistory = []; undoBtn.disabled = true;
     statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
     renderBoard(board);
+    updateNotationDisplay();
     checkForEndOfGame();
     if (!gameEnded && gameMode === 'pve' && currentPlayer === aiColor) {
         isAiThinking = true; undoBtn.disabled = true; statusDisplay.textContent = translations.ai_thinking; setTimeout(makeAiMove, 100);
@@ -720,12 +722,16 @@ function animateAndMovePiece(from, to) {
         tempBoard[from.r][from.c] = null;
         return isKingInCheck(tempBoard, (currentPlayer === 'red') ? 'black' : 'red');
     })();
+    const notation = moveToNotation({ from, to }, boardState);
     moveHistory.push({
         board: boardBeforeMove,
         player: playerBeforeMove,
         move: { from, to },
-        isCheck: isCheckAfterMove
+        isCheck: isCheckAfterMove,
+        notation: notation
     });
+    notationHistory.push(notation);
+    updateNotationDisplay();
     undoBtn.disabled = isAiThinking;
 
     const visualFromR = boardFlipped ? ROWS - 1 - from.r : from.r;
@@ -803,21 +809,35 @@ function animateAndMovePiece(from, to) {
 
 function undoMove() {
     if (isAiThinking || moveHistory.length === 0) return;
-    const statesToPop = (gameMode === 'pve' && moveHistory.length >= 2) ? 2 : 1;
-    let lastState;
+
+    // In PvE, if it's the player's turn, it means the AI just moved. Undo both moves.
+    const statesToPop = (gameMode === 'pve' && currentPlayer === playerColor) ? 2 : 1;
+
+    if (moveHistory.length < statesToPop) {
+        return; // Not enough history to undo
+    }
+
+    let lastStateRecord = null;
     for (let i = 0; i < statesToPop; i++) {
-        lastState = moveHistory.pop();
+        lastStateRecord = moveHistory.pop();
+        if (notationHistory.length > 0) {
+            notationHistory.pop();
+        }
     }
-    if (lastState) {
-        boardState = lastState.board;
-        currentPlayer = lastState.player;
-        gameEnded = false;
-        checkmateOverlay.classList.add('hidden');
-        selectedPiece = null;
-        validMoves = [];
-        statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
-        renderBoard(board);
-    }
+
+    // Restore the state from BEFORE the move that was just popped.
+    boardState = JSON.parse(JSON.stringify(lastStateRecord.board));
+    currentPlayer = lastStateRecord.player;
+    
+    gameEnded = false;
+    isAiThinking = false; // Stop any AI thinking process
+    checkmateOverlay.classList.add('hidden');
+    selectedPiece = null;
+    validMoves = [];
+    statusDisplay.textContent = `${currentPlayer === 'red' ? translations.status_red_turn : translations.status_black_turn}`;
+    renderBoard(board);
+    updateNotationDisplay();
+    
     undoBtn.disabled = moveHistory.length === 0;
 }
 
@@ -1081,4 +1101,119 @@ function makeAiMove() {
     } else {
         console.error('[Script.js] WebSocket is not open. Cannot send move.');
     }
+}
+
+// --- Notation Logic ---
+function updateNotationDisplay() {
+    const notationList = document.getElementById('notation-list');
+    notationList.innerHTML = '';
+    for (let i = 0; i < notationHistory.length; i += 2) {
+        const moveNumber = i / 2 + 1;
+        const redMove = notationHistory[i] || '';
+        const blackMove = notationHistory[i + 1] || '';
+
+        const moveElement = document.createElement('div');
+        moveElement.classList.add('notation-move');
+        
+        const numberElement = document.createElement('span');
+        numberElement.classList.add('notation-move-number');
+        numberElement.textContent = `${moveNumber}.`;
+
+        const redElement = document.createElement('span');
+        redElement.classList.add('notation-move-red');
+        redElement.textContent = redMove;
+
+        const blackElement = document.createElement('span');
+        blackElement.classList.add('notation-move-black');
+        blackElement.textContent = blackMove;
+
+        moveElement.appendChild(numberElement);
+        moveElement.appendChild(redElement);
+        moveElement.appendChild(blackElement);
+        notationList.appendChild(moveElement);
+    }
+    notationList.scrollTop = notationList.scrollHeight;
+}
+
+function moveToNotation(move, board) {
+    const piece = board[move.from.r][move.from.c];
+    if (!piece) return '';
+
+    const pieceInfo = getPieceInfo(piece);
+    const { color, type, name } = pieceInfo;
+    const { from, to } = move;
+
+    // Define number systems for notation
+    const numToChinese = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+    const numToArabic = ['', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    const redNum = numToChinese;   // Red uses Chinese numerals
+    const blackNum = numToArabic; // Black uses Arabic numerals
+
+    const fromFile = color === 'red' ? 9 - from.c : from.c + 1;
+    const toFile = color === 'red' ? 9 - to.c : to.c + 1;
+
+    let notation = '';
+    let pieceName = name;
+    let fromFileNotation = (color === 'red' ? redNum[fromFile] : blackNum[fromFile]);
+
+    // Handle pieces with multiple instances on the same file
+    if ('RNCPA'.includes(type)) {
+        const piecesOnSameFile = [];
+        for (let r = 0; r < ROWS; r++) {
+            const p = board[r][from.c];
+            if (p && p === piece) {
+                piecesOnSameFile.push(r);
+            }
+        }
+        const count = piecesOnSameFile.length;
+
+        if (count > 1) {
+            fromFileNotation = ''; // Ambiguous move, so don't use file number in notation.
+
+            if (type === 'P') {
+                // Special notation for Pawns (兵/卒)
+                if (color === 'red') {
+                    piecesOnSameFile.sort((a, b) => a - b); // Smaller 'r' is front for Red
+                } else {
+                    piecesOnSameFile.sort((a, b) => b - a); // Larger 'r' is front for Black
+                }
+                
+                const pawnIndex = piecesOnSameFile.indexOf(from.r);
+
+                if (count === 2) {
+                    pieceName = (pawnIndex === 0 ? '前' : '後') + name;
+                } else if (count === 3) {
+                    const prefix = ['前', '中', '後'][pawnIndex];
+                    pieceName = prefix + name;
+                } else { // count >= 4
+                    const prefix = numToChinese[pawnIndex + 1];
+                    pieceName = prefix + name;
+                }
+            } else {
+                // Standard 前/後 notation for other pieces
+                if (color === 'red') {
+                    pieceName = (from.r === Math.min(...piecesOnSameFile) ? '前' : '後') + name;
+                } else {
+                    pieceName = (from.r === Math.max(...piecesOnSameFile) ? '前' : '後') + name;
+                }
+            }
+        }
+    }
+
+    notation = pieceName + fromFileNotation;
+
+    if (from.c === to.c) { // Vertical move
+        notation += (color === 'red' ? (from.r > to.r ? '進' : '退') : (from.r < to.r ? '進' : '退'));
+        const distance = Math.abs(from.r - to.r);
+        if ('PKRC'.includes(type)) {
+            notation += (color === 'red' ? redNum[distance] : blackNum[distance]);
+        }
+    } else if (from.r === to.r) { // Horizontal move
+        notation += '平' + (color === 'red' ? redNum[toFile] : blackNum[toFile]);
+    } else { // Diagonal move
+        notation += (color === 'red' ? (from.r > to.r ? '進' : '退') : (from.r < to.r ? '進' : '退'));
+        notation += (color === 'red' ? redNum[toFile] : blackNum[toFile]);
+    }
+
+    return notation;
 }

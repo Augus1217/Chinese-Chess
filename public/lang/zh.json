@@ -51,6 +51,7 @@
     "ai_thinking": "AI思考中...",
     "server_error_ai": "AI錯誤，請刷新頁面",
     "repetitive_check_violation": "違反規則：不能使用同一棋子連續將軍超過五次！",
+    "notation": "棋譜",
     "settings": "設定",
     "bgm_volume": "背景音樂音量",
     "sound_effects": "語音",

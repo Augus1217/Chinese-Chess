@@ -17,7 +17,7 @@ const server = http.createServer(serverApp);
 const wss = new WebSocket.Server({ server });
 
 // --- Reliable Path Resolution ---
-const engineName = process.platform === 'win32' ? 'pikafish-sse41-popcnt.exe' : 'pikafish-sse41-popcnt';
+let engineName = process.platform === 'win32' ? 'pikafish-sse41-popcnt.exe' : 'pikafish-sse41-popcnt';
 const nnueName = 'pikafish.nnue';
 
 let enginePath;
@@ -31,8 +31,8 @@ function initializePaths() {
         nnuePath = path.join(process.resourcesPath, 'engine', nnueName);
     } else {
         // In dev, resources are at the project root (one level up from api folder)
-        enginePath = path.join(__dirname, '..', 'engine', engineName);
-        nnuePath = path.join(__dirname, '..', 'engine', nnueName);
+        enginePath = path.join(__dirname, '..', 'engine 20250627', engineName);
+        nnuePath = path.join(__dirname, '..', 'engine 20250627', nnueName);
     }
 }
 // --- End of Path Resolution ---
@@ -149,7 +149,10 @@ server.listen(PORT, () => {
 });
 
 // Export a function to start the server and pass isPackaged status
-module.exports.start = (isPackagedStatus) => {
+module.exports.start = (isPackagedStatus, bestEngineName) => {
     isPackagedApp = isPackagedStatus;
+    if (bestEngineName) {
+        engineName = bestEngineName;
+    }
     initializePaths(); // Initialize paths once isPackagedApp is set
 };

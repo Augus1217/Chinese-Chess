@@ -27,7 +27,7 @@
     ],
     "extraResources": [
       {
-        "from": "engine/",
+        "from": "engine 20250627/",
         "to": "engine"
       }
     ],

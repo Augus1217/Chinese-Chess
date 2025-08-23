@@ -1,7 +1,39 @@
 const { app, BrowserWindow, Menu, ipcMain } = require('electron');
 const path = require('path');
+const { exec } = require('child_process');
 
-require('./api/websocket.js').start(app.isPackaged);
+const enginePriority = ['vnni512', 'bw512', 'avx512', 'avxvnni', 'bmi2', 'avx2', 'sse41-popcnt', 'ssse3'];
+const defaultEngine = 'pikafish-sse41-popcnt.exe';
+
+function getBestEngine(callback) {
+    const apiDir = path.join(__dirname, 'api');
+    const command = 'cpu_features.exe';
+
+    exec(command, { cwd: apiDir }, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`Error executing cpu_features.exe: ${error}`);
+            return callback(defaultEngine);
+        }
+
+        try {
+            const features = JSON.parse(stdout);
+            for (const engine of enginePriority) {
+                if (features[engine]) {
+                    const engineName = `pikafish-${engine}.exe`;
+                    return callback(engineName);
+                }
+            }
+            callback(defaultEngine);
+        } catch (e) {
+            console.error(`Error parsing CPU features: ${e}`);
+            callback(defaultEngine);
+        }
+    });
+}
+
+getBestEngine((engineName) => {
+    require('./api/websocket.js').start(app.isPackaged, engineName);
+});
 
 let mainWindow;
 
