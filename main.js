@@ -3,13 +3,24 @@ const path = require('path');
 const { exec } = require('child_process');
 
 const enginePriority = ['vnni512', 'bw512', 'avx512', 'avxvnni', 'bmi2', 'avx2', 'sse41-popcnt', 'ssse3'];
-const defaultEngine = 'pikafish-sse41-popcnt.exe';
 
+// 1. DEFINE getBestEngine FIRST
 function getBestEngine(callback) {
-    const apiDir = path.join(__dirname, 'api');
-    const command = 'cpu_features.exe';
+    const isWin = process.platform === 'win32';
+    const extension = isWin ? '.exe' : '';
+    const defaultEngine = `pikafish-sse41-popcnt${extension}`;
 
-    exec(command, { cwd: apiDir }, (error, stdout, stderr) => {
+    // If not on Windows, skip CPU detection since we only have the .exe
+    if (!isWin) {
+        console.log('[Engine] Skipping CPU feature detection on non-Windows platform.');
+        return callback(defaultEngine);
+    }
+
+    // Windows-only logic from here
+    const apiDir = path.join(__dirname, 'api');
+    const cpuFeaturesFullPath = path.join(apiDir, `cpu_features${extension}`);
+
+    exec(`"${cpuFeaturesFullPath}"`, (error, stdout, stderr) => {
         if (error) {
             console.error(`Error executing cpu_features.exe: ${error}`);
             return callback(defaultEngine);
@@ -19,7 +30,7 @@ function getBestEngine(callback) {
             const features = JSON.parse(stdout);
             for (const engine of enginePriority) {
                 if (features[engine]) {
-                    const engineName = `pikafish-${engine}.exe`;
+                    const engineName = `pikafish-${engine}${extension}`;
                     return callback(engineName);
                 }
             }
@@ -31,8 +42,13 @@ function getBestEngine(callback) {
     });
 }
 
+// 2. THEN, START THE SERVER
+const webSocketApi = require('./api/websocket.js');
+
+// 3. FINALLY, CALL getBestEngine
 getBestEngine((engineName) => {
-    require('./api/websocket.js').start(app.isPackaged, engineName);
+    console.log(`[Engine] Selected engine: ${engineName}`); // Added for debugging
+    webSocketApi.start(app.isPackaged, engineName);
 });
 
 let mainWindow;
