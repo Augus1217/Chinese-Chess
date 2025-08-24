@@ -36,7 +36,7 @@ A huge thank you to everyone who has shown interest in this project!
 
 ### 🚀 Installation and Usage
 
-Want to run this project on your computer? If you are on Windows, you can download a pre-packaged version directly from the **Releases** section.  
+Want to run this project on your computer? You can download a packaged version directly from the **Releases** section.  
 Support for macOS is not available at this time.  
 Alternatively, to run from the source code, please follow these steps:
 
@@ -112,7 +112,7 @@ The packaged files will appear in the `dist/` directory at the project root.
 
 ### 🚀 安裝與執行
 
-想在您的電腦上執行本專案嗎？Windows 用戶可直接至專案的 **Releases** 頁面下載已打包好的版本。  
+想在您的電腦上執行本專案嗎？你可以直接至專案的 **Releases** 頁面下載已打包好的版本。  
 很遺憾，本應用程式目前不支援 macOS。  
 若想從原始碼執行，請依照以下步驟操作：
 
