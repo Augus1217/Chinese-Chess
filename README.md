@@ -24,7 +24,7 @@ A huge thank you to everyone who has shown interest in this project!
 
 *   **Powerful AI Engine**: Integrated with the specialized [Pikafish for Xiangqi](https://github.com/official-pikafish/Pikafish) engine for a challenging gameplay experience.
 *   **Cross-Platform Support**: Runs on both Windows and Linux.
-*   **Smart Performance Optimization**: The application automatically detects your CPU architecture to enable the corresponding optimized engine version.
+*   **Smart Performance Optimization**(Windows): The application automatically detects your CPU architecture to enable the corresponding optimized engine version.
 *   **Multi-language Support**: Includes interfaces in Traditional Chinese, English, and Vietnamese.
 
 ### 🛠️ Tech Stack
@@ -42,7 +42,7 @@ Alternatively, to run from the source code, please follow these steps:
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/imlindora/Chinese-chess.git
+    git clone https://github.com/Augus1217/Chinese-Chess
     ```
 
 2.  **Navigate to the project directory**
@@ -99,7 +99,7 @@ The packaged files will appear in the `dist/` directory at the project root.
 
 *   **強大的 AI 引擎**: 內建為象棋特製化的 [Pikafish](https://github.com/official-pikafish/Pikafish) 引擎，提供極具挑戰性的對弈體驗。
 *   **跨平台支援**: 可在 Windows 和 Linux 系統上執行。
-*   **智慧效能優化**: 應用程式會自動偵測你的 CPU 架構，並啟用對應的最佳化引擎版本。
+*   **智慧效能優化**(Windows): 應用程式會自動偵測你的 CPU 架構，並啟用對應的最佳化引擎版本。
 *   **多國語言**: 內建繁體中文、英文、越南文等多種語言介面。
 *   **遊戲音效**: 包含將軍、吃子等音效，增加遊戲沉浸感。
 
@@ -118,7 +118,7 @@ The packaged files will appear in the `dist/` directory at the project root.
 
 1.  **複製專案庫**
     ```bash
-    git clone https://github.com/imlindora/Chinese-chess.git
+    git clone https://github.com/Augus1217/Chinese-Chess
     ```
 
 2.  **進入專案目錄**
