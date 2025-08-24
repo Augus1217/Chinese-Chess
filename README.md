@@ -26,7 +26,6 @@ A huge thank you to everyone who has shown interest in this project!
 *   **Cross-Platform Support**: Runs on both Windows and Linux.
 *   **Smart Performance Optimization**: The application automatically detects your CPU architecture to enable the corresponding optimized engine version.
 *   **Multi-language Support**: Includes interfaces in Traditional Chinese, English, and Vietnamese.
-*   **Game Sound Effects**: Includes sound effects for actions like "check" and "capture" to enhance immersion.
 
 ### 🛠️ Tech Stack
 
