@@ -95,7 +95,7 @@
 
 /* --- Notation Panel --- */
 #notation-panel {
-    width: 200px;
+    width: 225px;
     height: 630px; /* Same as board-wrapper */
     background: #f3dcb3;
     border: 2px solid #66432d;

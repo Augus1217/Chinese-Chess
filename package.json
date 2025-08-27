@@ -1,8 +1,9 @@
 {
   "name": "Chinese-chess",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A web-based interface for Chinese Chess engines.",
   "author": "Augus <imlindora@gmail.com>",
+  "homepage": "https://github.com/Augus1217/Chinese-Chess",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
