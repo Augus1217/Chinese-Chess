@@ -43,7 +43,7 @@ Alternatively, to run from the source code, please follow these steps:
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/Augus1217/Chinese-chess.git
+    git clone https://github.com/Augus1217/Chinese-Chess.git
     ```
 
 2.  **Navigate to the project directory**
@@ -119,7 +119,7 @@ The packaged files will appear in the `dist/` directory at the project root.
 
 1.  **複製專案庫**
     ```bash
-    git clone https://github.com/Augus1217/Chinese-chess.git
+    git clone https://github.com/Augus1217/Chinese-Chess.git
     ```
 
 2.  **進入專案目錄**
