@@ -1,6 +1,6 @@
 {
   "name": "Chinese-chess",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "A web-based interface for Chinese Chess engines.",
   "author": "Augus <imlindora@gmail.com>",
   "homepage": "https://github.com/Augus1217/Chinese-Chess",
@@ -19,12 +19,13 @@
   },
   "build": {
     "appId": "com.example.Chinese-chess",
-    "productName": "Chinese chess",
+    "productName": "Chinese-chess",
     "files": [
       "main.js",
       "preload.js",
       "public/",
-      "api/"
+      "api/",
+      "api/cpu_features_linux"
     ],
     "extraResources": [
       {

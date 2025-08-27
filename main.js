@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu, ipcMain } = require('electron');
+const { app, BrowserWindow, Menu, ipcMain, screen } = require('electron');
 const path = require('path');
 const { exec } = require('child_process');
 
@@ -6,23 +6,32 @@ const enginePriority = ['vnni512', 'bw512', 'avx512', 'avxvnni', 'bmi2', 'avx2',
 
 // 1. DEFINE getBestEngine FIRST
 function getBestEngine(callback) {
-    const isWin = process.platform === 'win32';
-    const extension = isWin ? '.exe' : '';
-    const defaultEngine = `pikafish-sse41-popcnt${extension}`;
+    const platform = process.platform;
+    const isWin = platform === 'win32';
+    const isLinux = platform === 'linux';
 
-    // If not on Windows, skip CPU detection since we only have the .exe
-    if (!isWin) {
-        console.log('[Engine] Skipping CPU feature detection on non-Windows platform.');
-        return callback(defaultEngine);
+    let executableName = '';
+    let extension = '';
+
+    if (isWin) {
+        executableName = 'cpu_features';
+        extension = '.exe';
+    } else if (isLinux) {
+        executableName = 'cpu_features_linux';
+        extension = '';
+    } else {
+        // For MacOS or other platforms, use a default engine
+        console.log(`[Engine] Unsupported platform: ${platform}. Using default engine.`);
+        return callback('pikafish-sse41-popcnt'); // Assuming a generic engine for other platforms
     }
 
-    // Windows-only logic from here
+    const defaultEngine = `pikafish-sse41-popcnt${extension}`;
     const apiDir = path.join(__dirname, 'api');
-    const cpuFeaturesFullPath = path.join(apiDir, `cpu_features${extension}`);
+    const cpuFeaturesFullPath = path.join(apiDir, `${executableName}${extension}`);
 
     exec(`"${cpuFeaturesFullPath}"`, (error, stdout, stderr) => {
         if (error) {
-            console.error(`Error executing cpu_features.exe: ${error}`);
+            console.error(`Error executing ${executableName}${extension}: ${error}`);
             return callback(defaultEngine);
         }
 
@@ -31,6 +40,7 @@ function getBestEngine(callback) {
             for (const engine of enginePriority) {
                 if (features[engine]) {
                     const engineName = `pikafish-${engine}${extension}`;
+                    console.log(`[Engine] Found supported engine: ${engineName}`);
                     return callback(engineName);
                 }
             }
@@ -105,20 +115,24 @@ function createMenu(translations) {
 }
 
 function createWindow () {
+  const primaryDisplay = screen.getPrimaryDisplay();
+  const { width, height } = primaryDisplay.workAreaSize;
+
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: width,
+    height: height,
+    x: 0,
+    y: 0,
     show: false, 
     title: "中華象棋",
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   });
-
+  mainWindow.maximize();
   mainWindow.loadFile('public/index.html');
 
   mainWindow.once('ready-to-show', () => {
-    mainWindow.maximize();
     mainWindow.show();
   });
 }
