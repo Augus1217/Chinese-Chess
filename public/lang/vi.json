@@ -74,7 +74,7 @@
         "vi": "Tiếng Việt"
     },
     "piece_names": {
-        "rK": "Tướng", "rA": "Sĩ", "rB": "Tượng", "rN": "Mã", "rR": "Xe", "rC": "Pháo", "rP": "Binh",
-        "bK": "Tướng", "bA": "Sĩ", "bB": "Tượng", "bN": "Mã", "bR": "Xe", "bC": "Pháo", "bP": "Tốt"
+        "rK": "帥", "rA": "仕", "rB": "相", "rN": "傌", "rR": "俥", "rC": "炮", "rP": "兵",
+        "bK": "將", "bA": "士", "bB": "象", "bN": "馬", "bR": "車", "bC": "包", "bP": "卒"
     }
 }

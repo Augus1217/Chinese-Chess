@@ -1,5 +1,5 @@
 {
-  "name": "Chinese-chess",
+  "name": "chinese-chess-by-augus",
   "version": "1.4.2",
   "description": "A web-based interface for Chinese Chess engines.",
   "author": "Augus <imlindora@gmail.com>",
@@ -17,15 +17,21 @@
     "electron": "28.0.0",
     "electron-builder": "^24.9.1"
   },
-  "build": {
-    "appId": "com.example.Chinese-chess",
-    "productName": "Chinese-chess",
+    "build": {
+    "appId": "com.augus.chinese.chess",
+    "productName": "中華象棋",
     "files": [
       "main.js",
       "preload.js",
       "public/",
       "api/",
-      "api/cpu_features_linux"
+      "build/",
+      "api/cpu_features.exe",
+      "api/libgcc_s_seh-1.dll",
+      "api/libstdc++-6.dll",
+      "api/libwinpthread-1.dll",
+      "api/websocket.js",
+      "api/nlohmann/"
     ],
     "extraResources": [
       {
@@ -35,18 +41,32 @@
     ],
     "win": {
       "target": [
-        "portable",
-        "nsis"
+        "msix"
       ],
       "icon": "assets/icon.ico"
+    },
+    "appx": {
+      "identityName": "YOUR_IDENTITY_NAME_FROM_PARTNER_CENTER",
+      "publisher": "CN=YOUR_PUBLISHER_ID_FROM_PARTNER_CENTER",
+      "publisherDisplayName": "Your Publisher Display Name",
+      "applicationId": "ChineseChess",
+      "displayName": "中華象棋"
     },
     "linux": {
       "target": [
         "AppImage",
-        "deb"
+        "deb",
+        "snap"
       ],
-      "icon": "assets/icon.png",
-      "category": "Game"
+      "icon": "build/icons",
+      "category": "Game",
+      "desktop": {
+        "Icon": "chinese-chess-by-augus"
+      }
+    },
+    "snap": {
+      "grade": "stable",
+      "confinement": "strict"
     },
     "nsis": {
       "oneClick": false,
