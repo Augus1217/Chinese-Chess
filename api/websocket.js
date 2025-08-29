@@ -47,8 +47,9 @@ function initializePaths() {
         nnuePath = path.join(devEngineDir, nnueFileName);
     }
 
-    // On Linux and macOS, the engine file needs execute permissions
-    if (process.platform === 'linux' || process.platform === 'darwin') {
+    // On Linux and macOS, the engine file needs execute permissions.
+    // Don't do this inside a read-only snap package.
+    if ((process.platform === 'linux' || process.platform === 'darwin') && !process.env.SNAP) {
         if (fs.existsSync(enginePath)) {
             try {
                 fs.chmodSync(enginePath, 0o755);

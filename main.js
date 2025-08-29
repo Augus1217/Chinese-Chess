@@ -1,6 +1,8 @@
 const { app, BrowserWindow, Menu, ipcMain, screen } = require('electron');
+app.disableHardwareAcceleration();
 const path = require('path');
 const { exec } = require('child_process');
+const fs = require('fs');
 
 const enginePriority = ['vnni512', 'bw512', 'avx512', 'avxvnni', 'bmi2', 'avx2', 'sse41-popcnt', 'ssse3'];
 
@@ -26,8 +28,31 @@ function getBestEngine(callback) {
     }
 
     const defaultEngine = `pikafish-sse41-popcnt${extension}`;
-    const apiDir = path.join(__dirname, 'api');
-    const cpuFeaturesFullPath = path.join(apiDir, `${executableName}${extension}`);
+    let cpuFeaturesFullPath = path.join(__dirname, 'api', `${executableName}${extension}`);
+
+    // --- SNAPCRAFT WORKAROUND ---
+    // If running in a snap, extract the executable from asar to a writable location
+    if (process.env.SNAP) {
+        const targetDir = process.env.SNAP_USER_DATA;
+        const targetPath = path.join(targetDir, `${executableName}${extension}`);
+
+        try {
+            // Read from asar archive
+            const binaryData = fs.readFileSync(cpuFeaturesFullPath);
+            // Write to writable location
+            fs.writeFileSync(targetPath, binaryData);
+            // Make it executable
+            fs.chmodSync(targetPath, 0o755);
+            console.log(`[Snap Workaround] Extracted ${executableName} to ${targetPath}`);
+            // Update the path to the new executable
+            cpuFeaturesFullPath = targetPath;
+        } catch (e) {
+            console.error(`[Snap Workaround] Failed to extract executable: ${e}`);
+            // Fallback to default engine if extraction fails
+            return callback(defaultEngine);
+        }
+    }
+    // --- END SNAPCRAFT WORKAROUND ---
 
     exec(`"${cpuFeaturesFullPath}"`, (error, stdout, stderr) => {
         if (error) {

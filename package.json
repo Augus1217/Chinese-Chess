@@ -1,6 +1,6 @@
 {
   "name": "chinese-chess-by-augus",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "A web-based interface for Chinese Chess engines.",
   "author": "Augus <imlindora@gmail.com>",
   "homepage": "https://github.com/Augus1217/Chinese-Chess",
@@ -20,6 +20,9 @@
     "build": {
     "appId": "com.augus.chinese.chess",
     "productName": "中華象棋",
+    "asarUnpack": [
+      "api/**"
+    ],
     "files": [
       "main.js",
       "preload.js",
@@ -41,9 +44,10 @@
     ],
     "win": {
       "target": [
-        "msix"
+        "nsis",
+	"portable"
       ],
-      "icon": "assets/icon.ico"
+      "icon": "build/icons"
     },
     "appx": {
       "identityName": "YOUR_IDENTITY_NAME_FROM_PARTNER_CENTER",
@@ -59,14 +63,17 @@
         "snap"
       ],
       "icon": "build/icons",
-      "category": "Game",
-      "desktop": {
-        "Icon": "chinese-chess-by-augus"
-      }
+      "category": "Game"
     },
     "snap": {
       "grade": "stable",
-      "confinement": "strict"
+      "confinement": "strict",
+      "base": "core22",
+      "stagePackages": [
+        "libatomic1",
+        "libstdc++6",
+        "libnss3"
+      ]
     },
     "nsis": {
       "oneClick": false,
