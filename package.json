@@ -1,5 +1,5 @@
 {
-  "name": "chinese-chess",
+  "name": "chinese-chess-by-augus",
   "version": "1.5.0",
   "description": "A powerful Chinese Chess (Xiangqi) desktop application, featuring the Pikafish AI engine for a smooth gameplay experience.",
   "author": "Augus <imlindora@gmail.com>",
@@ -15,6 +15,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron . --no-sandbox",
+    "clean": "rm -rf dist/",
+    "prebuild": "npm run clean",
     "build": "electron-builder"
   },
   "dependencies": {
@@ -92,12 +94,15 @@
         "network",
         "gsettings",
         "audio-playback",
-        "pulseaudio"
+        "pulseaudio",
+        "home"
       ],
       "stagePackages": [
         "libatomic1",
         "libstdc++6",
-        "libnss3"
+        "libnss3",
+        "fonts-noto-cjk",
+        "fonts-wqy-microhei"
       ]
     },
     "nsis": {

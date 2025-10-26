@@ -1056,33 +1056,6 @@ function startCustomGame(mode) {
 
 
 // Helper to convert board state to FEN
-function boardToFen(board, player) {
-    let fen = '';
-    for (let i = 0; i < ROWS; i++) {
-        let emptyCount = 0;
-        for (let j = 0; j < COLS; j++) {
-            const piece = board[i][j];
-            if (piece) {
-                if (emptyCount > 0) {
-                    fen += emptyCount;
-                    emptyCount = 0;
-                }
-                const pieceInfo = getPieceInfo(piece);
-                fen += pieceInfo.color === 'red' ? pieceInfo.type.toUpperCase() : pieceInfo.type.toLowerCase();
-            } else {
-                emptyCount++;
-            }
-        }
-        if (emptyCount > 0) {
-            fen += emptyCount;
-        }
-        if (i < ROWS - 1) {
-            fen += '/';
-        }
-    }
-    fen += ` ${player.charAt(0)} - - 0 1`;
-    return fen;
-}
 
 // Helper to get movetime based on difficulty
 function getMovetimeForDifficulty(difficulty) {
@@ -1253,7 +1226,12 @@ function boardToFen(board, player) {
                     emptyCount = 0;
                 }
                 const pieceInfo = getPieceInfo(piece);
-                fen += pieceInfo.color === 'red' ? pieceInfo.type.toUpperCase() : pieceInfo.type.toLowerCase();
+                if (pieceInfo) {
+                    fen += pieceInfo.color === 'red' ? pieceInfo.type.toUpperCase() : pieceInfo.type.toLowerCase();
+                } else {
+                    console.error(`Invalid piece at [${i}][${j}]:`, piece);
+                    emptyCount++;  // Treat invalid piece as empty
+                }
             } else {
                 emptyCount++;
             }
@@ -1296,16 +1274,23 @@ function generatePgnString() {
 }
 
 function exportPgn() {
-    const pgnString = generatePgnString();
-    const blob = new Blob([pgnString], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'game.pgn';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    try {
+        const pgnString = generatePgnString();
+        // Add UTF-8 BOM to ensure proper encoding detection
+        const bom = '\uFEFF';
+        const blob = new Blob([bom + pgnString], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'game.pgn';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    } catch (error) {
+        console.error('Error exporting PGN:', error);
+        showNotification('export_pgn_error');
+    }
 }
 
 function exportTextNotation() {
@@ -1318,7 +1303,9 @@ function exportTextNotation() {
             text += ` ${notationHistory[i]}\n`;
         }
     }
-    const blob = new Blob([text.trim()], { type: 'text/plain;charset=utf-8' });
+    // Add UTF-8 BOM to ensure proper encoding detection
+    const bom = '\uFEFF';
+    const blob = new Blob([bom + text.trim()], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
