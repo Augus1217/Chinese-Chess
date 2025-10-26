@@ -95,9 +95,9 @@ The packaged files will appear in the `dist/` directory at the project root.
 
 ## 快速下載 (v1.4.3)
 * [Windows 可攜版](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_win_x64.exe)
-* [Windows 安裝版](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_Setup_v1.4.3_win_x64.exe)
+* [Windows 安裝程式](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_Setup_v1.4.3_win_x64.exe)
 * [Linux AppImage(不建議)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_linux_amd64.AppImage)
-* [Linux snap store版](https://snapcraft.io/chinese-chess-by-augus)
+* [Linux snap store](https://snapcraft.io/chinese-chess-by-augus)
 * [Linux deb](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_linux_amd64.deb)
 
 大家好，我是本專案的開發者 Augus，來自台灣。  
