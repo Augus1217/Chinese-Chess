@@ -1,0 +1,110 @@
+{
+  "name": "chinese-chess",
+  "version": "1.5.0",
+  "description": "A powerful Chinese Chess (Xiangqi) desktop application, featuring the Pikafish AI engine for a smooth gameplay experience.",
+  "author": "Augus <imlindora@gmail.com>",
+  "homepage": "https://github.com/Augus1217/Chinese-Chess",
+  "bugs": {
+    "url": "https://github.com/Augus1217/Chinese-Chess/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Augus1217/Chinese-Chess.git"
+  },
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron . --no-sandbox",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "electron-store": "^11.0.2",
+    "express": "^4.18.2",
+    "portfinder": "^1.0.38",
+    "ws": "^8.12.0"
+  },
+  "devDependencies": {
+    "electron": "28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.augus.chinese.chess",
+    "productName": "Chinese-Chess",
+    "asarUnpack": [
+      "api/**"
+    ],
+    "files": [
+      "main.js",
+      "preload.js",
+      "public/",
+      "api/",
+      "build/",
+      "api/cpu_features.exe",
+      "api/libgcc_s_seh-1.dll",
+      "api/libstdc++-6.dll",
+      "api/libwinpthread-1.dll",
+      "api/websocket.js",
+      "api/nlohmann/"
+    ],
+    "extraResources": [
+      {
+        "from": "engine 20250627/",
+        "to": "engine"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "build/"
+    },
+    "appx": {
+      "identityName": "YOUR_IDENTITY_NAME_FROM_PARTNER_CENTER",
+      "publisher": "CN=YOUR_PUBLISHER_ID_FROM_PARTNER_CENTER",
+      "publisherDisplayName": "Your Publisher Display Name",
+      "applicationId": "ChineseChess",
+      "displayName": "中華象棋"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "snap"
+      ],
+      "icon": "build/",
+      "category": "Game",
+      "desktop": {
+        "Name": "中華象棋"
+      }
+    },
+    "snap": {
+      "grade": "stable",
+      "confinement": "strict",
+      "base": "core22",
+      "plugs": [
+        "desktop",
+        "desktop-legacy",
+        "wayland",
+        "x11",
+        "unity7",
+        "browser-support",
+        "network",
+        "gsettings",
+        "audio-playback",
+        "pulseaudio"
+      ],
+      "stagePackages": [
+        "libatomic1",
+        "libstdc++6",
+        "libnss3"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true
+    }
+  }
+}

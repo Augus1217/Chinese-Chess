@@ -1,0 +1,53 @@
+{
+  "versions": [
+    {
+      "version": "1.5.0",
+      "changelog": {
+        "zh": {
+          "title": "版本 1.5.0 更新日誌",
+          "changes": [
+            "新增簡體中文語言支援",
+            "新增 PGN 格式匯出功能",
+            "背景音樂 (BGM) 播放優化",
+            "修復非中文模式下無法播放語音的問題",
+            "新增版本更新日誌功能",
+            "新增象棋教學網站 (測試版，尚未完成)"
+          ]
+        },
+        "zh-CN": {
+          "title": "版本 1.5.0 更新日志",
+          "changes": [
+            "新增简体中文语言支持",
+            "新增 PGN 格式导出功能",
+            "背景音乐 (BGM) 播放优化",
+            "修复非中文模式下无法播放语音的问题",
+            "新增版本更新日志功能",
+            "新增象棋教学网站 (测试版，尚未完成)"
+          ]
+        },
+        "en": {
+          "title": "Version 1.5.0 Changelog",
+          "changes": [
+            "Added Simplified Chinese language support.",
+            "Added feature to export game records in PGN format.",
+            "Optimized background music (BGM) playback.",
+            "Fixed an issue where voice sounds wouldn't play in non-Chinese language modes.",
+            "Added a changelog feature to display updates.",
+            "Added a chess tutorial website (Beta, unfinished)."
+          ]
+        },
+        "vi": {
+          "title": "Nhật ký thay đổi phiên bản 1.5.0",
+          "changes": [
+            "Đã thêm hỗ trợ ngôn ngữ tiếng Trung giản thể.",
+            "Đã thêm tính năng xuất bản ghi trò chơi ở định dạng PGN.",
+            "Tối ưu hóa phát lại nhạc nền (BGM).",
+            "Đã khắc phục sự cố trong đó âm thanh giọng nói không phát ở các chế độ ngôn ngữ không phải tiếng Trung.",
+            "Đã thêm tính năng nhật ký thay đổi để hiển thị các bản cập nhật.",
+            "Đã thêm một trang web hướng dẫn cờ tướng (Beta, chưa hoàn thành)."
+          ]
+        }
+      }
+    }
+  ]
+}
