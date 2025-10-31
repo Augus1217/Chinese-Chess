@@ -102,7 +102,8 @@
         "libstdc++6",
         "libnss3",
         "fonts-noto-cjk",
-        "fonts-wqy-microhei"
+        "fonts-wqy-microhei",
+        "fontconfig"
       ]
     },
     "nsis": {

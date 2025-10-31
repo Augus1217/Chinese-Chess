@@ -1,0 +1,62 @@
+name: chinese-chess-by-augus
+version: '1.5.0'
+summary: A powerful Chinese Chess (Xiangqi) desktop application
+description: |
+  A powerful Chinese Chess (Xiangqi) desktop application, featuring the 
+  Pikafish AI engine for a smooth gameplay experience. Play against AI 
+  or with friends, with multiple difficulty levels and game analysis features.
+
+grade: stable
+confinement: strict
+base: core22
+
+architectures:
+  - build-on: amd64
+
+apps:
+  chinese-chess-by-augus:
+    command: chinese-chess-by-augus
+    extensions: [gnome]
+    plugs:
+      - desktop
+      - desktop-legacy
+      - wayland
+      - x11
+      - unity7
+      - browser-support
+      - network
+      - gsettings
+      - audio-playback
+      - pulseaudio
+      - home
+    environment:
+      DISABLE_WAYLAND: '1'
+
+parts:
+  chinese-chess:
+    plugin: dump
+    source: .
+    stage-packages:
+      - libatomic1
+      - libstdc++6
+      - libnss3
+      - fonts-noto-cjk
+      - fonts-wqy-microhei
+      - fontconfig
+    override-build: |
+      # Install Node.js dependencies
+      npm install
+      
+      # Build the application
+      npx electron-builder --linux dir
+      
+      # Copy built files to install directory
+      cp -r dist/linux-unpacked/* $SNAPCRAFT_PART_INSTALL/
+      
+      # Make the engine executable
+      chmod +x $SNAPCRAFT_PART_INSTALL/resources/engine/Linux/*
+    build-packages:
+      - nodejs
+      - npm
+    organize:
+      '*': /
