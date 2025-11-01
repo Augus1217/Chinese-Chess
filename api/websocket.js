@@ -49,8 +49,9 @@ function initializePaths() {
     }
 
     // On Linux and macOS, the engine file needs execute permissions.
-    // Don't do this inside a read-only snap package.
-    if ((process.platform === 'linux' || process.platform === 'darwin') && !process.env.SNAP) {
+    // Don't do this inside a read-only snap package or AppImage.
+    const isAppImage = process.env.APPIMAGE !== undefined;
+    if ((process.platform === 'linux' || process.platform === 'darwin') && !process.env.SNAP && !isAppImage) {
         if (fs.existsSync(enginePath)) {
             try {
                 fs.chmodSync(enginePath, 0o755);
@@ -116,16 +117,41 @@ wss.on('connection', (ws) => {
                     ws.send(JSON.stringify({ type: 'error', data: `Engine spawn error: ${err.message}` }));
                 });
 
-                engineProcess.stdin.write('uci\n');
-                const evalFileValue = process.platform === 'win32' ? path.basename(nnuePath) : nnuePath;
-                engineProcess.stdin.write(`setoption name EvalFile value ${evalFileValue}\n`);
-                engineProcess.stdin.write('setoption name UCI_LimitStrength value true\n');
-                engineProcess.stdin.write('isready\n');
+                // Add error handler for stdin to catch EPIPE errors
+                engineProcess.stdin.on('error', (err) => {
+                    console.error('[Engine] Stdin Error:', err);
+                });
+
+                // Check if stdin is writable before writing
+                if (engineProcess.stdin && engineProcess.stdin.writable) {
+                    engineProcess.stdin.write('uci\n');
+                    const evalFileValue = process.platform === 'win32' ? path.basename(nnuePath) : nnuePath;
+                    engineProcess.stdin.write(`setoption name EvalFile value ${evalFileValue}\n`);
+                    engineProcess.stdin.write('setoption name UCI_LimitStrength value true\n');
+                    engineProcess.stdin.write('isready\n');
+                } else {
+                    console.error('[Engine] Stdin is not writable');
+                }
 
             } catch (e) {
                 console.error("[Engine] FATAL: Failed to spawn process.", e);
                 ws.send(JSON.stringify({ type: 'error', data: 'Failed to start engine.' }));
             }
+        };
+
+        // Helper function to safely write to engine stdin
+        const safeWriteToEngine = (command) => {
+            if (engineProcess && engineProcess.stdin && engineProcess.stdin.writable) {
+                try {
+                    engineProcess.stdin.write(command);
+                    return true;
+                } catch (err) {
+                    console.error('[Engine] Write error:', err);
+                    return false;
+                }
+            }
+            console.error('[Engine] Cannot write: stdin not available');
+            return false;
         };
 
         startEngine();
@@ -138,7 +164,7 @@ wss.on('connection', (ws) => {
                     if (msg.difficulty === 'custom' && msg.customElo) {
                         const customElo = parseInt(msg.customElo, 10);
                         if (customElo >= 1280 && customElo <= 3133) {
-                            engineProcess.stdin.write(`setoption name UCI_Elo value ${customElo}\n`);
+                            safeWriteToEngine(`setoption name UCI_Elo value ${customElo}\n`);
                         }
                     } else {
                         const eloMap = {
@@ -149,12 +175,12 @@ wss.on('connection', (ws) => {
                         };
                         const elo = eloMap[msg.difficulty];
                         if (elo) {
-                            engineProcess.stdin.write(`setoption name UCI_Elo value ${elo}\n`);
+                            safeWriteToEngine(`setoption name UCI_Elo value ${elo}\n`);
                         }
                     }
 
-                    engineProcess.stdin.write(`position fen ${msg.fen}\n`);
-                    engineProcess.stdin.write(`go movetime ${msg.movetime || 3000}\n`);
+                    safeWriteToEngine(`position fen ${msg.fen}\n`);
+                    safeWriteToEngine(`go movetime ${msg.movetime || 3000}\n`);
                 }
             } catch (e) {
                 console.error('[WebSocket] Error parsing message:', e);

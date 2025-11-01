@@ -15,8 +15,6 @@
   "main": "main.js",
   "scripts": {
     "start": "electron . --no-sandbox",
-    "clean": "rm -rf dist/",
-    "prebuild": "npm run clean",
     "build": "electron-builder"
   },
   "dependencies": {
