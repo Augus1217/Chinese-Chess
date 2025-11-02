@@ -1,0 +1,15 @@
+# 排除第三方函式庫不計入語言統計
+api/nlohmann/json.hpp linguist-vendored
+
+# 排除 dist 和 build 目錄
+dist/** linguist-generated
+build/** linguist-generated
+
+# 排除引擎二進位檔案
+engine*/** linguist-vendored
+
+# 標記主要語言
+*.js linguist-detectable=true
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.cpp linguist-detectable=true
