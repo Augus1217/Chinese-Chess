@@ -18,7 +18,7 @@ This is a desktop Chinese Chess (Xiangqi) application built with Electron and th
 * 🪟 [Windows installer(.msi)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.msi)
 * 🐧 [Linux AppImage](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess-1.5.0.AppImage)
 * 🐧 [Linux snap store](https://snapcraft.io/chinese-chess-by-augus)
-* 🐧 [Linux deb(Ubuntu/Debian)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_linux_amd64.deb)
+* 🐧 [Linux deb(Ubuntu/Debian)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus_1.5.0_amd64.deb)
 * 🐧 [Linux rpm(Fedora/RHEL/Cent OS)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus-1.5.0.x86_64.rpm)
 
 Hello everyone, I'm Augus, the developer of this project, from Taiwan.
