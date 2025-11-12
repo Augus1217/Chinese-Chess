@@ -4,7 +4,7 @@
 
 <a name="english"></a>
 
-# Chinese Chess (Xiangqi)
+# Chinese Chess (Xiangqi) ♟️
 
 This is a desktop Chinese Chess (Xiangqi) application built with Electron and the Pikafish Xiangqi engine.
 
@@ -12,40 +12,40 @@ This is a desktop Chinese Chess (Xiangqi) application built with Electron and th
 
 <a name="quickdownload"></a>
 
-## Quick Download (v1.5.0)
-* [Windows portable](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.exe)
-* [Windows installer(.exe)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.Setup.1.5.0.exe)
-* [Windows installer(.msi)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.msi)
-* [Linux AppImage](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess-1.5.0.AppImage)
-* [Linux snap store](https://snapcraft.io/chinese-chess-by-augus)
-* [Linux deb(Ubuntu/Debian)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_linux_amd64.deb)
-* [Linux rpm(Fedora/RHEL/Cent OS)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus-1.5.0.x86_64.rpm)
+## ⬇️ Quick Download (v1.5.0)
+* 🪟 [Windows portable](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.exe)
+* 🪟 [Windows installer(.exe)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.Setup.1.5.0.exe)
+* 🪟 [Windows installer(.msi)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.msi)
+* 🐧 [Linux AppImage](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess-1.5.0.AppImage)
+* 🐧 [Linux snap store](https://snapcraft.io/chinese-chess-by-augus)
+* 🐧 [Linux deb(Ubuntu/Debian)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_linux_amd64.deb)
+* 🐧 [Linux rpm(Fedora/RHEL/Cent OS)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus-1.5.0.x86_64.rpm)
 
 Hello everyone, I'm Augus, the developer of this project, from Taiwan.
 
-This is a project I completed during my summer break between elementary and junior high school, with the assistance of the Gemini CLI. As the new school year begins, my studies will become more demanding, and I won't have sufficient time to maintain or update this project.
+This is a project I completed during my summer break between elementary and junior high school, with the assistance of the Gemini CLI. (Way more fun than summer homework, by the way!) As the new school year begins, my studies will become more demanding, and I won't have sufficient time to maintain or update this project.
 
 A huge thank you to everyone who has shown interest in this project!
 
 ### ✨ Features
 
-*   **Powerful AI Engine**: Integrated with the specialized [Pikafish for Xiangqi](https://github.com/official-pikafish/Pikafish) engine for a challenging gameplay experience.
-*   **Cross-Platform Support**: Runs on both Windows and Linux.
-*   **Smart Performance Optimization**: The application automatically detects your CPU architecture to enable the corresponding optimized engine version.
-*   **Multi-language Support**: Includes interfaces in Traditional Chinese, English, and Vietnamese.
-*   **Game Sound Effects(Only Chinese)**: Includes sound effects for actions like "check" and "capture" to enhance immersion.
+*   🤖 **Powerful AI Engine**: Integrated with the specialized [Pikafish for Xiangqi](https://github.com/official-pikafish/Pikafish) engine for a challenging gameplay experience.
+*   💻 **Cross-Platform Support**: Runs on both Windows and Linux.
+*   ⚡ **Smart Performance Optimization**: The application automatically detects your CPU architecture to enable the corresponding optimized engine version.
+*   🌐 **Multi-language Support**: Includes interfaces in Traditional Chinese, English, and Vietnamese.
+*   🔊 **Game Sound Effects(Only Chinese)**: Includes sound effects for actions like "check" and "capture" to enhance immersion.
 
 ### 🛠️ Tech Stack
 
-*   **Application Framework**: [Electron](https://www.electronjs.org/)
-*   **Backend Environment**: [Node.js](https://nodejs.org/)
-*   **Communication**: [Express](https://expressjs.com/) + [WebSocket](https://github.com/websockets/ws)
-*   **Chess AI**: [Pikafish Xiangqi Engine](https://github.com/official-pikafish/Pikafish)
+*   ⚡ **Application Framework**: [Electron](https://www.electronjs.org/)
+*   🟢 **Backend Environment**: [Node.js](https://nodejs.org/)
+*   🔌 **Communication**: [Express](https://expressjs.com/) + [WebSocket](https://github.com/websockets/ws)
+*   ♟️ **Chess AI**: [Pikafish Xiangqi Engine](https://github.com/official-pikafish/Pikafish)
 
 ### 🚀 Installation and Usage
 
 Want to run this project on your computer? You can download a packaged version directly from [Quick Download](#quickdownload) or the [Releases](https://github.com/Augus1217/Chinese-Chess/releases) section.  
-Support for macOS is not available at this time.  
+Support for macOS is not available at this time. If you really want macOS support, you can send me a [MacBook Pro](https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-black-standard-display-apple-m4-max-with-16-core-cpu-and-40-core-gpu-48gb-memory-1tb) so I can build it
 Alternatively, to run from the source code, please follow these steps:
 
 1.  **Clone the repository**
@@ -81,13 +81,13 @@ The packaged files will appear in the `dist/` directory at the project root.
 ### ❤️ Acknowledgements
 
 *   The core AI functionality of this project comes from the powerful open-source **Pikafish** engine team.
-*   Thanks to the **Gemini CLI** for its assistance during the development process.
+*   Thanks to the **Gemini CLI** for its assistance during the development process. It was like having a coding buddy who never gets tired and doesn't steal my snacks.
 
 ---
 
 <a name="繁體中文"></a>
 
-# 中華象棋 (Chinese Chess)
+# 中華象棋 (Chinese Chess) ♟️
 
 這是一個使用 Electron 和 Pikafish 象棋引擎打造的桌面版中國象棋（Xiangqi）應用程式。
 
@@ -95,39 +95,39 @@ The packaged files will appear in the `dist/` directory at the project root.
 
 <a name="快速下載"></a>
 
-## 快速下載 (v1.5.0)
-* [Windows 可攜版](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.exe)
-* [Windows 安裝程式(.exe)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.Setup.1.5.0.exe)
-* [Windows 安裝程式(.msi)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.msi)
-* [Linux AppImage](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess-1.5.0.AppImage)
-* [Linux snap store](https://snapcraft.io/chinese-chess-by-augus)
-* [Linux deb(Ubuntu/Debian)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus_1.5.0_amd64.deb)
-* [Linux rpm(Fedora/RHEL/Cent OS)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus-1.5.0.x86_64.rpm)
+## ⬇️ 快速下載 (v1.5.0)
+* 🪟 [Windows 可攜版](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.exe)
+* 🪟 [Windows 安裝程式(.exe)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.Setup.1.5.0.exe)
+* 🪟 [Windows 安裝程式(.msi)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.msi)
+* 🐧 [Linux AppImage](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess-1.5.0.AppImage)
+* 🐧 [Linux snap store](https://snapcraft.io/chinese-chess-by-augus)
+* 🐧 [Linux deb(Ubuntu/Debian)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus_1.5.0_amd64.deb)
+* 🐧 [Linux rpm(Fedora/RHEL/Cent OS)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus-1.5.0.x86_64.rpm)
 
 大家好，我是本專案的開發者 Augus，來自台灣。  
-這是我在國小升國中的暑假期間，透過與 Gemini CLI 協作完成的專案。隨著開學，我即將成為一名國中生，課業將會變得更加繁重，因此我將沒有足夠的時間繼續維護和更新這個專案。
+這是我在國小升國中的暑假期間，透過與 Gemini CLI 協作完成的專案。（順帶一提，這比寫暑假作業有趣多了！）隨著開學，我即將成為一名國中生，課業將會變得更加繁重，因此我將沒有足夠的時間繼續維護和更新這個專案。
 
 非常感謝所有關注這個專案的人！
 
 ### ✨ 功能特色
 
-*   **強大的 AI 引擎**: 內建為象棋特製化的 [Pikafish](https://github.com/official-pikafish/Pikafish) 引擎，提供極具挑戰性的對弈體驗。
-*   **跨平台支援**: 可在 Windows 和 Linux 系統上執行。
-*   **智慧效能優化**: 應用程式會自動偵測你的 CPU 架構，並啟用對應的最佳化引擎版本。
-*   **多國語言**: 內建繁體中文、英文、越南文等多種語言介面。
-*   **遊戲音效**: 包含將軍、吃子等音效，增加遊戲沉浸感。
+*   🤖 **強大的 AI 引擎**: 內建為象棋特製化的 [Pikafish](https://github.com/official-pikafish/Pikafish) 引擎，提供極具挑戰性的對弈體驗。
+*   💻 **跨平台支援**: 可在 Windows 和 Linux 系統上執行。
+*   ⚡ **智慧效能優化**: 應用程式會自動偵測你的 CPU 架構，並啟用對應的最佳化引擎版本。
+*   🌐 **多國語言**: 內建繁體中文、英文、越南文等多種語言介面。
+*   🔊 **遊戲音效**: 包含將軍、吃子等音效，增加遊戲沉浸感。
 
 ### 🛠️ 技術棧
 
-*   **應用程式框架**: [Electron](https://www.electronjs.org/)
-*   **後端環境**: [Node.js](https://nodejs.org/)
-*   **通訊**: [Express](https://expressjs.com/) + [WebSocket](https://github.com/websockets/ws)
-*   **象棋 AI**: [Pikafish Xiangqi Engine](https://github.com/official-pikafish/Pikafish)
+*   ⚡ **應用程式框架**: [Electron](https://www.electronjs.org/)
+*   🟢 **後端環境**: [Node.js](https://nodejs.org/)
+*   🔌 **通訊**: [Express](https://expressjs.com/) + [WebSocket](https://github.com/websockets/ws)
+*   ♟️ **象棋 AI**: [Pikafish Xiangqi Engine](https://github.com/official-pikafish/Pikafish)
 
 ### 🚀 安裝與執行
 
 想在您的電腦上執行本專案嗎？可直接至上面的[快速下載](#快速下載)或專案的 [Releases](https://github.com/Augus1217/Chinese-Chess/releases) 頁面下載已打包好的版本。  
-很遺憾，本應用程式目前不支援 macOS。  
+很遺憾，本應用程式目前不支援 macOS。 如果你想讓它支援MacOS，你可以送我一台[Macbook Pro](https://www.apple.com/tw/shop/buy-mac/macbook-pro/16-%E5%90%8B-%E5%A4%AA%E7%A9%BA%E9%BB%91%E8%89%B2-%E6%A8%99%E6%BA%96%E9%A1%AF%E7%A4%BA%E5%99%A8-apple-m4-max-%E9%85%8D%E5%82%99-16-%E6%A0%B8%E5%BF%83-cpu-%E8%88%87-40-%E6%A0%B8%E5%BF%83-gpu-48gb-%E8%A8%98%E6%86%B6%E9%AB%94-1tb)，讓我進行建置。
 若想從原始碼執行，請依照以下步驟操作：
 
 1.  **複製專案庫**
@@ -163,6 +163,6 @@ npm run build
 ### ❤️ 致謝
 
 *   本專案的核心 AI 功能來自強大的 **Pikafish** 開源象棋引擎團隊。
-*   感謝 **Gemini CLI** 在開發過程中提供的協助。
+*   感謝 **Gemini CLI** 在開發過程中提供的協助，就像有個不會累、也不會偷吃我零食的程式碼夥伴。
 
 ---
