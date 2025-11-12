@@ -12,12 +12,14 @@ This is a desktop Chinese Chess (Xiangqi) application built with Electron and th
 
 <a name="quickdownload"></a>
 
-## Quick Download (v1.4.3)
-* [Windows portable](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_win_x64.exe)
-* [Windows installer](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_Setup_v1.4.3_win_x64.exe)
-* [Linux AppImage(not recommended)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_linux_amd64.AppImage)
+## Quick Download (v1.5.0)
+* [Windows portable](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.exe)
+* [Windows installer(.exe)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.Setup.1.5.0.exe)
+* [Windows installer(.msi)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.msi)
+* [Linux AppImage](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess-1.5.0.AppImage)
 * [Linux snap store](https://snapcraft.io/chinese-chess-by-augus)
-* [Linux deb](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_linux_amd64.deb)
+* [Linux deb(Ubuntu/Debian)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_linux_amd64.deb)
+* [Linux rpm(Fedora/RHEL/Cent OS)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus-1.5.0.x86_64.rpm)
 
 Hello everyone, I'm Augus, the developer of this project, from Taiwan.
 
@@ -93,12 +95,14 @@ The packaged files will appear in the `dist/` directory at the project root.
 
 <a name="快速下載"></a>
 
-## 快速下載 (v1.4.3)
-* [Windows 可攜版](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_win_x64.exe)
-* [Windows 安裝程式](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_Setup_v1.4.3_win_x64.exe)
-* [Linux AppImage(不建議)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_linux_amd64.AppImage)
+## 快速下載 (v1.5.0)
+* [Windows 可攜版](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.exe)
+* [Windows 安裝程式(.exe)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.Setup.1.5.0.exe)
+* [Windows 安裝程式(.msi)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess.1.5.0.msi)
+* [Linux AppImage](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/Chinese-Chess-1.5.0.AppImage)
 * [Linux snap store](https://snapcraft.io/chinese-chess-by-augus)
-* [Linux deb](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.4.3/chinese-chess_v1.4.3_linux_amd64.deb)
+* [Linux deb(Ubuntu/Debian)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus_1.5.0_amd64.deb)
+* [Linux rpm(Fedora/RHEL/Cent OS)](https://github.com/Augus1217/Chinese-Chess/releases/download/v1.5.0/chinese-chess-by-augus-1.5.0.x86_64.rpm)
 
 大家好，我是本專案的開發者 Augus，來自台灣。  
 這是我在國小升國中的暑假期間，透過與 Gemini CLI 協作完成的專案。隨著開學，我即將成為一名國中生，課業將會變得更加繁重，因此我將沒有足夠的時間繼續維護和更新這個專案。
