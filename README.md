@@ -4,7 +4,7 @@
 
 <a name="english"></a>
 
-# Chinese Chess (Xiangqi) ♟️
+# Chinese Chess (Xiangqi)
 
 This is a desktop Chinese Chess (Xiangqi) application built with Electron and the Pikafish Xiangqi engine.
 
@@ -87,7 +87,7 @@ The packaged files will appear in the `dist/` directory at the project root.
 
 <a name="繁體中文"></a>
 
-# 中華象棋 (Chinese Chess) ♟️
+# 中華象棋 (Chinese Chess)
 
 這是一個使用 Electron 和 Pikafish 象棋引擎打造的桌面版中國象棋（Xiangqi）應用程式。
 
