@@ -98,10 +98,7 @@
       "stagePackages": [
         "libatomic1",
         "libstdc++6",
-        "libnss3",
-        "fonts-noto-cjk",
-        "fonts-wqy-microhei",
-        "fontconfig"
+        "libnss3"
       ]
     },
     "nsis": {
