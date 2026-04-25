@@ -45,7 +45,7 @@ A huge thank you to everyone who has shown interest in this project!
 ### 🚀 Installation and Usage
 
 Want to run this project on your computer? You can download a packaged version directly from [Quick Download](#quickdownload) or the [Releases](https://github.com/Augus1217/Chinese-Chess/releases) section.  
-Support for macOS is not available at this time. If you really want macOS support, you can send me a [MacBook Pro](https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-black-standard-display-apple-m4-max-with-16-core-cpu-and-40-core-gpu-48gb-memory-1tb) so I can build it
+Support for macOS is not available at this time. If you really want macOS support, you can send me a [MacBook Pro](https://www.apple.com/shop/buy-mac/macbook-pro/16-inch-space-black-standard-display-apple-m4-max-with-16-core-cpu-and-40-core-gpu-48gb-memory-1tb) so I can build it.
 Alternatively, to run from the source code, please follow these steps:
 
 1.  **Clone the repository**

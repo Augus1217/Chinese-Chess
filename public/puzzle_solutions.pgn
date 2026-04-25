@@ -1,0 +1,3875 @@
+[Event "适情雅趣_李浭551局新版 第119局 力敌万人"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-119"]
+[SetUp "1"]
+[FEN "4k1C2/3Pa2R1/4baN2/n8/9/9/2p6/3C5/4p1r1r/R4K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8e8 f7e8 2. d8e8 e9d9 3. g7f9 e7g9 4. f9d8 c3d3 5. d8c6 d3e3 6. c6b8 a6b8 7. a0a9 1-0
+
+[Event "适情雅趣_李浭551局新版 第120局 龟玉毁椟"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-120"]
+[SetUp "1"]
+[FEN "R2rk4/4nP3/2n1b4/6N2/9/1r2C4/4c4/4B4/3pN4/4KC3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8f9 e9f9 2. a9d9 c7d9 3. g6h8 f9f8 4. e4f4 e3f3 5. f4d4 f3i3 6. d4d8 1-0
+
+[Event "适情雅趣_李浭551局新版 第121局 柳营射猎"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-121"]
+[SetUp "1"]
+[FEN "2n1ka3/3RaR3/C3b3N/6N2/6b2/9/9/9/r2p1pr2/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8f9 e9f9 2. g6h8 f9e9 3. i7g8 e9f9 4. g8e7 f9e9 5. e7g8 e9f9 6. d8d9 f9f8 7. h8g6 f8f7 8. d9d7 g5e7 9. d7e7 1-0
+
+[Event "适情雅趣_李浭551局新版 第122局 地富兵强"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-122"]
+[SetUp "1"]
+[FEN "4kabC1/4a4/4b2N1/5P3/9/9/9/6Cr1/R1pp4r/R3K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a1a9 e8d9 2. a9d9 e9d9 3. h7f8 d9e9 4. a0a9 e9e8 5. g2g8 e8f8 6. f6f7 f8e8 7. f7e7 e8d8 8. e7d7 d8d7 9. a9d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第123局 逢山开路"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-123"]
+[SetUp "1"]
+[FEN "1Nba1k1n1/7P1/9/1P2R1n2/5rb2/9/9/C3R4/3p1r3/c3K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6f6 f5f6 2. e2e9 f9f8 3. h8g8 f8f7 4. e9e7 c9e7 5. b9d8 d9e8 6. a2a7 e7c5 7. d8b7 c5e7 8. b7d6 1-0
+
+[Event "适情雅趣_李浭551局新版 第124局 王俭坠车"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-124"]
+[SetUp "1"]
+[FEN "3k1ab2/2R3N2/1r1a2R1b/4p4/2p1c1P2/9/N8/9/4r1p2/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第125局 五虎下川"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-125"]
+[SetUp "1"]
+[FEN "5k2c/CN2a2R1/4ba3/3R5/9/2N6/9/3AB1n2/3p1p2r/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8h9 f9f8 2. b8c6 e8d7 3. c6d8 d7e8 4. d8b9 e8d9 5. d6d8 f7e8 6. d8e8 f8e8 7. c4d6 e8f8 8. d6c8 d9e8 9. c8e7 e8d7 10. b9d8 d7e8 11. e7g6 f8f7 12. h9h7 1-0
+
+[Event "适情雅趣_李浭551局新版 第126局 叶落归秋"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-126"]
+[SetUp "1"]
+[FEN "2ba2n2/4ak3/4b4/4R4/4N4/9/9/5C3/3rAp3/c1rAK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6f6 e8f7 2. f6g6 f7e8 3. g6g8 f8f9 4. e5f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第127局 雪夜访戴"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-127"]
+[SetUp "1"]
+[FEN "1c2kar2/3Pa4/N3b4/4C2R1/2b1CR3/9/9/9/5p3/2rnK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f5f9 b9f9 2. d8e8 e9d9 3. e8d8 d9d8 4. a7c6 d8d7 5. c6b8 d7d8 6. h6h8 g9g8 7. h8g8 f9f8 8. g8f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第128局 耿恭拜井"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-128"]
+[SetUp "1"]
+[FEN "2bak1C2/3Pa1R2/4b1N1N/9/9/9/4Pr3/5C3/3npr3/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "1"]
+[Result "1-0"]
+
+1. d8e8 d9e8 2. g8e8 e9d9 3. g7f9 e7g9 4. e8d8 d9e9 5. i7g8 f3f8 6. f2e2 e9f9 7. d8d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第129局 凿壁偷光"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-129"]
+[SetUp "1"]
+[FEN "2bk1a3/1R2RN3/c3ba3/2n6/9/1C7/9/9/3r1p2r/1Cc1K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b8d8 c6d8 2. b4b9 d8b9 3. e8b8 d9e9 4. b0b9 d1d9 5. f8d7 1-0
+
+[Event "适情雅趣_李浭551局新版 *第130局 鸦鹊争巢"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-130"]
+[SetUp "1"]
+[FEN "4k3C/c4P3/4N2c1/r6P1/4P2P1/4n3p/2p5R/3p5/4p1n2/3KC2N1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e7f9 h7h9 2. f9h8 h9h6 3. h8f9 h6h9 4. f9h8 h9h5 5. h8f9 h5h9 6. e0e4 e9d9 7. f9h8 h9h0 8. h8f9 h0h9 9. f9h8 d9d8 10. h8f7 d8d7 11. i9i7 h9h7 12. f7d6 h7h5 13. e4d4 d7e7 14. e5e6 e7f7 15. e6f6 f7f8 16. d4f4 h5f5 17. f6f7 f8f9 18. f7f8 f9e9 19. f8e8 e9d9 20. f4d4 f5d5 21. d6f7 d5i5 22. e8d8 1-0
+
+[Event "适情雅趣_李浭551局新版 第131局 入幕之宾"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-131"]
+[SetUp "1"]
+[FEN "2bak3C/2C1aR2n/2n5N/9/7N1/9/9/1r6B/5p2r/3RK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8f9 e9f9 2. h5g7 f9e9 3. i7g8 e9f9 4. g8e7 f9e9 5. g7f9 e9f9 6. d0d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第132局 五霸争雄"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-132"]
+[SetUp "1"]
+[FEN "4kab2/1n2a2cC/2R1P3b/3N5/9/9/9/3p4r/r3p4/2RK5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d6f7 h8f8 2. e7e8 f9e8 3. i8i9 e8f9 4. c7e7 e9d9 5. c0c9 d9d8 6. e7e1 d8d7 7. c9c7 1-0
+
+[Event "适情雅趣_李浭551局新版 第133局 六国争雄"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-133"]
+[SetUp "1"]
+[FEN "2b1kab2/3Pa4/2N3n2/2C1pR1CN/9/9/9/4p4/1r5r1/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f6f9 e9f9 2. i6h8 f9e9 3. d8d9 e8d9 4. h8f7 e9f9 5. h6f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第134局 沧海腾蛟"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-134"]
+[SetUp "1"]
+[FEN "1C1k5/4P4/3N4R/5n2C/9/9/5N3/3ABAr2/1r1p1p3/4K3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d7c9 b1b9 2. i7d7 f6d7 3. i6d6 d7c9 4. d6d1 c9d7 5. d2e1 d7f6 6. f3d4 f6d7 7. d4e6 d7b6 8. e1d2 b6d5 9. e6c7 1-0
+
+[Event "适情雅趣_李浭551局新版 第135局 竹马迎拜"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-135"]
+[SetUp "1"]
+[FEN "1P3k1n1/4a4/5a1R1/1N2P3N/1C3n3/9/1c7/3p5/r3p4/3K1p3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i6h8 f9f8 2. b6d7 e8d7 3. h7f7 f8e8 4. b5e5 f5e7 5. f7e7 e8d8 6. h8f9 d8d9 7. e7d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第136局 惊鸿整羽"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-136"]
+[SetUp "1"]
+[FEN "3aka3/3P1n3/NR2b4/1Cp1p1p2/4c2C1/9/9/9/6r1r/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h5h9 f9e8 2. d8e8 e9e8 3. b7b8 e8e9 4. a7c8 e9e8 5. h9h8 f8h9 6. b6e6 e8d8 7. c8d6 d8d7 8. b8b7 d7d8 9. d6e8 h9f8 10. b7b8 d8d7 11. e8c9 e7c9 12. b8b7 1-0
+
+[Event "适情雅趣_李浭551局新版 第137局 匹马平胡"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-137"]
+[SetUp "1"]
+[FEN "3k1a1R1/9/2cab4/2n1R4/2b6/4P4/3N5/3CB4/1r1p4r/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d3e5 d7e8 2. e6d6 c7d7 3. h9f9 e8f9 4. d6c6 d9e9 5. e5d7 e9e8 6. c6c8 1-0
+
+[Event "适情雅趣_李浭551局新版 第138局 群雄割据"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-138"]
+[SetUp "1"]
+[FEN "2baka3/3N4C/4b4/1r2PR3/9/9/4c4/2nR3C1/5p2r/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d8f7 e9e8 2. f7h8 i1i8 3. d2d8 e8d8 4. f6f8 d9e8 5. h8f9 d8d7 6. h2h7 e7g5 7. f8f7 c9e7 8. f7e7 1-0
+
+[Event "适情雅趣_李浭551局新版 第139局 并驾连驱"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-139"]
+[SetUp "1"]
+[FEN "C4k3/4a4/5a3/9/4N4/1p3RN1c/4c4/2p1C4/1rn4r1/3K1R3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f4f7 e8f7 2. f0f7 f9e9 3. f7e7 e9f9 4. e7e9 f9e9 5. e5f7 e9f9 6. e2f2 e3f3 7. f7d8 f9e9 8. d8b9 e9e8 9. b9c7 e8e9 10. c7d9 e9e8 11. g4f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第140局 引龙出水"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-140"]
+[SetUp "1"]
+[FEN "4k3c/3Ra1P2/3ab1N2/9/2b6/9/9/3KCR3/1nr1p1r2/5C3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f2f9 e9f9 2. g8g9 f9f8 3. g7f5 g1f1 4. f5e7 f1g1 5. e2f2 g1f1 6. e7g6 f8f7 7. g6e5 f7f8 8. e5d7 c5e7 9. f2e2 f1i1 10. d8e8 f8f7 11. d7e5 1-0
+
+[Event "适情雅趣_李浭551局新版 第141局 细柳屯兵"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-141"]
+[SetUp "1"]
+[FEN "2Pak4/CR2a1P2/4b2R1/9/9/1C7/4c4/9/2nr1p3/1r1cK1B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h7h9 e7g9 2. h9g9 e8f9 3. g9f9 e9f9 4. g8f8 f9e9 5. b8e8 d9e8 6. b4e4 e8f9 7. a8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第142局 七国连衡"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-142"]
+[SetUp "1"]
+[FEN "1n2ka3/R3a1P2/1P2b1n1C/5R3/2b1P4/1N7/9/5p3/4r4/3p1K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i7i9 e7g9 2. a8e8 e9e8 3. f6f8 e8e9 4. f8f9 e9e8 5. g8f8 e8e7 6. b4c6 e7d7 7. f9d9 b9d8 8. d9d8 1-0
+
+[Event "适情雅趣_李浭551局新版 第143局 见害必避"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-143"]
+[SetUp "1"]
+[FEN "2bak1r2/4aP1R1/b3c4/8p/9/2R6/r8/4B2C1/p3A4/4K1B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c4g4 g9f9 2. f8f9 e8f9 3. h8d8 a3h3 4. e0d0 d9e8 5. g4e4 a7c5 6. h2g2 h3g3 7. e4e5 c9a7 8. d8d6 a7c9 9. g2h2 g3h3 10. h2g2 e8d7 11. e5c5 c9a7 12. c5g5 h3f3 13. d6d7 f9e8 14. d7e7 a7c5 15. g5g9 f3f9 16. g9f9 e9f9 17. e7e8 a1a0 18. g2f2 a0b0 19. f2f1 b0c0 20. e2c0 i6i5 21. e1f2 1-0
+
+[Event "适情雅趣_李浭551局新版 第144局 清门缵戎"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-144"]
+[SetUp "1"]
+[FEN "2b1ka3/4a4/4b3n/3R1N3/6R2/9/9/3C3C1/1nrpA4/1c2KA3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d6d9 e8d9 2. h2e2 e7g9 3. g5e5 c9e7 4. e5e7 f9e8 5. e7e8 e9f9 6. e2f2 1-0
+
+[Event "适情雅趣_李浭551局新版 第145局 开门待战"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-145"]
+[SetUp "1"]
+[FEN "CnC1k4/9/7P1/4p4/p5p2/6B1r/1R4Pr1/4BAN2/6p2/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c9c4 b9d8 2. c4e4 e9f9 3. b3f3 d8f7 4. f3f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第146局 远猎山林"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-146"]
+[SetUp "1"]
+[FEN "3a5/1n1ka4/9/5N3/2P6/C8/R8/B2ABA1r1/3pNp3/rc2K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a3d3 b8d7 2. d3d7 e8d7 3. a4d4 d7e8 4. c5d5 e8d7 5. d5e5 d7e8 6. f6d7 d8d7 7. d4d1 d7e7 8. e5e6 e7f7 9. d1f1 1-0
+
+[Event "适情雅趣_李浭551局新版 第147局 烧牛凿城"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-147"]
+[SetUp "1"]
+[FEN "3akaP2/9/1R7/2pNp4/1C4b2/9/9/3NB4/1n1p1p3/4Kcr1c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b7e7 d9e8 2. d6c8 e9d9 3. e7d7 e8d7 4. b5d5 d7e8 5. d5d1 e8d7 6. d2b1 d7e8 7. b1d2 e8d7 8. d2b3 d7e8 9. b3d4 e8d7 10. d4e6 d7e8 11. e6d4 e8d7 12. d4c6 d7e8 13. c6d4 e8d7 14. d4f5 d7e8 15. f5d6 e8d7 16. d6f7 d7e8 17. c8d6 e8d7 18. d6b5 d7e8 19. b5c7 1-0
+
+[Event "适情雅趣_李浭551局新版 第148局 拨乱反正"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-148"]
+[SetUp "1"]
+[FEN "2R6/C2Rak3/4ba2b/P8/1r7/9/2p1p4/3An1p2/3KA4/2r6 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d8d5 e8d9 2. c9c8 f7e8 3. d5b5 e2g3 4. c8c3 f8f9 5. a8a9 f9f8 6. c3c0 g2h2 7. b5b8 h2g2 8. c0f0 g2f2 9. f0f2 e3f3 10. f2f3 g3f5 11. f3f5 1-0
+
+[Event "适情雅趣_李浭551局新版 第149局 腾蛟起凤"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-149"]
+[SetUp "1"]
+[FEN "4R4/3ca4/4ka3/5P3/C1b2R3/9/4P4/3AB1n1r/3p1p3/2N1K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f6e6 e7d7 2. f5f7 e8f7 3. e9e7 c5e7 4. e6d6 d8d6 5. a5d5 d6f6 6. d5d1 f6d6 7. d2e1 d6i6 8. c0d2 i6d6 9. d2e4 d6i6 10. e4d6 1-0
+
+[Event "适情雅趣_李浭551局新版 第150局 吕帅鹰扬"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-150"]
+[SetUp "1"]
+[FEN "3aka2R/1R7/c1P2P3/2P1rr3/2N5C/7C1/9/3p5/4p4/1p1K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h4h9 f9e8 2. h9h8 e8f9 3. b8e8 e9e8 4. f7f8 e8f8 5. i5i8 f8f7 6. i9f9 f7e7 7. c7d7 e7d7 8. c6d6 d7e7 9. d6d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第151局 虏马饮江"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-151"]
+[SetUp "1"]
+[FEN "3ak1b2/2P2P3/3ac2P1/9/1R7/C5N2/9/3p1A1C1/4p2r1/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f2e1 h1h0 2. f0f1 e7f7 3. a4a9 d9e8 4. c8c9 e8d9 5. b5e5 f7e7 6. e5e7 d7e8 7. f8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第152局 江心下钓"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-152"]
+[SetUp "1"]
+[FEN "3akabr1/1R3P3/9/9/2C6/4N4/9/4p4/2nn2r2/1R2K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b8e8 d9e8 2. b0b9 e8d9 3. f8e8 e9e8 4. e4f6 e8e9 5. c5c9 d9e8 6. c9c7 e8d9 7. f6d7 e9e8 8. b9b8 1-0
+
+[Event "适情雅趣_李浭551局新版 第153局 死敌为忠"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-153"]
+[SetUp "1"]
+[FEN "N2k1a3/5P3/3a5/9/9/9/9/C3RA3/4Nr3/2p1K1pnc w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e2e9 d9e9 2. a9c8 e9d9 3. a2d2 d7e8 4. e1d3 e8d7 5. d3c5 d7e8 6. c5d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第154局 外攘四夷"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-154"]
+[SetUp "1"]
+[FEN "3a1k2C/3ra4/4b4/9/6b1N/6cR1/9/3n5/4r4/3K2cR1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h4h9 f9f8 2. h0h8 f8f7 3. h8h7 f7f8 4. h9h8 f8f9 5. h7f7 e8f7 6. h8h9 e7g9 7. h9g9 f9f8 8. i5h7 f8e8 9. g9e9 e8e9 10. h7g9 1-0
+
+[Event "适情雅趣_李浭551局新版 第155局 足蹑天窟"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-155"]
+[SetUp "1"]
+[FEN "2b1ka2N/6R2/bR7/9/1C2r3C/9/9/9/c1r3p2/c2K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第156局 三献刖足"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-156"]
+[SetUp "1"]
+[FEN "3k5/1PR1a4/2Nab3b/6C2/9/4n4/9/9/2cp5/1rc1K2R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h0h9 i7g9 2. h9g9 e7g9 3. c8c9 d9d8 4. g6d6 e4d6 5. c9d9 e8d9 6. c7b9 c1c9 7. b8c8 1-0
+
+[Event "适情雅趣_李浭551局新版 第157局 指鹿道马"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-157"]
+[SetUp "1"]
+[FEN "2bak4/4a4/4b4/N4CN1R/9/9/3n5/9/2p1AK3/c2A2r2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i6i9 e7g9 2. f6e6 e8f9 3. g6e7 d9e8 4. i9g9 d3f4 5. g9g0 c9e7 6. g0g7 f4e6 7. g7e7 e6g5 8. a6b8 a0c0 9. e7a7 e8f7 10. a7a9 e9e8 11. a9f9 c1d1 12. f9g9 g5e6 13. g9g8 e8e9 14. b8d7 e9d9 15. d7e5 c0c3 16. g8g9 d9d8 17. g9g6 c3e3 18. e5c6 e6c7 19. g6d6 d8e8 20. d6d7 e8e9 21. d7c7 f7e8 22. f1f2 e3h3 23. c7e7 h3h0 24. c6b8 d1c1 25. b8d7 e9d9 26. e7e8 h0h8 27. e8h8 c1c0 28. f2e2 c0b0 29. d7b8 1-0
+
+[Event "适情雅趣_李浭551局新版 第158局 暴虎凭河"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-158"]
+[SetUp "1"]
+[FEN "C3kab2/4a4/N3b4/2N6/9/3C5/9/3A2r2/3K3c1/3A2n1c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d4d9 e9d9 2. a7b9 e7c9 3. b9c7 d9d8 4. c7a8 d8d7 5. a8c9 1-0
+
+[Event "适情雅趣_李浭551局新版 第159局 前后绝伦"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-159"]
+[SetUp "1"]
+[FEN "3ak4/4a4/4b4/6N2/9/3rC4/4c4/4BR2C/1n1rA4/4KA3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f2f9 e9f9 2. g6h8 f9e9 3. h8f7 e9f9 4. i2f2 e3f3 5. e4f4 d4f4 6. f2f4 1-0
+
+[Event "适情雅趣_李浭551局新版 第160局 倚闾望子"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-160"]
+[SetUp "1"]
+[FEN "3cka1n1/3Ra4/3nb4/7N1/9/6C2/9/9/2r2p2r/1R2K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "1"]
+[Result "1-0"]
+
+1. g4g9 e7g9 2. h6f7 d7f8 3. d8d9 e9d9 4. b0b9 c1c9 5. b9c9 1-0
+
+[Event "适情雅趣_李浭551局新版 第161局 远害全身"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-161"]
+[SetUp "1"]
+[FEN "9/3k5/R2abN2C/C3P4/2b6/9/9/4p4/2r6/cr1AK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a6d6 d7e8 2. a7d7 d8d7 3. e6e7 d7d8 4. e7d7 1-0
+
+[Event "适情雅趣_李浭551局新版 *第162局 朱云折槛"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-162"]
+[SetUp "1"]
+[FEN "2bakab2/5RP2/7P1/2P6/9/2N6/9/4Cp2C/r3p4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c4e5 d9e8 2. f8f9 e9f9 3. g8g9 f9f8 4. e5g6 f8f7 5. i2i7 1-0
+
+[Event "适情雅趣_李浭551局新版 第163局 选将练兵"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-163"]
+[SetUp "1"]
+[FEN "c4a3/1r1kaP2C/b1R1b2c1/4CN3/9/9/9/9/4p3r/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8e8 d8d9 2. c7d7 h7d7 3. e6d6 d7c7 4. f6d7 b8d8 5. e8d8 d9e9 6. d6e6 e7g9 7. i8e8 g9e7 8. d8c8 e9d9 9. e6d6 1-0
+
+[Event "适情雅趣_李浭551局新版 第164局 凿壁借光*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-164"]
+[SetUp "1"]
+[FEN "3a1k3/2R1a4/3cb1n2/1C2N4/2b1C3R/9/9/9/r1r2p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6g7 d7g7 2. i5f5 g7f7 3. f5f7 e8f7 4. c8f8 f9f8 5. b6f6 f7e8 6. e5f5 1-0
+
+[Event "适情雅趣_李浭551局新版 第165局 遇水架桥*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-165"]
+[SetUp "1"]
+[FEN "3k1n3/1R3R1n1/b3b4/3P5/9/9/9/4B1CC1/3ppcr2/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g2g9 g1g9 2. e2g4 g9g4 3. h2d2 g4d4 4. b8b9 a7c9 5. d6d7 e1e0 6. f0f1 d1e1 7. f1e1 e0d0 8. d7d8 f9d8 9. b9c9 1-0
+
+[Event "适情雅趣_李浭551局新版 第166局 立倾敌国"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-166"]
+[SetUp "1"]
+[FEN "4ka3/2R1aR3/3cb4/9/3N5/9/9/C3C4/3p1pnr1/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8c9 d7d9 2. c9d9 e9d9 3. f8f9 d9d8 4. a2d2 e8d7 5. f9f8 d8d9 6. d5c7 1-0
+
+[Event "适情雅趣_李浭551局新版 第167局 功成略地"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-167"]
+[SetUp "1"]
+[FEN "2b1ka3/1R2a1P2/4b4/5R2C/4N4/4n4/9/4p4/1r5r1/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i6i9 h1h9 2. b8e8 e9e8 3. f6f8 e8e9 4. f8f9 e9e8 5. f9f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第168局 疾如激电"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-168"]
+[SetUp "1"]
+[FEN "3ak4/3ra3R/9/9/9/1r2P1C2/5NP2/6n2/3p1p3/4K2R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i8i9 e8f9 2. g4g9 f9e8 3. g9g2 e8f9 4. g2e2 d9e8 5. i9f9 e9f9 6. e2f2 e8f7 7. f3g5 f9e9 8. h0h9 e9e8 9. f2e2 e8f8 10. g5h7 1-0
+
+[Event "适情雅趣_李浭551局新版 第169局 阴陵失道"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-169"]
+[SetUp "1"]
+[FEN "2b1R2c1/R3a4/1n2kaN2/4p4/2bP5/6C2/9/9/3r1r3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g7f9 e7d7 2. a8d8 b7d8 3. d5d6 d1d6 4. g4g7 1-0
+
+[Event "适情雅趣_李浭551局新版 第170局 面缚自首"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-170"]
+[SetUp "1"]
+[FEN "6b2/3PR1P1c/3P1k3/7c1/2b3p2/2N6/9/2C6/3p1r3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "1"]
+[Result "1-0"]
+
+1. e8f8 i8f8 2. d7e7 c5e7 3. c4d6 h6e6 4. c2c7 1-0
+
+[Event "适情雅趣_李浭551局新版 第171局 赢缩无常"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-171"]
+[SetUp "1"]
+[FEN "3k3C1/2P6/4cN3/9/9/9/4P4/4Bp3/1rrnA2R1/5K1p1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "1"]
+[Result "1-0"]
+
+1. f7g9 e7e9 2. g9e8 e9e3 3. e8g9 e3e9 4. g9e8 e9e2 5. e8g9 e2e9 6. g9e8 e9e1 7. e8g9 e1e9 8. h1d1 c1d1 9. g9e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第172局 动行网罗"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-172"]
+[SetUp "1"]
+[FEN "3a1k2C/4a3N/5c3/5P3/9/9/9/6p2/1n1p5/2p1KAC1c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i8g7 f9e9 2. g7h9 f7f9 3. h9f8 f9f6 4. f8h9 f6f9 5. h9f8 f9f0 6. f8h9 f0f9 7. g0c0 d1d0 8. e0e1 d0c0 9. h9f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第173局 水枯见鱼"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-173"]
+[SetUp "1"]
+[FEN "4ka3/4aR3/4N4/4p4/9/9/4P4/4C4/c1nrAR3/4KA3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8f9 e8f9 2. f1f9 e9e8 3. f9e9 e8d8 4. e7c6 d8d7 5. e9e7 1-0
+
+[Event "适情雅趣_李浭551局新版 第174局 三气周瑜"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-174"]
+[SetUp "1"]
+[FEN "2b1ka3/3Pa4/4b1c2/6RC1/3R2c2/8C/9/2n6/3p3r1/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i4i9 g7g9 2. d8d9 e8d9 3. d5d9 e9d9 4. g6d6 d9e9 5. h6e6 1-0
+
+[Event "适情雅趣_李浭551局新版 第175局 四面旋绕"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-175"]
+[SetUp "1"]
+[FEN "C2R4c/5k3/b2a1N2b/2R6/9/9/9/4p4/3nr1p2/c4K2C w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c6c8 d7e8 2. c8e8 f8e8 3. f7d6 e8e7 4. d6f5 e7e8 5. f5g7 e8e7 6. g7f9 e7e8 7. d9d8 e8e9 8. i0i9 i7g9 9. f9g7 g9i7 10. d8e8 e9d9 11. g7f9 i7g9 12. f9d8 g9i7 13. d8b9 a7c9 14. b9c7 1-0
+
+[Event "适情雅趣_李浭551局新版 第176局 送往迎来"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-176"]
+[SetUp "1"]
+[FEN "6RNr/5k3/4ba3/9/9/9/9/2R1p4/3pAr3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c2c8 f7e8 2. g9g1 f8f9 3. g1f1 f9e9 4. e1f0 d1e1 5. f0e1 i9h9 6. e1f0 h9h6 7. f1f8 e8d9 8. f8h8 e2e1 9. e0e1 h6e6 10. e1d1 e6d6 11. d1e1 d6f6 12. h8h9 f6f9 13. h9h7 f9f1 14. e1f1 e7g9 15. h7h9 d9e8 16. h9g9 e8f9 17. g9f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第177局 声势相倚"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-177"]
+[SetUp "1"]
+[FEN "3k5/8C/9/p6R1/7R1/9/9/4B4/r2rA4/4KAB2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i8a8 a1b1 2. h6h9 d9d8 3. h5h8 d8d7 4. h8b8 d1e1 5. f0e1 b1b0 6. b8b0 a6a5 7. b0b8 a5a4 8. h9h7 1-0
+
+[Event "适情雅趣_李浭551局新版 第178局 黾勉同心"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-178"]
+[SetUp "1"]
+[FEN "4ka3/3RaP1n1/6R2/9/4P4/6C2/9/9/2rrp4/c4K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d8e8 e9d9 2. g7d7 d1d7 3. e8e9 d9d8 4. g4g8 f9e8 5. f8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第179局 边烽惊虏"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-179"]
+[SetUp "1"]
+[FEN "2C6/5k3/bP1Nn1R1n/1r7/6R2/9/5c3/3p5/4p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g5f5 b6f6 2. f5f6 f8e8 3. g7e7 e8e7 4. f6f7 e7e8 5. f7f8 e8e7 6. c9c7 e7d7 7. c7a7 1-0
+
+[Event "适情雅趣_李浭551局新版 第180局 暮鸟投林"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-180"]
+[SetUp "1"]
+[FEN "3k5/2R6/3a1nN2/9/9/9/9/5R3/1n1r1C3/2c1KcrN1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8c9 d9d8 2. g7f9 f7e9 3. c9c8 d8d9 4. f9e7 d7e8 5. f2d2 d1d2 6. f1f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第181局 海底诛龙"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-181"]
+[SetUp "1"]
+[FEN "2bakab2/7r1/9/3N5/9/8C/9/3RB4/4pcn2/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d6f7 e9e8 2. d2d8 e8e7 3. f7h8 e1d1 4. d0d1 c9a7 5. d8d7 e7e8 6. i4i8 f1f8 7. h8f7 e8e9 8. d7d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第182局 投肉馁虎"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-182"]
+[SetUp "1"]
+[FEN "2baka3/9/4c1R2/6N2/8C/9/9/4B1r2/4pp3/2BK5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i5i9 f9e8 2. g7g9 e8f9 3. g6i7 g2f2 4. g9g2 e9e8 5. g2f2 f1f0 6. f2f0 e1e0 7. f0e0 e7e0 8. d0e0 e8d8 9. e2g4 c9a7 10. i9i8 a7c5 11. i7h5 c5e7 12. h5f6 e7c5 13. f6e8 d8d7 14. e8c9 d7d8 15. c9b7 d8d7 16. b7c5 d7d8 17. c0a2 1-0
+
+[Event "适情雅趣_李浭551局新版 第183局 远遁边境"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-183"]
+[SetUp "1"]
+[FEN "c3k3C/2P6/1P6b/9/9/2C6/9/3RBr3/1p2r4/2BK5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d2d9 e9e8 2. c8d8 e8e7 3. d9e9 e7f7 4. e9f9 f7e7 5. i9a9 f2f0 6. f9f0 e1e0 7. d0e0 e7d7 8. f0f8 b1b0 9. a9a7 1-0
+
+[Event "适情雅趣_李浭551局新版 第184局 蛇龙混海"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-184"]
+[SetUp "1"]
+[FEN "C2k5/4P4/r2cb1N1b/8C/6r2/9/9/6p2/4p4/5K1R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h0h9 e7g9 2. h9g9 i7g9 3. i6i9 g9i7 4. g7f9 i7g9 5. f9d8 g9e7 6. d8b9 e7c9 7. b9c7 1-0
+
+[Event "适情雅趣_李浭551局新版 第185局 酸毒道路"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-185"]
+[SetUp "1"]
+[FEN "5k1n1/c3a4/5aR1b/6N2/2r5C/9/9/9/3p1p3/4K1R2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g7g9 i7g9 2. g6h8 a8h8 3. g0g9 f9f8 4. g9g8 f8f9 5. i5i9 h9f8 6. g8g9 1-0
+
+[Event "适情雅趣_李浭551局新版 第186局 宿鸟惊弹"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-186"]
+[SetUp "1"]
+[FEN "2b6/1C2k4/n3bR3/6N2/9/9/9/1R7/3p2rr1/1C2K3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f7f8 e8e9 2. b8b9 a7b9 3. f8e8 e9e8 4. b2b8 e8e9 5. b0b9 1-0
+
+[Event "适情雅趣_李浭551局新版 第187局 萤惑退舍"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-187"]
+[SetUp "1"]
+[FEN "3a1k3/RC1cc4/r2a5/2N6/9/9/9/5p3/4p2r1/5K2R w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i0i9 f9f8 2. i9i8 h1h8 3. i8h8 f8f9 4. b8b9 e8e9 5. c6d8 d7e8 6. h8h9 f9f8 7. d8e6 a7e7 8. a8e8 d9e8 9. h9h8 f8f7 10. e6g5 1-0
+
+[Event "适情雅趣_李浭551局新版 第188局 载浮载沉*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-188"]
+[SetUp "1"]
+[FEN "2bak3C/4a4/2P1b4/6RR1/9/9/9/9/c1nr1p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6h9 e8f9 2. h9h8 f9e8 3. g6g9 e8f9 4. h8e8 d9e8 5. g9g8 e7g9 6. g8e8 e9d9 7. e8e9 d9d8 8. c7c8 d8d7 9. e9d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第189局 闭门扫轨"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-189"]
+[SetUp "1"]
+[FEN "3a1k3/4a1R2/4brN2/1N7/9/9/9/1C4p2/3p4p/4K3C w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g8h8 f7g7 2. i0f0 g2g1 3. h8h6 d1e1 4. e0e1 g7g8 5. b6c8 e7c9 6. e1e0 g1g0 7. f0f1 g0f0 8. e0e1 g8g1 9. h6f6 e8f7 10. f6f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第190局 乘风吹火"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-190"]
+[SetUp "1"]
+[FEN "3ak4/c3a3R/5c2N/6C2/6b2/9/9/9/1r3p3/4K2R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "0-1"]
+
+1. h0h9 f7f9 2. g6e6 e8f7 3. e0d0 f1e1 4. h9f9 e9f9 5. i8i9 f9f8 6. i7g6 f8e8 7. i9e9 e8e9 8. g6e7 a8e8 9. e7c6 e8a8 10. c6b4 b1b0 0-1
+
+[Event "适情雅趣_李浭551局新版 第191局 劳问将士"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-191"]
+[SetUp "1"]
+[FEN "3k1a3/1NR2n3/3a5/1r4CC1/2b6/9/9/9/1c1p3r1/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6g9 f9e8 2. h6d6 b6d6 3. c8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第192局 两地关心"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-192"]
+[SetUp "1"]
+[FEN "2bak3C/4aP2N/4b4/5C3/9/9/9/3p5/4p2r1/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i8g9 h1h9 2. f8e8 d9e8 3. g9f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第193局 同功并位"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-193"]
+[SetUp "1"]
+[FEN "2ba1k3/4a4/4b3R/9/8R/9/9/3A2n2/3pA1r2/4K2c1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i5f5 f9e9 2. i7i9 h0h9 3. i9h9 e7g9 4. h9g9 e8f9 5. g9f9 e9e8 6. f9f8 e8e9 7. f5e5 c9e7 8. e5e7 d9e8 9. e7e8 e9d9 10. f8f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第194局 步设陷阱"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-194"]
+[SetUp "1"]
+[FEN "3a1a3/3k3c1/1n2RN3/5r3/8R/9/2n6/9/3r1p3/2c1K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e7e8 d8d7 2. e8d8 b7d8 3. f7e9 d9e8 4. i5i7 h8h7 5. i7h7 f6f7 6. h7f7 1-0
+
+[Event "适情雅趣_李浭551局新版 *第195局 盐车困骥"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-195"]
+[SetUp "1"]
+[FEN "2bk1aN2/1R7/3a5/9/9/9/C7C/1p7/1np2p1r1/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b8d8 d9d8 2. g9f7 d8d9 3. i3i9 h1h9 4. a3d3 d7e8 5. f7d6 d9e9 6. d6c8 e9d9 7. c8b6 f1f0 8. e0e1 c1d1 9. e1e2 d9d8 10. i9i8 h9h8 11. b6d5 1-0
+
+[Event "适情雅趣_李浭551局新版 第196局 雪拥蓝关"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-196"]
+[SetUp "1"]
+[FEN "2ba1kb2/1P2a1R2/3cnrN2/C8/9/9/9/9/4p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "1"]
+[Result "1-0"]
+
+1. g8g9 f9f8 2. g9f9 e8f9 3. g7h9 f8e8 4. a6e6 e8d8 5. b8c8 1-0
+
+[Event "适情雅趣_李浭551局新版 第197局 投命仇门"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-197"]
+[SetUp "1"]
+[FEN "2bk4C/9/3a5/5cN2/9/9/8P/6n1B/2r6/1R2KA2r w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6f8 d7e8 2. f8h9 d9d8 3. b0d0 c1d1 4. d0d1 e8d7 5. d1d7 d8d7 6. h9f8 d7d8 7. i9i8 1-0
+
+[Event "适情雅趣_李浭551局新版 第198局 惊鸟藏枝"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-198"]
+[SetUp "1"]
+[FEN "4kC3/3RaP3/3C2n1c/Nr1R5/9/9/9/4p4/6r2/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8e8 g7e8 2. d8d9 e9d9 3. d7e7 b6d6 4. a6b8 d9d8 5. f9f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第199局 雕鹰捉兔"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-199"]
+[SetUp "1"]
+[FEN "5k3/3Pa2R1/4ba2b/4C4/4N4/9/4c4/9/5p3/1r1nK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8f8 f9e9 2. d8e8 f7e8 3. f8e8 e9f9 4. e8e9 f9f8 5. e5g6 f8f7 6. e9f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第200局 落花流水"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-200"]
+[SetUp "1"]
+[FEN "3a1k3/R3a4/4b1P2/3R4C/9/4C1N2/r8/9/2r1p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d6d9 e8d9 2. a8f8 f9f8 3. g7f7 f8f7 4. g4e5 f7f8 5. e5g6 f8f7 6. g6h8 f7f8 7. i6i8 1-0
+
+[Event "适情雅趣_李浭551局新版 第201局 三请诸葛"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-201"]
+[SetUp "1"]
+[FEN "3ak1P1P/4a4/9/9/4p3C/c3C1R2/9/5p3/2rp5/4K1R2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g9f9 e9f9 2. g4g9 f9f8 3. g0g8 f8f7 4. g8g7 f7f8 5. g9g8 f8f9 6. g7f7 e8f7 7. i5f5 f7e8 8. g8g9 f9f8 9. e4f4 1-0
+
+[Event "适情雅趣_李浭551局新版 第202局 行监坐守"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-202"]
+[SetUp "1"]
+[FEN "3ak1b2/9/4ba3/5R1N1/3r5/9/4c4/2r1B2R1/4A4/4KA3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6f7 e9f9 2. f7g9 f9e9 3. g9f7 e9f9 4. h2h9 f9f8 5. h9h8 f8f9 6. f7h6 f9e9 7. h6g8 e9e8 8. f6c6 e8d8 9. g8e7 d9e8 10. e7d5 c2c6 11. d5e3 c6f6 12. h8h5 d8d9 13. e3c4 f6e6 14. h5h9 d9d8 15. h9a9 e6e2 16. c4d6 e8d7 17. d6b7 d8e8 18. b7c9 e8e7 19. a9a3 e2e4 20. a3d3 d7e8 21. d3d8 e7f7 22. d8e8 e4e7 23. e8e7 f7e7 24. e0d0 e7f7 25. c9e8 f7f8 26. e8c7 f8f9 27. c7e6 f9e9 28. e6g7 1-0
+
+[Event "适情雅趣_李浭551局新版 第203局 远近惊骇"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-203"]
+[SetUp "1"]
+[FEN "9/4a4/3k1a3/1NP1p4/9/8C/4P4/cr1AKA3/5r3/2n6 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c6d6 d7d8 2. i4d4 e8d7 3. d6d7 d8e8 4. d7e7 e8f8 5. d4f4 f7e8 6. e7f7 f8f7 7. f4f1 f7e7 8. b6c8 e7d7 9. f1d1 1-0
+
+[Event "适情雅趣_李浭551局新版 第204局 雷震八荒"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-204"]
+[SetUp "1"]
+[FEN "R1C6/2P6/b2ak4/6P2/6b2/6B2/9/c4K2n/9/2rR2r2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d0d7 e7e8 2. c8d8 e8e9 3. c9c1 a2a9 4. d7e7 g5e7 5. c1e1 e7g9 6. g4e2 g9e7 7. e2c0 e7g9 8. c0e2 g9e7 9. e2g0 e7g9 10. g0i2 a7c9 11. g6f6 a9a3 12. f6f7 a3f3 13. f7f8 g9i7 14. f8e8 e9f9 15. d8d9 i7g5 16. d9e9 1-0
+
+[Event "适情雅趣_李浭551局新版 第205局 四畏廉名"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-205"]
+[SetUp "1"]
+[FEN "3aka3/9/4b2Rc/4P2N1/6b2/7C1/9/9/2nrA4/4KA3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h7e7 d9e8 2. h6f7 e9d9 3. h4h9 d9d8 4. e7d7 d8d7 5. h9h7 g5e7 6. e6e7 d7d8 7. e7d7 d8d9 8. h7h9 1-0
+
+[Event "适情雅趣_李浭551局新版 第206局 孤星坠地"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-206"]
+[SetUp "1"]
+[FEN "9/4a4/4ka3/1NP1p4/9/9/8C/1p2KA1rc/2c1A4/5p3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i3e3 e7d7 2. c6d6 d7d8 3. e3d3 e8d7 4. d6e6 d8e8 5. e6e7 e8e9 6. b6d7 e9f9 7. d3f3 f7e8 8. e7f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第207局 菱叶穿萍"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-207"]
+[SetUp "1"]
+[FEN "2ba1k3/2P6/1n1a5/4C1N1R/1n5Cr/9/9/3p5/4p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6e7 d9e8 2. i6f6 f9e9 3. e7g8 e9d9 4. f6f9 e8f9 5. h5h9 f9e8 6. g8e9 e8f9 7. e9f7 f9e8 8. c8d8 b7d8 9. f7e9 e8f9 10. e9d7 f9e8 11. d7b8 1-0
+
+[Event "适情雅趣_李浭551局新版 第208局 用兵最精"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-208"]
+[SetUp "1"]
+[FEN "2ba5/4a4/1P1k5/R7N/C8/6B2/9/2n1B4/5pr2/4K3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b7c7 d7e7 2. a6e6 e7f7 3. i6h8 f7f8 4. a5a8 e8f7 5. c7c8 d9e8 6. h8g6 f8f9 7. a8a9 e8d9 8. g6e7 f9e9 9. e7d9 e9f9 10. e6e9 f9e9 11. d9c7 c9e7 12. c8c9 1-0
+
+[Event "适情雅趣_李浭551局新版 第209局 叁参见佛"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-209"]
+[SetUp "1"]
+[FEN "4ka3/3Rn4/4b1r2/N1p6/1nP6/9/9/3C5/5r1p1/4K3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d8d9 e9d9 2. a6b8 d9d8 3. b8d7 d8d7 4. c5d5 b5d4 5. d5d6 d7d8 6. d6d7 d8d9 7. d7d8 d9e9 8. d8d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第210局 兵马如云*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-210"]
+[SetUp "1"]
+[FEN "Nr2kc3/4a3n/2R3n2/4RN3/9/9/7C1/9/3p1pr2/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6e8 g7e8 2. f6d7 e9d9 3. h3d3 e8d6 4. d7f8 d6e8 5. c7d7 d9e9 6. d3e3 e8c9 7. d7e7 c9e8 8. e7e8 e9d9 9. e8a8 d9e9 10. f8e6 e9d9 11. a8d8 1-0
+
+[Event "适情雅趣_李浭551局新版 第211局 晚鸟争枝"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-211"]
+[SetUp "1"]
+[FEN "r4Rb2/4k2C1/4b4/9/1N7/1r6R/9/4n4/3p1p3/4K3C w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b5c7 e8d8 2. i4d4 b4d4 3. c7e8 d8d7 4. i0i7 e7g5 5. e8f6 d7e7 6. f6g8 e7d7 7. f9f7 g9e7 8. f7e7 1-0
+
+[Event "适情雅趣_李浭551局新版 第212局 雁惊云网"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-212"]
+[SetUp "1"]
+[FEN "1R3a3/3k3C1/3a4b/6pN1/9/9/4n3c/5p2C/4r4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6g8 d7e8 2. g8e9 e8f7 3. e9f7 d8e8 4. b9b8 e8e7 5. h8h7 e7f7 6. i2i7 1-0
+
+[Event "适情雅趣_李浭551局新版 第213局 投石入水"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-213"]
+[SetUp "1"]
+[FEN "3ak4/4a4/b1C1b4/9/6N1R/9/9/5p3/r3p4/3p1K1R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h0h9 e7g9 2. c7c9 a7c9 3. h9g9 e8f9 4. g5f7 e9e8 5. f7d6 e8d8 6. g9g8 d9e8 7. g8e8 f9e8 8. d6b7 d8d7 9. i5d5 d7e7 10. d5e5 e7f7 11. b7d6 f7f8 12. e5f5 e8f7 13. f5f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第214局 阻住行程"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-214"]
+[SetUp "1"]
+[FEN "r2aka3/7rC/1R2b4/3N5/9/9/9/p7B/5pp2/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第215局 猛虎出林"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-215"]
+[SetUp "1"]
+[FEN "5a3/4k4/4b4/6N2/6b2/9/2nR5/2rC4C/4p4/3K1c2r w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i2e2 e7g9 2. g6e5 g5e7 3. e5d7 e7g5 4. d3e3 g5e7 5. e3c3 e7g5 6. c3e3 g9e7 7. e3f3 e7g9 8. f3f8 e8e7 9. d7e5 1-0
+
+[Event "适情雅趣_李浭551局新版 第216局 载沉载浮"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-216"]
+[SetUp "1"]
+[FEN "2bak3C/3ra4/4c3b/7R1/9/9/9/3A5/r3p4/3K2R2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6h9 e8f9 2. h9h8 f9e8 3. g0g9 e8f9 4. g9g8 f9e8 5. h8h9 i7g9 6. g8g9 e8f9 7. g9f9 e9e8 8. h9h8 1-0
+
+[Event "适情雅趣_李浭551局新版 第217局 急流勇退*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-217"]
+[SetUp "1"]
+[FEN "3ak4/3naP1C1/8R/P8/9/9/9/1rp1B4/4p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i7i9 e8f9 2. h8h9 f9e8 3. h9h0 e8f9 4. h0g0 b2b0 5. g0b0 d9e8 6. i9i1 d8e6 7. i1e1 c2d2 8. d0e0 e9d9 9. f8f9 d9d8 10. e2g4 e6g7 11. e1e7 d2d1 12. e7g7 d1d0 13. e0e1 d0c0 14. g7g8 c0b0 15. g8e8 d8d7 16. e8e2 b0a0 17. e2d2 1-0
+
+[Event "适情雅趣_李浭551局新版 第218局 路隔星河"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-218"]
+[SetUp "1"]
+[FEN "r2aka3/3P5/8R/4r3C/6C2/6R2/9/3p5/4p4/3K1p3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g5e5 e6e5 2. i7e7 e5e7 3. i6i9 f9e8 4. g4g9 e8f9 5. d8e8 d9e8 6. g9g7 1-0
+
+[Event "适情雅趣_李浭551局新版 第219局 屈突徙柴*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-219"]
+[SetUp "1"]
+[FEN "cc1a1k3/3Pa1R2/5rNr1/9/6R2/9/9/9/3p5/3AK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g8g9 f9f8 2. g9f9 b9f9 3. g7h9 f9g9 4. g5g8 f8f9 5. g8g9 f9f8 6. g9d9 a9h9 7. d8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第220局 攀辕卧辙"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-220"]
+[SetUp "1"]
+[FEN "1r2ka3/2P1a2P1/n3N4/4R4/6N2/9/9/9/5pc2/c3K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g5f7 e8f7 2. c8b8 f9e8 3. b8b9 a0a4 4. e6i6 g1g9 5. i6i9 g9f9 6. b9c9 a4c4 7. c9d9 e8d9 8. i9f9 e9e8 9. f9f7 f1e1 10. e0e1 a7b5 11. h8g8 c4c8 12. f7f4 b5d6 13. f4f6 d6b7 14. f6e6 b7c5 15. e6e3 c5d7 16. g8f8 c8f8 17. e7f5 e8d8 18. f5d6 f8e8 19. e3c3 d7b6 20. d6b7 d8d7 21. c3d3 b6d5 22. d3d5 1-0
+
+[Event "适情雅趣_李浭551局新版 第221局 野马舞风"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-221"]
+[SetUp "1"]
+[FEN "R4a1C1/3ka4/8b/7N1/6b2/1r7/9/2C6/4p3r/c4K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a9a8 d8d7 2. a8a7 d7d8 3. h9h8 e8f7 4. h6g8 f7e8 5. a7d7 d8d7 6. g8f6 d7e7 7. f6d5 e7d7 8. c2d2 b4d4 9. d5f6 d7e7 10. f6g8 1-0
+
+[Event "适情雅趣_李浭551局新版 第222局 鱼游浅濑"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-222"]
+[SetUp "1"]
+[FEN "1R1a3r1/1C1cak3/2N6/5r3/1R7/9/9/5n3/C3p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c7e6 f8f7 2. b5b7 e8d7 3. e6d8 d9e8 4. b9f9 h9f9 5. b7d7 f7f8 6. d8b9 e8d7 7. a1a8 f8f7 8. b8b7 f7f8 9. b9d8 d7e8 10. d8e6 f8f7 11. a8a7 1-0
+
+[Event "适情雅趣_李浭551局新版 第223局 军中烈士"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-223"]
+[SetUp "1"]
+[FEN "3akr3/R4r2C/3a5/9/9/9/9/6n2/C2pA4/1R2K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a8e8 d9e8 2. e1f2 e9d9 3. b0b9 d9d8 4. a1a6 d1d0 5. e0d0 f9i9 6. a6d6 1-0
+
+[Event "适情雅趣_李浭551局新版 第224局 随形助胜"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-224"]
+[SetUp "1"]
+[FEN "3a1k3/1Nc1a1R2/5rN2/9/9/9/9/9/3p5/4K1Rrc w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "1"]
+[Result "1-0"]
+
+1. g8g9 f9f8 2. g9f9 e8f9 3. g7h9 h0h9 4. g0g8 c8g8 5. b8d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第225局 循序渐进"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-225"]
+[SetUp "1"]
+[FEN "3k5/1R2n1P2/2R1b4/9/r2P5/7N1/9/9/4r3C/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b8d8 d9d8 2. c7d7 d8d7 3. d5d6 d7d8 4. d6d7 d8d9 5. d7d8 d9e9 6. d8d9 e9f9 7. g8f8 f9f8 8. h4g6 f8f9 9. g6h8 f9f8 10. i1i8 1-0
+
+[Event "适情雅趣_李浭551局新版 第226局 脱网逢钩"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-226"]
+[SetUp "1"]
+[FEN "4k4/4a4/4Pa3/4p1pCR/3N5/9/9/5p3/6r2/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i6i9 e8f9 2. h6e6 f7e8 3. e7e8 e9e8 4. i9i8 e8e9 5. d5e7 f9e8 6. i8i9 1-0
+
+[Event "适情雅趣_李浭551局新版 *原_227局_舍生取义_补图复原"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-228plus"]
+[SetUp "1"]
+[FEN "3k1a3/2R1a1N1c/2R6/9/9/9/9/4Cp3/4r4/r2c1K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c7d7 e8d7 2. g8e7 d7e8 3. c8c9 d9d8 4. e7c6 d8d7 5. c9c7 d7d8 6. c7c8 d8d9 7. c8c9 1-0
+
+[Event "适情雅趣_李浭551局新版 第228局 流星赶月"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-228"]
+[SetUp "1"]
+[FEN "9/9/3ak1P2/5PR2/6C2/9/9/9/nr2p1pp1/R4K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g7f7 e7e8 2. f7e7 e8d8 3. g6g8 d8d9 4. g8g9 d9d8 5. e7d7 d8e8 6. d7e7 e8d8 7. a0d0 e1d1 8. g5e5 g1f1 9. f0f1 d1d0 10. f1f2 b1b2 11. e5e2 a1b3 12. g9g8 d8d9 13. e7e8 b2e2 14. f2e2 b3c1 15. e2e1 c1d3 16. e1d1 d0c0 17. g8g9 1-0
+
+[Event "适情雅趣_李浭551局新版 第229局 游鱼吞钩"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-229"]
+[SetUp "1"]
+[FEN "4k1b2/4aPN2/5a3/9/N8/6C2/4c4/9/2nr1p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8f9 e9d9 2. g4g9 d9d8 3. a5c6 d8d7 4. g8f6 e3e6 5. g9g7 1-0
+
+[Event "适情雅趣_李浭551局新版 第230局 猛虎入山"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-230"]
+[SetUp "1"]
+[FEN "2bakcb2/4a4/9/2N6/1C7/3R5/4R4/4K4/5r3/2n2r3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d4d9 f9d9 2. e3e8 e9f9 3. e8e9 f9f8 4. e9f9 f8f9 5. c6d8 f9f8 6. b5b8 1-0
+
+[Event "适情雅趣_李浭551局新版 第231局 胡骑迫背"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-231"]
+[SetUp "1"]
+[FEN "2bak1b2/4aR3/9/3NR4/9/9/9/6n2/r2r1p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8f9 e9f9 2. e6f6 f9e9 3. d6f7 e9f9 4. f7h6 f9e9 5. h6g8 1-0
+
+[Event "适情雅趣_李浭551局新版 第232局 用舍相碍"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-232"]
+[SetUp "1"]
+[FEN "5a3/3ka4/2Ncb4/9/9/C8/9/3R3r1/3pAp3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d2h2 d1e1 2. e0d0 f1f0 3. a4a0 e8d9 4. a0f0 d8e8 5. f0f4 e8e9 6. f4e4 e7c9 7. h2h8 c9a7 8. h8d8 a7c5 9. d8d7 e1e0 10. d0d1 e9e8 11. d7d3 e8e7 12. d3f3 e0d0 13. c7e6 1-0
+
+[Event "适情雅趣_李浭551局新版 第233局 望尘遮道"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-233"]
+[SetUp "1"]
+[FEN "4k4/3RaP3/n3Na3/8C/9/9/6r2/5p3/4p4/R4K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d8d9 e9d9 2. a0d0 g3d3 3. d0d3 d9e9 4. f8f9 e8f9 5. i6e6 f9e8 6. e7c8 e9f9 7. e6f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第234局 停车绊马"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-234"]
+[SetUp "1"]
+[FEN "n4k3/1R7/3a5/2N6/9/2C5R/5n3/9/r4cp1r/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i4f4 f1f4 2. c6e7 d7e8 3. b8b9 f9f8 4. e7g6 f8f7 5. g6e5 f7f8 6. c4c8 e8d9 7. e5d7 f8f7 8. c8c7 1-0
+
+[Event "适情雅趣_李浭551局新版 *第235局 居中反祸"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-235"]
+[SetUp "1"]
+[FEN "2bk2r2/P3aR3/n1r1b4/9/9/6R2/9/3n5/4p4/1C3K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g4g9 d9d8 2. f8e8 d8e8 3. g9g8 e8e9 4. b0b9 1-0
+
+[Event "适情雅趣_李浭551局新版 第236局 勒马停骖"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-236"]
+[SetUp "1"]
+[FEN "3ak1b2/4a1P2/4b4/5N3/R3C1p2/9/9/5n3/4r4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f6d7 e9f9 2. e5e2 e8f7 3. a5g5 g9i7 4. g5g7 e1e0 5. d0d1 f7e8 6. g7i7 e0e1 7. d1d0 e1d1 8. d0d1 f2g0 9. i7i9 e7g9 10. g8f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第237局 怀春育孕"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-237"]
+[SetUp "1"]
+[FEN "2b1k1b2/3Ra4/2r2a2r/6R2/4P4/7C1/9/9/4p4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h4h9 g9e7 2. g6g9 e8f9 3. d8e8 f7e8 4. g9f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第238局 长鲸授首"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-238"]
+[SetUp "1"]
+[FEN "5a1C1/3ka4/4b4/7N1/1Rb6/9/9/5n3/2r1p4/c4K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b5b8 d8d7 2. b8b7 d7d8 3. h9h8 e8f7 4. h6g8 f9e8 5. b7d7 d8d7 6. g8f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第239局 子胥过关"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-239"]
+[SetUp "1"]
+[FEN "3akab2/2r6/4b4/2C4N1/9/9/9/1p3p3/4p4/3K3R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第240局 弃短取长"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-240"]
+[SetUp "1"]
+[FEN "4kab2/5P3/4b1n2/1N1N5/9/1n4C2/9/3p5/4p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b6d7 e9d9 2. d7b8 d9e9 3. d6c8 e9d9 4. c8e7 d9d8 5. e7f9 g7f9 6. g4g8 1-0
+
+[Event "适情雅趣_李浭551局新版 第241局 凭马渡江"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-241"]
+[SetUp "1"]
+[FEN "2b2a3/C3a4/3kb4/9/9/5RN2/9/1C7/r2r1p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f4d4 d1d4 2. g4e5 d7d8 3. e5c6 d8d9 4. b2b9 c9a7 5. a8a9 1-0
+
+[Event "适情雅趣_李浭551局新版 第242局 鱼游釜甑"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-242"]
+[SetUp "1"]
+[FEN "3aka3/6P2/9/6P2/6n1C/7R1/9/1r3p3/4p2C1/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i5i9 f9e8 2. h4h9 e8f9 3. h9f9 e9e8 4. h1h8 e8e7 5. f9f7 e7f7 6. g6g7 f7e7 7. i9i7 g5f7 8. g7f7 e7f7 9. h8h7 1-0
+
+[Event "适情雅趣_李浭551局新版 第243局 明修栈道"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-243"]
+[SetUp "1"]
+[FEN "3r1k3/C5P2/b4a3/CR2R4/9/9/9/2n6/5pr2/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g8f8 f9f8 2. b6b8 f8f9 3. b8f8 f9f8 4. e6e8 f8f9 5. e8f8 f9f8 6. a6f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第244局 祸生肘腋"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-244"]
+[SetUp "1"]
+[FEN "1R1a5/2P1k4/1n2b4/4c4/9/9/9/2C5R/4r1r2/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8d8 b7d8 2. i2i8 g1g8 3. i8g8 e8e9 4. c2c9 d9e8 5. c9c8 e8d9 6. g8e8 e6e8 7. c8c9 1-0
+
+[Event "适情雅趣_李浭551局新版 *第245局 苍舒称象"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-245"]
+[SetUp "1"]
+[FEN "2ba1k3/4a4/9/9/9/4R4/9/2CrB4/3r5/2B1K3R w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e2c4 d1d0 2. e0e1 d2d1 3. e1e2 d0e0 4. i0e0 c9e7 5. e0f0 f9e9 6. e4e7 d1c1 7. e7g7 c1c2 8. e2e1 c2c1 9. e1e2 c1c4 10. g7g9 1-0
+
+[Event "适情雅趣_李浭551局新版 第246局 困魏掣燕"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-246"]
+[SetUp "1"]
+[FEN "3k1a3/4a4/4P4/9/6C2/9/9/2R1B1r2/5p1p1/3AK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c2c9 d9d8 2. c9c8 d8d9 3. e2g4 g2g4 4. g5g9 g4g9 5. c8c9 d9d8 6. e7e8 f9e8 7. c9g9 e8d7 8. d0e1 d8e8 9. g9g7 f1e1 10. e0d0 h1h0 11. g7d7 h0g0 12. d7d6 e8f8 13. d6e6 g0f0 14. e6e1 f8f9 15. e1e3 f9f8 16. e3f3 f8e8 17. f3f0 e8e7 18. f0f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第247局 伏虎降龙"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-247"]
+[SetUp "1"]
+[FEN "3k5/2P1a4/c8/1r3N3/6b2/9/5RP2/C8/4p4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8c9 d9d8 2. f3d3 a7d7 3. d3d7 e8d7 4. a2d2 b6d6 5. d2d5 e1d1 6. f0f1 g5i7 7. c9d9 d1e1 8. f1f2 d8d9 9. f6e8 d6d5 10. e8c7 d9e9 11. c7d5 d7e8 12. d5f6 e8f7 13. g3g4 e9d9 14. f6h5 i7g9 15. f2e2 e1d1 16. g4g5 d1d0 17. g5f5 g9e7 18. f5f6 f7e8 19. f6e6 e7c9 20. h5f6 d9e9 21. e6d6 c9e7 22. f6g8 e9d9 23. g8e7 d0e0 24. e7c6 e0f0 25. d6e6 f0g0 26. e6e7 e8f9 27. e7d7 f9e8 28. c6b8 d9e9 29. d7d8 g0f0 30. d8e8 e9f9 31. b8d9 f0g0 32. e8f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第248局 同心赞政"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-248"]
+[SetUp "1"]
+[FEN "6R2/5k3/5a3/5R3/6p2/9/9/4rC2B/2n6/5KBr1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g9g8 f8f9 2. g8e8 e2e0 3. e8e0 f9f8 4. e0e7 c1e2 5. f0e0 h0g0 6. i2g0 e2c1 7. e0d0 g5g4 8. f6f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第249局 开拓心胸"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-249"]
+[SetUp "1"]
+[FEN "9/9/3ak4/9/4P4/9/6R1P/r2AB4/2r6/3K4R w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e5e6 e7e8 2. e6e7 e8d8 3. e7d7 d8d7 4. g3d3 d7e7 5. i0e0 c1c3 6. e2c0 e7f7 7. d3d7 f7f8 8. c0a2 c3b3 9. d7e7 b3b0 10. d0d1 b0b1 11. d1d0 b1f1 12. e7e9 f1f2 13. e0e8 f8f7 14. e9f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第250局 雁阵排空"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-250"]
+[SetUp "1"]
+[FEN "6c2/5k3/1N2b4/4C4/2b2C3/3R5/9/6n2/7r1/4K3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d4d8 f8f9 2. d8d9 g9d9 3. b7d8 f9f8 4. d8f7 f8f7 5. e6f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第251局 惊心破胆"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-251"]
+[SetUp "1"]
+[FEN "2rak1C2/5R3/3a5/6N2/9/9/9/r3C4/4p4/3K4R w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6e7 d9e8 2. f8e8 d7e8 3. e7g8 e9f9 4. i0f0 e1f1 5. f0f1 e8f7 6. f1f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第252局 诱虎吞钩"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-252"]
+[SetUp "1"]
+[FEN "4ka3/4a4/3n5/3N5/9/C1R6/2R6/4n1r2/3p5/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c4c9 e8d9 2. d6f7 e9e8 3. c9c8 e8e7 4. a4a7 d7c5 5. c8c7 e7e8 6. f7d6 c5d7 7. c7c8 e8e9 8. d6f7 d7f8 9. c3e3 d9e8 10. c8c9 1-0
+
+[Event "适情雅趣_李浭551局新版 第253局 二龙绕室"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-253"]
+[SetUp "1"]
+[FEN "3a1kb2/4a4/4b4/5NN2/9/9/9/8C/3r4c/4K1n2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6h8 f9e9 2. f6g8 e9f9 3. g8h6 f9e9 4. i2i9 e8f9 5. h6f7 e9e8 6. i9i8 1-0
+
+[Event "适情雅趣_李浭551局新版 第254局 毙马仆途"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-254"]
+[SetUp "1"]
+[FEN "3a3nC/1R4c2/2C1k2r1/9/9/r6N1/9/9/4p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h4g6 e7f7 2. b8f8 h9f8 3. i9f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第255局 历诛四寇"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-255"]
+[SetUp "1"]
+[FEN "3k5/2R6/9/9/9/9/9/3ppp3/2Rp5/2B1K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8c9 d9d8 2. c1c8 d8d7 3. c9d9 d7e7 4. d9e9 e7d7 5. c8c1 d1c1 6. c0e2 d2e2 7. e9c9 c1b1 8. c9d9 d7e7 9. e0d0 e7e8 10. d9d4 b1b0 11. d4e4 e8f8 12. d0e0 b0c0 13. e4c4 f8e8 14. c4c0 e8e9 15. c0c4 e9d9 16. c4d4 d9e9 17. e0d0 e9f9 18. d0d1 f2f1 19. d4f4 f9e9 20. f4e4 e9f9 21. e4e2 f1g1 22. d1e1 g1f1 23. e1e0 f1f0 24. e0e1 f0e0 25. e2f2 1-0
+
+[Event "适情雅趣_李浭551局新版 第256局 车行同轨"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-256"]
+[SetUp "1"]
+[FEN "4k4/C8/3R5/9/9/9/9/3RB1n2/1r2r4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d7d9 e9e8 2. d2d8 e8e7 3. d8b8 e1e0 4. d0e0 b1b8 5. d9e9 b8e8 6. e9g9 e7d7 7. g9g7 e8e7 8. g7g2 d7d8 9. a8a1 e7d7 10. e2c0 d7e7 11. a1e1 e7d7 12. e1e3 d7d0 13. e0e1 d8d9 14. g2e2 d0d3 15. e3h3 d9d8 16. h3h2 d8d7 17. e2e8 d3d1 18. e1e0 d1d0 19. e0e1 d0h0 20. h2f2 h0h1 21. f2f1 h1h2 22. f1f9 h2h1 23. e1e0 h1h0 24. e0e1 h0h7 25. e8e5 d7d8 26. f9d9 h7h1 27. e1e0 h1h0 28. e0e1 h0h7 29. e5d5 h7d7 30. d9d7 d8d9 31. d7c7 1-0
+
+[Event "适情雅趣_李浭551局新版 第257局 挡住英雄"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-257"]
+[SetUp "1"]
+[FEN "6b2/9/3k4C/4P4/9/9/9/4R4/3r1p3/4K1B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6e7 d7d8 2. e7e8 d8d9 3. i7d7 g9i7 4. d7d2 i7g5 5. e8f8 f1e1 6. e2e1 d1e1 7. e0e1 g5i7 8. d2c2 i7g5 9. f8e8 g5e7 10. c2c0 e7c5 11. c0e0 c5a7 12. g0e2 a7c5 13. e2c4 c5a7 14. e0c0 a7c5 15. c0c5 1-0
+
+[Event "适情雅趣_李浭551局新版 第258局 独夫当关"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-258"]
+[SetUp "1"]
+[FEN "3ak4/4a2P1/2R6/9/9/9/9/5A3/3R1pr2/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d1f1 g1g0 2. f1f0 g0g4 3. c7e7 g4g3 4. f0i0 e9f9 5. e7e4 f9f8 6. i0i7 g3g0 7. e0e1 g0g1 8. e1e2 g1g7 9. h8g8 g7g8 10. e4f4 e8f7 11. f4f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第259局 阴持两端"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-259"]
+[SetUp "1"]
+[FEN "3k5/9/9/8p/9/2R3B1r/9/4BA3/6r2/2R2K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c4d4 d9e9 2. c0e0 g1e1 3. e0e1 i4i1 4. e1i1 i6i5 5. e2g0 i5i4 6. i1e1 e9f9 7. d4f4 1-0
+
+[Event "适情雅趣_李浭551局新版 第260局 直造竹所"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-260"]
+[SetUp "1"]
+[FEN "3k5/4R4/4b3R/2r1p4/9/7C1/9/9/5pr2/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e8e9 d9e9 2. i7e7 e9d9 3. e7d7 d9e9 4. h4e4 e9f9 5. d7f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第261局 金创满身"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-261"]
+[SetUp "1"]
+[FEN "9/9/R2ak1P2/2rN5/9/9/1C7/4rn3/3K5/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a7d7 e7e8 2. d7e7 e8e7 3. g7f7 e7d7 4. b3d3 1-0
+
+[Event "适情雅趣_李浭551局新版 第262局 不服自老"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-262"]
+[SetUp "1"]
+[FEN "2Pa5/1r2a2R1/4k4/9/4N4/9/9/3p1n3/9/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8h7 e8f7 2. e5c6 e7e8 3. h7h8 e8e9 4. c9d9 e9f9 5. c6e7 f7e8 6. h8h9 f9f8 7. e7g6 f8f7 8. h9h7 1-0
+
+[Event "适情雅趣_李浭551局新版 第263局 增补隘口"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-263"]
+[SetUp "1"]
+[FEN "4k4/4a3R/4Pa3/7C1/4p4/9/9/2r6/5r3/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i8i9 e8f9 2. h6h9 f9e8 3. h9h3 e8f9 4. e7e8 e9e8 5. h3e3 e8f8 6. i9i8 1-0
+
+[Event "适情雅趣_李浭551局新版 第264局 跃鲤吞饵"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-264"]
+[SetUp "1"]
+[FEN "6b2/1N1R5/5k3/9/9/9/9/4p4/2Rp1p2r/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c1c7 g9e7 2. c7e7 f7e7 3. b8c6 e7f7 4. c6e5 f7e7 5. e5g6 e7f7 6. d8f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第265局 巅峰得路"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-265"]
+[SetUp "1"]
+[FEN "2b1k4/2P6/3Rn1P2/9/4r4/9/9/3R5/4r4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d7e7 e5e7 2. d2d9 e9e8 3. c8d8 e8f8 4. g7g8 f8f7 5. d9f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第266局 入穴取虎"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-266"]
+[SetUp "1"]
+[FEN "3k1a3/9/3a5/3rRN2C/9/9/9/6n2/5r3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "1"]
+[Result "1-0"]
+
+1. e6e9 d9d8 2. e9d9 d8d9 3. i6d6 d7e8 4. f6d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第267局 脱钩逢网*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-267"]
+[SetUp "1"]
+[FEN "3C1a1c1/C8/3kbN3/4P4/9/9/9/9/r4p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "0-1"]
+
+1. e6e7 d7d8 2. e7d7 d8d7 3. f7e5 d7e7 4. d9d1 a1d1 5. a8a1 d1a1 6. e0d0 a1a0 7. d0d1 h9h1 8. d1d2 a0a2 0-1
+
+[Event "适情雅趣_李浭551局新版 第268局 直穷到底"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-268"]
+[SetUp "1"]
+[FEN "9/4ak3/5a3/6P2/7r1/1r7/9/C2RR4/5p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e2e8 f7e8 2. d2f2 b4f4 3. f2f4 e8f7 4. f4f7 f8f7 5. g6f6 f7f8 6. a2f2 h5f5 7. f6f7 f8f9 8. f7f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第269局 投躯帝廷"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-269"]
+[SetUp "1"]
+[FEN "1c2k1C2/c4P3/5a3/9/9/9/9/7R1/3rp4/5K1C1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h2e2 e9d9 2. e2e9 d9d8 3. h0h8 d8d7 4. e9d9 a8d8 5. h8h7 f7e8 6. g9g7 1-0
+
+[Event "适情雅趣_李浭551局新版 第270局 杨香跨虎"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-270"]
+[SetUp "1"]
+[FEN "N2k1ab2/2R1a4/2R6/9/9/5r3/9/5n3/4r4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8c9 d9d8 2. c7c8 d8d7 3. c8d8 d7d8 4. a9b7 d8d7 5. c9c7 d7d8 6. c7c5 d8d7 7. b7c9 d7e7 8. c5c7 e8d7 9. c7d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第271局 吐胆倾心"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-271"]
+[SetUp "1"]
+[FEN "3a1k3/c2P5/2r2a3/6N2/9/6R2/9/4C4/4r4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6e7 c7e7 2. g4g9 f9f8 3. d8e8 e7e8 4. e2f2 1-0
+
+[Event "适情雅趣_李浭551局新版 第272局 赤心报国"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-272"]
+[SetUp "1"]
+[FEN "3k1aP2/8C/5a3/4R1N2/9/9/9/6n2/3r1p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6e9 d9d8 2. g6f8 f9e8 3. e9e8 f7e8 4. f8e6 d8d9 5. i8i9 e8f9 6. g9f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第273局 舍命如归"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-273"]
+[SetUp "1"]
+[FEN "9/r2k5/1R1ab4/3N5/2b6/1C7/9/3n1p3/9/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b7d7 d8e8 2. d7d8 e8e9 3. d6f7 e9f9 4. b4f4 1-0
+
+[Event "适情雅趣_李浭551局新版 第274局 辎重塞途"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-274"]
+[SetUp "1"]
+[FEN "3k1a3/nPR1a4/2Nr5/9/9/9/9/9/5r3/2c1K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "1"]
+[Result "1-0"]
+
+1. c8c9 d9d8 2. c9d9 e8d9 3. c7b9 c0c9 4. b8c8 1-0
+
+[Event "适情雅趣_李浭551局新版 第275局 打草惊蛇"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-275"]
+[SetUp "1"]
+[FEN "2raka3/9/9/4C1NRp/9/9/9/5p3/3p5/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6e7 d9e8 2. e7c6 e8f7 3. e6e3 c9c6 4. h6c6 i6i5 5. c6d6 d1c1 6. d6e6 e9d9 7. e3c3 f9e8 8. e6d6 d9e9 9. d6b6 e9d9 10. c3f3 d9d8 11. b6d6 e8d7 12. d6d2 f2f1 13. d2f2 f1e1 14. e0e1 i5i4 15. f3d3 d7e8 16. f2f4 c1d1 17. e1e2 d1c1 18. f4i4 c1b1 19. i4d4 e8d7 20. d4b4 d7e8 21. b4b1 d8d9 22. d3g3 e8d7 23. g3g8 d7e8 24. b1b9 1-0
+
+[Event "适情雅趣_李浭551局新版 第276局 路车乘马"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-276"]
+[SetUp "1"]
+[FEN "1c1k5/4R4/4N4/4rC3/9/6Rr1/9/6C2/4p4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e8d8 d9d8 2. g4g8 d8d7 3. g2g7 d7e7 4. f6f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第277局 双骑追敌"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-277"]
+[SetUp "1"]
+[FEN "5k3/9/1P7/7NN/9/8C/9/3p5/r3p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i6h8 f9e9 2. h6g8 e9e8 3. g8f6 e8e9 4. f6d7 e9e8 5. i4i8 e8e7 6. h8f9 e7f7 7. d7e9 f7f8 8. f9h8 1-0
+
+[Event "适情雅趣_李浭551局新版 第278局 异地同心"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-278"]
+[SetUp "1"]
+[FEN "5k3/8P/4ra3/9/9/9/9/5R1R1/4r4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h2h9 f9f8 2. h9h8 f8f9 3. h8e8 e1e0 4. f0f1 e7e8 5. f2f7 e8f8 6. f7f8 f9e9 7. f8f9 e9e8 8. f9f7 e0e1 9. f1f0 e1g1 10. i8h8 g1g0 11. f0f1 g0g5 12. f7f2 g5e5 13. h8g8 e5e1 14. f1f0 e1e3 15. f2f8 e8e7 16. f8f9 e7e8 17. g8f8 e8d8 18. f9b9 e3h3 19. b9b8 d8d7 20. b8e8 h3h0 21. f0f1 h0h1 22. f1f0 h1h9 23. f0e0 h9h0 24. e0e1 h0h1 25. e1e0 h1h7 26. e8e9 h7h0 27. e0e1 h0h1 28. e1e0 h1h9 29. e9e7 d7d8 30. f8e8 d8d9 31. e7d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第279局 火炎昆岗"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-279"]
+[SetUp "1"]
+[FEN "3ak1b1r/4a2Pn/4b4/4C4/9/9/cR7/n8/4A1p2/3AKC3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f0f9 e9f9 2. b3f3 f9e9 3. e0f0 g1g0 4. f0f1 g0f0 5. f3f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第280局 将机就机"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-280"]
+[SetUp "1"]
+[FEN "3ak4/1C2aR3/2n1c4/7N1/9/7R1/9/4C4/4A1rnr/3AK3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6g8 g1g0 2. f8f0 g0g8 3. f0f9 e9f9 4. h4h9 g8g9 5. h9g9 1-0
+
+[Event "适情雅趣_李浭551局新版 第281局 诳楚救主"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-281"]
+[SetUp "1"]
+[FEN "3ak4/4aR3/n3N4/4P4/2b6/8C/4c4/N3B1n2/1r2A4/3RKAr2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8f9 e9f9 2. d0d9 f9f8 3. e7g6 f8f7 4. g6h8 f7f8 5. i4i8 1-0
+
+[Event "适情雅趣_李浭551局新版 第282局 前后一辙"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-282"]
+[SetUp "1"]
+[FEN "4ka3/4aR3/4N1C1b/c1p1p4/9/9/2N1P1R2/5C3/r1rp5/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f2g2 a1a0 2. f0f1 d1e1 3. f1f2 c1c2 4. g2c2 a6a8 5. e7c8 e9d9 6. f2e2 e1f1 7. c2d2 a0e0 8. e2f2 e0d0 9. d2d5 d9d8 10. c8d6 d0d5 11. c3d5 f1g1 12. d6e8 f9e8 13. g7g1 a8a2 14. e3e4 a2a4 15. d5c7 c6c5 16. g3d3 a4d4 17. d3d4 1-0
+
+[Event "适情雅趣_李浭551局新版 第283局 一举而定"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-283"]
+[SetUp "1"]
+[FEN "1r1akab2/5R3/4b1n2/7N1/9/2B6/2r1P4/B2RC4/3KA4/c8 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d2d4 a0g0 2. e2g2 f9e8 3. h6g8 b9b1 4. d1d2 c3c2 5. g2c2 g0g8 6. f8g8 g7e6 7. d4d6 e6f4 8. g8f8 b1c1 9. f8f4 c1c2 10. d2d1 c2c1 11. d1d0 c1b1 12. c4e2 b1b0 13. a2c0 b0b5 14. e3e4 b5i5 15. f4f8 i5i0 16. e1f0 i0i5 17. d6h6 e7g5 18. d0e0 e8f9 19. f8f5 g9e7 20. e4e5 d9e8 21. e5e6 e7g9 22. h6g6 g9i7 23. e6e7 i5h5 24. e7e8 f9e8 25. g6a6 h5h8 26. f5e5 e9f9 27. e2g4 g5e7 28. e5e7 i7g5 29. a6a9 f9f8 30. e7e8 f8f7 31. a9f9 h8f8 32. e8f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第284局 肉钽负荆"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-284"]
+[SetUp "1"]
+[FEN "4ka3/R3a4/b2rb4/4P2N1/9/9/9/3Ap4/4pp3/1R1K1A3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a8d8 d7d2 2. d8d2 e2d2 3. f0e1 f1e1 4. b0b1 d2d1 5. b1d1 e1d1 6. d0d1 e8d9 7. h6g8 e9e8 8. g8e7 a7c9 9. e7g6 e8e9 10. g6e5 c9a7 11. e6f6 d9e8 12. e5c6 a7c5 13. d1e1 e9d9 14. f6e6 e8f7 15. c6a5 c5a7 16. a5b7 f9e8 17. e6e7 d9e9 18. e7f7 e9f9 19. f7e7 e8d9 20. e1e0 f9e9 21. e0f0 d9e8 22. b7d6 e8d7 23. e7d7 a7c5 24. d6b7 c5a7 25. d7d8 a7c5 26. b7c5 1-0
+
+[Event "适情雅趣_李浭551局新版 *第285局 一骑困魏"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-285"]
+[SetUp "1"]
+[FEN "r4k3/4a1Pn1/1n3a3/4N1p2/9/9/9/4C4/4p4/2BK5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6d8 e1d1 2. d0e0 d1d0 3. e0d0 a9a6 4. g8g9 f9f8 5. e2f2 a6f6 6. d8e6 1-0
+
+[Event "适情雅趣_李浭551局新版 第286局 野马诱虎"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-286"]
+[SetUp "1"]
+[FEN "3k3r1/4a4/3a5/6N2/9/9/9/4C4/4p2c1/2BR1K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6f8 h9h7 2. f8h7 e1e0 3. f0e0 h1b1 4. d0d5 b1b0 5. c0a2 d9d8 6. h7f8 b0b3 7. d5b5 b3e3 8. e2d2 e3d3 9. f8e6 d8d9 10. b5b9 1-0
+
+[Event "适情雅趣_李浭551局新版 *第287局 夺马驱敌"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-287"]
+[SetUp "1"]
+[FEN "2bk1a2r/4an3/cR2b3N/p3CR3/2p1p4/1C7/4Pp2P/2c1B4/3pr4/2B2K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "0-1"]
+
+1. f6f8 a7a8 2. b7d7 d9e9 3. f8f3 c2b2 4. c0a2 b2b0 5. d7d1 e1d1 6. b4b9 c9a7 7. f3f9 i9f9 8. b9f9 d1d0 9. f0f1 e9d9 10. f9i9 e8f7 11. i7g6 d0d1 12. f1f0 e7g5 13. g6f8 a8e8 14. f8h7 d1h1 15. h7g9 h1h9 16. e2g0 h9i9 17. g9e8 f7e8 18. g0e2 i9i6 19. e6b6 i6b6 20. i3i4 b6b2 21. e2g0 b2a2 22. i4i5 a2f2 23. f0e0 b0b7 24. e0e1 b7e7 25. g0e2 e5e4 26. e3e4 f2e2 27. e1f1 e2e3 28. e4e5 e3f3 0-1
+
+[Event "适情雅趣_李浭551局新版 第288局 敛手削地"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-288"]
+[SetUp "1"]
+[FEN "1nb1kab1r/3Ra4/3cc1n2/C1N1p1pR1/9/3N1p3/4Pp3/4C3B/4r2p1/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c6b8 i9i8 2. a6g6 e8d9 3. d8i8 f9e8 4. i8g8 f4e4 5. b8d7 e8d7 6. g8g7 d9e8 7. h6h9 e7f7 8. g7f7 e8f7 9. h9g9 e9e8 10. g9g8 e8e9 11. e2e4 c9e7 12. e4e1 h1g1 13. e1e6 e7c9 14. g8g9 e9e8 15. d4c6 e8f8 16. g6f6 f7e8 17. e6e4 e8d9 18. g9g8 f8f9 19. c6d8 d9e8 20. g8g9 f9f8 21. e4f4 1-0
+
+[Event "适情雅趣_李浭551局新版 第289局 汗马功劳"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-289"]
+[SetUp "1"]
+[FEN "2ba1kbRC/3Ra4/9/2pPp4/3Nc4/9/4P4/3pB1N2/r2pA4/c3KAB2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g2h4 d1d0 2. e0d0 d2d1 3. d0e0 d1d0 4. e0d0 a1d1 5. d0d1 e5h5 6. h9h5 g9e7 7. h5h9 e7g9 8. h9g9 f9f8 9. h4g6 f8f7 10. g6h8 f7e7 11. d6c6 1-0
+
+[Event "适情雅趣_李浭551局新版 第290局 莘野邀汤"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-290"]
+[SetUp "1"]
+[FEN "2bak4/r2PaRR2/1n2N3b/4p1n2/9/9/9/4C4/2p1App2/2B1KAB1c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d8d9 e9d9 2. f8f9 d9d8 3. e7c6 d8d7 4. e2e8 c9e7 5. f9d9 b7d8 6. e8a8 f1e1 7. e0e1 c1d1 8. e1e2 g6f4 9. e2f2 f4d3 10. f2e2 d1d0 11. g8d8 1-0
+
+[Event "适情雅趣_李浭551局新版 第291局 城门失火"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-291"]
+[SetUp "1"]
+[FEN "3ak1Cnr/2P4Rn/3a5/9/9/C8/9/2p1B4/4rp3/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a4a9 d9e8 2. c8c9 e8d9 3. h8d8 e1d1 4. d0d1 c2c1 5. d1d2 c1c0 6. c9d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第292局 凤起丹山*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-292"]
+[SetUp "1"]
+[FEN "r1P1k4/5P3/9/1c7/9/2N6/9/9/2p3p2/1p1KCN1rc w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c4e3 b6e6 2. e3c2 e6h6 3. c2e1 h6e6 4. e1g0 e6h6 5. f0e2 h6e6 6. e2d4 e6g6 7. d4e6 1-0
+
+[Event "适情雅趣_李浭551局新版 第293局 两虎共斗"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-293"]
+[SetUp "1"]
+[FEN "1n1ak1br1/1r2aR3/4R3c/9/9/9/9/1C2B2Cp/4A4/3AK3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e0f0 i7f7 2. b2c2 b8c8 3. e2c4 c8c7 4. c2c7 b9c7 5. h2e2 h9h0 6. f0f1 h0h1 7. f1f0 c7e6 8. e7f7 h1h0 9. f0f1 h0f0 10. e1f0 i2i1 11. f8f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第294局 勤劳一纪"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-294"]
+[SetUp "1"]
+[FEN "4ka2R/3na4/2rcb3n/1R3N1NC/2b4P1/9/9/6pr1/7p1/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6g8 e9d9 2. f6e8 e7g9 3. i6d6 c7c9 4. i9g9 i7g8 5. g9f9 g8e9 6. b6b8 c9c8 7. b8b9 c8c9 8. b9c9 1-0
+
+[Event "适情雅趣_李浭551局新版 第295局 济弱扶倾"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-295"]
+[SetUp "1"]
+[FEN "5a3/3k1P3/2P1ban2/1N7/2b6/9/P5p2/4B4/3pr4/c1BA1K1R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第296局 绕江撒网"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-296"]
+[SetUp "1"]
+[FEN "6b2/4ak1C1/2N2aR2/4P4/2b6/9/8P/4B1p1r/r3Ap3/3AK3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8h9 i0g0 2. e2g4 g9i7 3. h9c9 a1e1 4. d0e1 f1e1 5. e0e1 i2i1 6. e1e0 g2h2 7. g7i7 i1e1 8. e0e1 g0i0 9. i7g7 h2h1 10. c7d9 e8d9 11. g7g8 1-0
+
+[Event "适情雅趣_李浭551局新版 第297局 鸮立中天"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-297"]
+[SetUp "1"]
+[FEN "C1b6/1RCka4/5a3/p1p1p4/2b6/9/P1P1P4/9/c3p2p1/5K1c1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b8b9 c5e7 2. c8c7 a1b1 3. b9b8 d8d7 4. b8b1 e8d9 5. c7c8 e1f1 6. f0f1 h1g1 7. f1f2 d7d8 8. a9a8 d8d7 9. b1b7 1-0
+
+[Event "适情雅趣_李浭551局新版 第298局 虎帐谈兵"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-298"]
+[SetUp "1"]
+[FEN "3ak4/2PPa4/b3b4/2p1C1N2/3c5/1rB6/9/3p5/4p2p1/1CB2K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6h8 e1f1 2. f0f1 h1g1 3. f1f0 g1g0 4. f0f1 b4b1 5. f1f2 d2e2 6. c4e2 d5d2 7. e2g0 d2d7 8. h8f9 b1b8 9. f9e7 b8b2 10. f2f1 b2b1 11. f1f0 b1f1 12. f0f1 c6c5 13. e7g8 1-0
+
+[Event "适情雅趣_李浭551局新版 第299局 参前倚衡"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-299"]
+[SetUp "1"]
+[FEN "r2k1a3/3na1R2/3cb1c2/3N1R3/6P2/3C5/9/B4p2B/2p3r2/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f6f9 e8f9 2. d6f7 g1e1 3. e0e1 c1d1 4. e1e0 d1e1 5. e0e1 f2e2 6. e1e0 a9a8 7. g8f8 e2e1 8. e0e1 d9e9 9. f8f9 e9e8 10. f9e9 e8f8 11. d4f4 f8f7 12. g5f5 1-0
+
+[Event "适情雅趣_李浭551局新版 第300局 陈桥兵变"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-300"]
+[SetUp "1"]
+[FEN "2ba1k3/2rPa4/R3b4/4cP1C1/2p6/9/3rP4/4B4/3pp4/2B2K1R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6e6 e1f1 2. f0f1 d3d8 3. h0h9 f9f8 4. f6f7 e8f7 5. a7e7 d1e1 6. f1f2 d8d0 7. e7f7 f8e8 8. h9h8 e8e9 9. f7f9 1-0
+
+[Event "适情雅趣_李浭551局新版 *第301局 手探月窟"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-301"]
+[SetUp "1"]
+[FEN "4kabn1/R3a4/4b1P1r/9/p8/2P5P/9/1R1pBC3/2r3p2/3AKABc1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第302局 蹇驽卧道"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-302"]
+[SetUp "1"]
+[FEN "3ak1b2/4a4/4b3n/2R1C1pCp/5R3/2Bn5/9/4BA3/6rcc/3AK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f5f8 d4e6 2. h6e6 g1d1 3. f2e1 i1i3 4. c6c9 d1d8 5. c9c7 h1h6 6. e6e3 h6h3 7. e3e5 d8d5 8. c7e7 d5e5 9. e7e5 h3h9 10. e5e7 i3g3 11. e7h7 i6i5 12. f8i8 e8f9 13. h7h9 i7g8 14. h9h3 g3g5 15. h3e3 d9e8 16. e0f0 i5i4 17. e3e6 g9i7 18. e6g6 g8e7 19. g6e6 i7g9 20. i8f8 g5d5 21. e6e7 d5d9 22. e7e6 i4h4 23. f8g8 g9i7 24. g8g7 d9b9 25. g7i7 b9b0 26. f0f1 b0b1 27. e1f2 b1b3 28. i7b7 b3f3 29. f1e1 e9d9 30. e2g0 f3e3 31. e6e3 h4h3 32. e3d3 e8d7 33. d3d7 1-0
+
+[Event "适情雅趣_李浭551局新版 *第303局 板筑隐贤"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-303"]
+[SetUp "1"]
+[FEN "2brk3C/4a4/3ab3n/2p3N2/4C4/2P6/9/B1p1B4/c2pA1p2/c3KA3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6i7 e9f9 2. e5g5 d1e1 3. f0e1 e8f7 4. g5f5 f7e8 5. i7h9 e7g9 6. h9g7 f9f8 7. i9i3 f8f7 8. f5f4 g1g0 9. g7f5 1-0
+
+[Event "适情雅趣_李浭551局新版 第304局 雌鸡化雄"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-304"]
+[SetUp "1"]
+[FEN "2bak1r2/3Pa4/4bc3/N6R1/p8/3R2B2/4P1n2/2C6/2r3p2/c1BAK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a6c7 e7c5 2. d8d9 e9f9 3. c7e6 c1e1 4. e0e1 g1f1 5. e1d1 f1e1 6. d0e1 c5a7 7. c2f2 f7i7 8. d4f4 i7f7 9. f4f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第305局 众星拱月"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-305"]
+[SetUp "1"]
+[FEN "2baR1cNC/R8/5k3/8p/3r1n3/2p6/P1P5P/4C3B/2p1A1r1c/4KA3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e9g9 g1g9 2. i9g9 c1d1 3. g9g1 c4c3 4. g1d1 i1d1 5. a8i8 f7e7 6. i8i6 d5b5 7. i6e6 e7d7 8. h9f8 d7d8 9. e2h2 f5h4 10. e6e4 b5b7 11. e4h4 b7f7 12. h4d4 d8e8 13. f8h9 f7h7 14. d4e4 c9e7 15. h2e2 h7h9 16. e4h4 e7c9 17. h4h9 d1d6 18. h9d9 d6i6 19. d9c9 i6i2 20. e1d0 c3d3 21. c9c6 i2i0 22. e0e1 i0d0 23. c6e6 e8d8 24. e2f2 d0d2 25. f2f4 d2d0 26. e1e2 d0d1 27. f4d4 d3d2 28. e2e1 d2e2 29. e1e2 d1d0 30. e6d6 1-0
+
+[Event "适情雅趣_李浭551局新版 第306局 轻兵锐卒"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-306"]
+[SetUp "1"]
+[FEN "3ak4/2P1aP3/8N/9/4P4/3p5/8P/4Bp2n/2p1N4/3K1A3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8g8 e8f7 2. c8d8 f2e2 3. g8g9 c1d1 4. d0d1 e2d2 5. d1d2 d4d3 6. e1d3 f7e8 7. i7g8 1-0
+
+[Event "适情雅趣_李浭551局新版 第307局 拔去病根"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-307"]
+[SetUp "1"]
+[FEN "2bak3C/4a2P1/6N1b/2C5p/9/9/P7n/2p1B4/4pp3/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8h9 e8f9 2. h9g9 i7g9 3. c6g6 e1e0 4. d0e0 c9e7 5. i9i3 d9e8 6. g6g2 c2c1 7. i3i1 c1b1 8. i1b1 i6i5 9. g7f5 i5i4 10. e2g4 e8d7 11. g2g9 f9e8 12. g9g7 e8d9 13. g7f7 f1g1 14. f7d7 i4h4 15. f5h4 d9e8 16. d7d1 g1g0 17. h4g6 g0f0 18. e0f0 e7g5 19. f0e0 g5e7 20. g6e7 e8f7 21. e0f0 f7e8 22. e7g8 e9d9 23. d1d5 d9d8 24. b1d1 1-0
+
+[Event "适情雅趣_李浭551局新版 第308局 宽一步胜"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-308"]
+[SetUp "1"]
+[FEN "C2k2b1c/4a4/b2a2N2/2R3p2/2p3n2/9/9/5A2r/4AKn2/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c6c9 d9d8 2. c9c8 d8d9 3. a9g9 d9e9 4. c8b8 i2f2 5. f1f2 g5h3 6. f2f1 i9i1 7. f1f0 h3f2 8. b8b9 a7c9 9. b9c9 e8d9 10. c9d9 e9d9 11. g7f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第309局 三军联位"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-309"]
+[SetUp "1"]
+[FEN "1P1ak1b2/4a4/4b4/6p2/2N4N1/1C2C4/6P2/r2ppp3/9/c3K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b4b8 e2e1 2. e0e1 d2e2 3. e1e0 e2e1 4. e0e1 a2d2 5. b9a9 d2e2 6. e1d1 e2e4 7. c5e4 f2e2 8. h5f4 a0a3 9. b8b9 e7c9 10. f4e2 a3a8 11. e2f4 a8d8 12. f4g6 e8d7 13. d1e1 d8i8 14. e1f1 i8b8 15. e4c5 d7e8 16. c5b7 e8f7 17. b7d6 g9e7 18. d6c8 e9e8 19. f1e1 e8d8 20. c8d6 b8c8 21. d6c8 d9e8 22. g6e7 d8d7 23. c8b6 d7d8 24. e7c6 d8d7 25. b6c4 c9a7 26. c4e5 1-0
+
+[Event "适情雅趣_李浭551局新版 第310局 有家难奔"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-310"]
+[SetUp "1"]
+[FEN "3ak4/4a4/4b4/9/2b4R1/1N5n1/5p1r1/3RB4/2p1r4/2B2K1c1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h5h9 e7g9 2. h9g9 e8f9 3. d2d9 e9d9 4. g9f9 d9d8 5. f9e9 e1f1 6. f0e0 d8d7 7. b4c6 f1e1 8. e0f0 e1e0 9. f0e0 c1c0 10. e9d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第311局 金鸡抱卵"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-311"]
+[SetUp "1"]
+[FEN "3k1ab2/2R1aP3/2n1b3r/9/5R3/9/3r5/N3B4/4AC3/4K3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8e8 f9e8 2. c8e8 d3d0 3. e1d0 i0f0 4. f1h1 i7f7 5. f5f7 c7e8 6. f7f9 d9d8 7. a2b4 e8g7 8. f9e9 g7e6 9. b4c6 e6c7 10. e0f0 e7g5 11. h1d1 g9e7 12. d0e1 g5i7 13. e1d2 1-0
+
+[Event "适情雅趣_李浭551局新版 *第312局 深入远岛"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-312"]
+[SetUp "1"]
+[FEN "1r4b2/4k4/rN2b1P1n/6p1p/9/3R3C1/9/5A3/p4pc2/3RK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h4e4 e7c5 2. d4d8 e8e9 3. b7d6 g1g7 4. d8e8 e9f9 5. e4f4 f1e1 6. e0e1 a7a4 7. d6f7 a4f4 8. f7d8 b9b1 9. e1e0 g7e7 10. e8e7 f9f8 11. e7e8 f8f7 12. e8i8 1-0
+
+[Event "适情雅趣_李浭551局新版 第313局 马跳澶溪"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-313"]
+[SetUp "1"]
+[FEN "3ak4/4a4/b3b3P/9/4N2R1/9/2p6/1p1AB4/3KA4/n3r1B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h5h9 e7g9 2. h9g9 e8f9 3. e5d7 e9e8 4. d7f6 e8f8 5. g9g8 f8f7 6. f6e4 f7e7 7. g8g7 e7e8 8. e4d6 e8d8 9. g7e7 d9e8 10. e7a7 e8d9 11. a7a8 d8d7 12. d6e4 d7e7 13. e4f6 e7f7 14. i7h7 e0g0 15. e2g0 f9e8 16. h7g7 f7f8 17. g7g8 f8f9 18. g8g9 f9f8 19. f6h7 f8f7 20. a8a7 e8d7 21. a7d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第314局 堵塞要路"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-314"]
+[SetUp "1"]
+[FEN "4kab2/4a1RCr/4b3n/2pRN4/4N4/4P4/5p3/9/3pr4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d6d9 e9d9 2. e6c7 d9e9 3. c7e8 e1f1 4. f0f1 f9e8 5. e5d7 e9d9 6. g8e8 d1e1 7. f1e1 f3f2 8. d7b8 1-0
+
+[Event "适情雅趣_李浭551局新版 第315局 三将夺关"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-315"]
+[SetUp "1"]
+[FEN "3a1kb2/4a1P2/4b4/5N3/9/P7C/6P2/4B4/r2pA4/c3KAB2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g8h8 e8d7 2. i4i9 f9f8 3. h8g8 f8f7 4. f6g4 e7g5 5. g4e5 f7e7 6. i9i4 e7e8 7. i4i8 e8e7 8. e5g6 e7f7 9. i8i4 a1a4 10. g6e5 f7e7 11. e2c4 e7e8 12. i4a4 d1c1 13. c4e2 c1c0 14. e1d0 g9e7 15. e5d7 c0d0 16. e0e1 a0a2 17. d7b6 a2d2 18. b6c8 d2d4 19. c8d6 e8d8 20. g8f8 d9e8 21. f8e8 d8d7 22. e2c0 d4d5 23. a4d4 e7c9 24. d6f7 d5f5 25. f7e5 d7e7 26. d4e4 1-0
+
+[Event "适情雅趣_李浭551局新版 第316局 渴骥饮泉"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-316"]
+[SetUp "1"]
+[FEN "2ba1kbRC/2N1a4/9/4p4/4c1p2/9/9/1p2B1r2/4r1n2/3K2B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8e7 e1e0 2. d0d1 e0d0 3. d1d0 g1e2 4. g0e2 g2g0 5. e2g0 e5a5 6. h9g9 f9f8 7. e7g6 f8f7 8. g9g7 f7f8 9. g7h7 f8f9 10. h7h9 1-0
+
+[Event "适情雅趣_李浭551局新版 第317局 移星换斗"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-317"]
+[SetUp "1"]
+[FEN "4kab2/4a3C/3rb4/n1R4Cc/5R3/1r7/9/4B4/3pp4/2B2K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c6c8 b4f4 2. f5f4 g9i7 3. f4f8 e1e0 4. f0f1 d1e1 5. f1f2 e0d0 6. h6h9 i7g9 7. c8e8 e9d9 8. f8f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第318局 赤壁鏖战"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-318"]
+[SetUp "1"]
+[FEN "c2a1k3/3Pa4/n3b4/5P1CP/6b2/1rB6/9/9/3pp4/2B2K1R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第319局 匿影避形"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-319"]
+[SetUp "1"]
+[FEN "2bak1b1N/9/2n1ca3/3R1C3/9/9/9/C3B4/c3p2p1/1rB2K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i9g8 e9e8 2. f6h6 e8f8 3. d6d8 f8f9 4. d8e8 b0c0 5. e2c0 a1a0 6. c0e2 e1f1 7. f0f1 a0h0 8. h6i6 h1g1 9. f1f0 c7d5 10. i6i9 h0h9 11. e8e9 f9f8 12. i9i8 h9h8 13. e2g4 g1g0 14. f0f1 d5e3 15. g4e2 e3f5 16. e9g9 f5d4 17. e2g4 d4c2 18. g9d9 c2e3 19. g4e2 e3f5 20. g8h6 h8h7 21. d9d8 f7e8 22. h6f5 h7h9 23. e2c0 h9h6 24. a2f2 e7f7 25. f2f7 f8f7 26. f1e1 h6f6 27. d8e8 c9e7 28. f5h6 f6g6 29. h6g8 g0f0 30. e8e7 1-0
+
+[Event "适情雅趣_李浭551局新版 第320局 右相安刘"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-320"]
+[SetUp "1"]
+[FEN "3k1ab2/4a4/2R1P1r2/9/2b6/7r1/9/1p2B1C1R/5p1p1/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g2g9 g7g9 2. c7c9 d9d8 3. e2g4 f1e1 4. e0e1 g9g4 5. e7e8 f9e8 6. c9c8 d8d7 7. i2i7 h4h7 8. i7h7 g4g7 9. h7g7 e8f7 10. g7f7 c5e7 11. f7e7 1-0
+
+[Event "适情雅趣_李浭551局新版 第321局 好勇不矜"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-321"]
+[SetUp "1"]
+[FEN "5kbc1/9/P5n1r/1RN6/9/9/3p1p3/R3C1r1B/2n6/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c6e7 g7e8 2. b6f6 f9e9 3. e7c8 e9d9 4. e2e7 c1e2 5. a2e2 i7i6 6. f6i6 g2g0 7. i2g0 h9h0 8. g0i2 h0h6 9. i6h6 d3d2 10. e2d2 1-0
+
+[Event "适情雅趣_李浭551局新版 第322局 跨海东征"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-322"]
+[SetUp "1"]
+[FEN "3rk3C/4a4/3ab4/4C1N2/9/9/9/B3B4/r2pA4/c3KA3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6i7 e9f9 2. e6h6 d1e1 3. f0e1 a1e1 4. e0e1 e8f7 5. h6f6 f7e8 6. i7h9 e7g9 7. h9g7 f9f8 8. i9i3 f8f7 9. f6f2 g9e7 10. i3f3 1-0
+
+[Event "适情雅趣_李浭551局新版 第323局 过眼成虚"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-323"]
+[SetUp "1"]
+[FEN "4ka3/3Ra1C2/4b2RN/4n4/9/9/5p3/9/4Ar2r/3AK3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g8g9 e7g9 2. h7c7 f1f0 3. e0f0 i0d0 4. c7c9 e8d9 5. i7g8 e6f8 6. d8d9 e9e8 7. g8f6 e8e7 8. c9c7 d0d7 9. c7d7 f8d7 10. d9d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第324局 临难忘躯"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-324"]
+[SetUp "1"]
+[FEN "3ak4/3RaP1N1/5c1Cc/9/1rb6/9/9/5C3/1p2r1p2/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h7h1 e1e7 2. f2e2 e7e2 3. f8f9 e8f9 4. h8f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第325局 夜过昭关"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-325"]
+[SetUp "1"]
+[FEN "1r1a1a3/4k4/4bc3/cN1R1C3/2b6/9/9/9/4pp3/2BK2C2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d6d8 e8e9 2. d8f8 a6a0 3. c0e2 e1d1 4. d0d1 f1e1 5. d1e1 b9b6 6. g0g9 f9e8 7. f8f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第326局 闭门思过*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-326"]
+[SetUp "1"]
+[FEN "5a3/2P1k4/r2Pba3/7C1/p7P/9/9/9/p3p3p/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6e6 e7g5 2. c8d8 e8e9 3. d7e7 f9e8 4. e7e8 e9f9 5. d8d9 a7a9 6. d9e9 a9e9 7. e6e9 g5e7 8. e9d9 i1h1 9. d9d1 a1b1 10. d1h1 b1b0 11. i5h5 a5a4 12. h5h6 b0c0 13. h6g6 c0d0 14. h1h0 a4a3 15. g6g7 d0e0 16. h0e0 a3a2 17. g7f7 e1e0 18. f0e0 a2a1 19. f7f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第327局 奇妙文武"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-327"]
+[SetUp "1"]
+[FEN "2ba1k3/4a4/4b4/5N1Rp/9/9/3pp4/4B4/4pp3/3K2B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6h9 f9f8 2. f6h7 f8f7 3. h9h8 e7g5 4. h8f8 f7e7 5. f8f4 e1d1 6. d0d1 e8f7 7. d1d0 d3d2 8. f4e4 e7d7 9. e4d4 d7e7 10. d4d2 e3d3 11. d2d3 e7e8 12. d3d8 e8e9 13. d8d9 e9e8 14. h7g9 e8f8 15. d9e9 f7e8 16. e9e8 f8f9 17. g9f7 f1f0 18. f7h8 1-0
+
+[Event "适情雅趣_李浭551局新版 第328局 忠孝两全"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-328"]
+[SetUp "1"]
+[FEN "C1b6/1RCka4/5a3/p1p6/2b6/9/P8/9/c3p2p1/5K1c1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a9a8 d8d9 2. c8c7 d9e9 3. b8b1 e8f9 4. b1e1 c9e7 5. a8a9 h1g1 6. e1g1 a1b1 7. c7b7 e7g5 8. g1h1 b1g1 9. h1h8 g1g0 10. f0f1 a6a5 11. b7b9 1-0
+
+[Event "适情雅趣_李浭551局新版 第329局 虹霓贯日"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-329"]
+[SetUp "1"]
+[FEN "2b1kab1r/C3a4/9/PN7/9/3p5/9/C8/5p1p1/2B1K2c1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a2d2 d4e4 2. a8a9 c9a7 3. e0d0 f1f0 4. d0d1 e8f7 5. d2d9 e9e8 6. a9a8 f0e0 7. b6c8 1-0
+
+[Event "适情雅趣_李浭551局新版 第330局 近攻远交*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-330"]
+[SetUp "1"]
+[FEN "3k1nbr1/2P1a4/b2a5/8R/9/6R2/9/5p3/4p2p1/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "0-1"]
+
+1. g4b4 g9e7 2. i6e6 h9h3 3. e6e1 h3d3 4. d0e0 d3c3 5. b4d4 h1h0 6. e1a1 h0g0 7. a1d1 f2e2 8. d1f1 c3c8 9. d4d1 g0f0 10. f1f0 c8c0 11. d1d0 c0c1 12. f0f9 d9d8 13. f9f3 c1h1 14. d0d1 h1d1 15. f3e3 e2f2 16. e3b3 f2f1 17. b3b8 d8d9 18. b8b9 a7c9 19. b9b0 e8f7 20. b0c0 d7e8 21. c0a0 d1e1 0-1
+
+[Event "适情雅趣_李浭551局新版 第331局 殒命宁亲"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-331"]
+[SetUp "1"]
+[FEN "2ba1k3/3Pa4/4b4/4pP1C1/9/9/9/1r2B4/3pp4/2B2K1R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f6f7 e8f7 2. h6f6 f7e8 3. f6f8 e8f7 4. h0h9 f9f8 5. h9h7 e1f1 6. f0f1 d1e1 7. f1f2 b2e2 8. c0e2 d9e8 9. h7h8 f8f9 10. d8e8 e1e0 11. h8f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第332局 车马盈门"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-332"]
+[SetUp "1"]
+[FEN "2bakab2/9/9/9/4N2R1/2P6/9/B3B4/r2pA4/c3KA3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e5f7 e9e8 2. f7d6 e8d8 3. d6b7 d8e8 4. h5e5 g9e7 5. b7d6 e8d8 6. e5d5 a0c0 7. a2c0 e7g9 8. d6b5 d8e8 9. b5c7 e8e7 10. c7d9 e7e8 11. d9c7 e8e7 12. e1d0 f9e8 13. d5e5 e7d7 14. f0e1 a1a7 15. c7b5 a7a6 16. e5e8 a6c6 17. e8e5 d1c1 18. e2g0 d7d8 19. e1f0 g9e7 20. e5e7 c6f6 21. e7e8 d8d7 22. e8e4 f6f0 23. e0f0 c1c0 24. f0e0 c0d0 25. e0e1 d0c0 26. e4d4 1-0
+
+[Event "适情雅趣_李浭551局新版 第333局 截趾适履"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-333"]
+[SetUp "1"]
+[FEN "3ak1bR1/9/4ba3/5N3/C7p/2B5r/8c/3p5/5p3/3AK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h9g9 e9e8 2. g9g8 e8e9 3. g8g7 i4d4 4. a5d5 d4d5 5. g7g9 e9e8 6. f6d5 e8f8 7. g9d9 d2c2 8. d5e3 c2c1 9. e3f1 f7e8 10. d9d3 i5i4 11. d3f3 e8f7 12. f1d2 i3h3 13. f3h3 i4h4 14. h3h4 e7c5 15. h4e4 c1d1 16. e4e9 d1d0 17. e0d0 f7e8 18. d2f3 c5a7 19. f3h4 a7c5 20. h4g6 f8f7 21. e9e8 c5a7 22. g6h8 1-0
+
+[Event "适情雅趣_李浭551局新版 第334局 策马入城"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-334"]
+[SetUp "1"]
+[FEN "2bak1C2/3caP3/4b4/3N1Cn2/9/9/9/8n/4p4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "1"]
+[Result "1-0"]
+
+1. f8f9 e9f9 2. d6f7 g6f8 3. f7h8 f9e9 4. h8f9 1-0
+
+[Event "适情雅趣_李浭551局新版 *第335局 蝶恋花心"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-335"]
+[SetUp "1"]
+[FEN "4R4/3k4r/4b4/7P1/6b2/7p1/9/C7B/4A2r1/2B1KA1p1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第336局 殃及池鱼"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-336"]
+[SetUp "1"]
+[FEN "2ra1a2r/4k3C/4b3N/5R2p/2p3b2/9/9/9/4p4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f6f8 e8e9 2. i8i6 i9h9 3. i7h9 e1e0 4. f0f1 d9e8 5. i6i9 e9d9 6. h9g7 d9d8 7. i9c9 d8d7 8. c9c6 g5i7 9. f8f5 d7d8 10. f5d5 e8d7 11. c6d6 d7e8 12. d6e6 e8d7 13. g7f9 d8d9 14. d5d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第337局 伍相奔吴"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-337"]
+[SetUp "1"]
+[FEN "4k4/2PP3PP/9/9/4p1rN1/5p3/9/4B4/3pp4/5K1R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h5g7 e1e0 2. f0e0 g5g7 3. h8g8 d1d0 4. e0d0 g7d7 5. d0e0 d7f7 6. c8c9 f4e4 7. h0h9 f7f9 8. c9d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第338局 大车无輗"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-338"]
+[SetUp "1"]
+[FEN "3a5/2N4N1/1r1k5/2P6/9/9/3r4P/4BA3/3pA4/2B1K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第339局 英略盖世"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-339"]
+[SetUp "1"]
+[FEN "1nb2kr2/3Pa2R1/3nba3/N3C2C1/6r2/9/9/9/9/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8f8 f9e9 2. d8e8 f7e8 3. f8e8 e9d9 4. a6c7 b9c7 5. e8d8 d9d8 6. e6d6 d8e8 7. h6e6 1-0
+
+[Event "适情雅趣_李浭551局新版 第340局 星坠日升"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-340"]
+[SetUp "1"]
+[FEN "2bak2r1/4a4/4b4/C2N1C3/9/3R5/9/2p6/2c1p4/3K2p2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第341局 兵马侵境"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-341"]
+[SetUp "1"]
+[FEN "2ba1a3/4k4/b1R2N2P/9/4P4/9/3r1p3/3A5/3pp4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c7c8 e8e7 2. f7h8 e1f1 3. f0f1 d3d6 4. h8f9 e7f7 5. e5f5 d6h6 6. d2e1 h6e6 7. f9d8 e6e8 8. f5e5 a7c5 9. i7h7 f7f8 10. d8e6 c9e7 11. c8c6 e8b8 12. e6g7 f3f2 13. e1f2 d1e1 14. f1e1 b8b1 15. e1e2 b1b2 16. e2e1 d9e8 17. c6c8 b2b1 18. e1e2 f8f7 19. g7h9 b1b2 20. e2e1 e7g9 21. c8e8 b2b1 22. e1e2 b1g1 23. e5e6 g1g6 24. h7g7 g6g7 25. e6f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第342局 抱火积薪"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-342"]
+[SetUp "1"]
+[FEN "3a1kbr1/1C2a4/2P6/p8/4p4/9/9/3p5/4Cp3/3K2R2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b8b9 f9f8 2. g0g8 f8f7 3. b9b7 g9e7 4. b7b8 e8d7 5. g8g2 f7f8 6. g2f2 f8e8 7. c7c8 e8e9 8. b8b9 e9e8 9. f2d2 h9h0 10. e1e0 e8f8 11. d2f2 f8e8 12. f2f9 h0e0 13. d0e0 e7c9 14. b9b8 e8e7 15. f9f1 e5e4 16. f1e1 e4e3 17. e1e3 e7f7 18. e3f3 1-0
+
+[Event "适情雅趣_李浭551局新版 第343局 闭窟捉虎"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-343"]
+[SetUp "1"]
+[FEN "C3kab1r/2C1a4/b1n5c/1N7/9/9/9/9/2pc1p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8c9 c7b9 2. b6d7 e9d9 3. d7b8 d9e9 4. c9c7 b9d8 5. a9d9 f1e1 6. e0e1 c1c0 7. c7c9 1-0
+
+[Event "适情雅趣_李浭551局新版 第344局 深入敌境"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-344"]
+[SetUp "1"]
+[FEN "C8/C2Pak3/3cba2b/9/9/9/2R2p1r1/9/4r2p1/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c3c9 e1f1 2. f0e0 f1f0 3. e0f0 h1h0 4. c9f9 f8f9 5. d8d9 e7c9 6. d9e9 1-0
+
+[Event "适情雅趣_李浭551局新版 第345局 爱身待时"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-345"]
+[SetUp "1"]
+[FEN "2bk1a3/5P3/3a5/1C2p1C1p/9/9/9/4B4/1p2r1p2/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第346局 石燕拂云"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-346"]
+[SetUp "1"]
+[FEN "4ka3/4aPN2/8b/7Cp/9/2P6/9/9/2p2p2c/4K3c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第347局 朝野从容"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-347"]
+[SetUp "1"]
+[FEN "4kr3/4a2R1/3ab3b/9/6P2/9/4r4/1R2C4/5p2c/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b2b9 e8d9 2. h8d8 d7e8 3. e2b2 e3e0 4. d0e0 f9f4 5. e0d0 e9f9 6. d8e8 f4d4 7. d0e0 i7g5 8. e8i8 i1g1 9. i8i9 e7g9 10. i9i2 g9e7 11. b2e2 e7g9 12. i2f2 f9e9 13. f2f1 d4d2 14. f1f2 g1i1 15. b9b5 i1i8 16. e0f0 d2e2 17. f2f9 e9e8 18. f9f8 e8e9 19. b5g5 e2e0 20. f0f1 e0e1 21. f1f0 g9i7 22. f8f9 e9e8 23. g5g8 e8e7 24. f9f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第348局 绝长补短"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-348"]
+[SetUp "1"]
+[FEN "1P2ka3/9/b2a1PC2/4C1p1p/9/9/9/9/1p2pp3/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f7f8 e9d9 2. g7g9 d9d8 3. g9g8 d8d9 4. e6d6 d7e8 5. d6d8 e1e0 6. d0d1 b1c1 7. d1d2 e8d7 8. d8a8 f9e8 9. f8e8 e0d0 10. a8a9 a7c9 11. b9c9 1-0
+
+[Event "适情雅趣_李浭551局新版 第349局 夷齐扣马"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-349"]
+[SetUp "1"]
+[FEN "N1bakab2/R8/9/9/9/9/5pp2/4B4/3pp4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a9c8 e9e8 2. c8b6 e8e7 3. b6d5 e7f7 4. a8a4 e1f1 5. f0e0 f7f8 6. a4f4 f8e8 7. d5f6 e8f8 8. f6d7 f8e8 9. f4f8 e8e7 10. d7e5 f1e1 11. e0f0 f9e8 12. e5c6 e7d7 13. f8f4 e1f1 14. f0f1 f3f2 15. f4f2 g3g2 16. f2f4 g2f2 17. f1f2 d1d0 18. f4d4 1-0
+
+[Event "适情雅趣_李浭551局新版 *第350局 力小任大"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-350"]
+[SetUp "1"]
+[FEN "3k5/4a2P1/9/2P6/9/3p5/9/BR4p2/rp2pp3/2BK5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第351局 管仲随马"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-351"]
+[SetUp "1"]
+[FEN "C3kanr1/9/1R2ca2c/9/1N7/9/9/9/4p2p1/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b7b9 e9e8 2. b9b8 e8e9 3. b5c7 e7d7 4. c7b9 d7d9 5. b9d8 e9e8 6. d8b7 e8e7 7. a9a7 d9d7 8. b7d6 d7d8 9. b8b7 d8d7 10. b7d7 e7e8 11. d7f7 e8d8 12. f7d7 d8e8 13. d7i7 e8d8 14. i7d7 d8e8 15. d7d9 e8e7 16. d6c8 e7e8 17. a7a8 1-0
+
+[Event "适情雅趣_李浭551局新版 第352局 老而不倦"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-352"]
+[SetUp "1"]
+[FEN "2b1k1b2/3P1P3/3a1a3/7C1/9/9/9/9/1p2pp3/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6f6 e1d1 2. d0d1 f7e8 3. f6e6 e8f7 4. d8e8 e9d9 5. f8f9 b1c1 6. d1d2 c1c0 7. f9e9 1-0
+
+[Event "适情雅趣_李浭551局新版 第353局 徐母回车"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-353"]
+[SetUp "1"]
+[FEN "2ba5/3k3C1/2Pa3R1/2p6/8P/9/9/9/1p2r4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h7h1 e1e5 2. c7d7 d8e8 3. d7d8 e8e9 4. h8e8 e9f9 5. h1h9 f9f8 6. e8e9 c9a7 7. h9h5 e5h5 8. i5h5 c6c5 9. d0e0 c5c4 10. h5g5 a7c5 11. e9e2 d9e8 12. g5f5 e8f7 13. e2f2 c5e7 14. f5f6 b1b0 15. f2f7 f8f9 16. d8e8 b0c0 17. f6e6 c4d4 18. f7f5 c0d0 19. e0d0 d4d3 20. e6f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第354局 虎守三穴"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-354"]
+[SetUp "1"]
+[FEN "4k1b2/3Pa4/4b4/9/9/7C1/2P6/2rc5/4p4/1R1K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b0b9 e8d9 2. h4c4 e7c5 3. c4c2 c5a7 4. b9b5 g9e7 5. b5e5 d2g2 6. e5e7 e9f9 7. e7e1 g2g8 8. d0e0 a7c5 9. e1f1 g8f8 10. c2c5 d9e8 11. d8e8 f8f2 12. f1f2 1-0
+
+[Event "适情雅趣_李浭551局新版 第355局 一虎下山"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-355"]
+[SetUp "1"]
+[FEN "9/3Pak1P1/5a3/9/4N4/9/9/4B4/1p2rp3/2BK5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8g8 f8f9 2. d8d9 e8d9 3. e5d7 e1e0 4. d0e0 f1f0 5. e0f0 b1b0 6. g8f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第356局 猛虎驱羊"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-356"]
+[SetUp "1"]
+[FEN "6b2/1R7/3kb4/P6P1/9/9/9/9/pp3pp2/4K2p1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b8b4 d7d8 2. b4d4 d8e8 3. d4g4 g1g0 4. g4g1 g0f0 5. e0d0 f0e0 6. d0e0 f1g1 7. e0e1 b1c1 8. a6b6 e8d8 9. h6g6 d8e8 10. b6c6 a1b1 11. g6f6 g1f1 12. e1e2 f1g1 13. f6f7 g9i7 14. c6d6 h0i0 15. d6d7 i0h0 16. e2d2 h0i0 17. d7d8 e8e9 18. f7f8 i0h0 19. d8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第357局 首动尾应"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-357"]
+[SetUp "1"]
+[FEN "4k4/9/9/4N4/9/2B6/9/nR1pBp3/p2r5/c3K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b2b9 e9e8 2. e6c7 e8f8 3. b9b5 f8f9 4. b5f5 f9e9 5. f5d5 e9f9 6. d5d9 f9f8 7. d9d4 f8f9 8. d4f4 f9e9 9. f4h4 d1h1 10. h4h1 e9f9 11. c4a2 a0a2 12. h1h9 f9f8 13. h9h5 f8f9 14. h5f5 f9e9 15. f5f2 d2d1 16. f2f6 a2d2 17. e0f0 d2d7 18. f6e6 d7e7 19. e6e7 1-0
+
+[Event "适情雅趣_李浭551局新版 第358局 引雏入巢"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-358"]
+[SetUp "1"]
+[FEN "5a3/4a4/5k3/9/6P1R/9/1pp6/3A5/1n1KA4/4r4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g5f5 f7e7 2. f5f6 e8f7 3. i5e5 e7d7 4. f6f7 d7d8 5. f7e7 d8d9 6. e5d5 d9e9 7. d5b5 f9e8 8. b5b8 e8d9 9. b8g8 e0g0 10. g8g0 d9e8 11. g0g8 e8f9 12. g8b8 e9d9 13. e7d7 d9e9 14. d7d8 f9e8 15. b8b9 e8d9 16. b9d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第359局 四海一家"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-359"]
+[SetUp "1"]
+[FEN "2b2a3/2P1k4/1r1Pba3/6C2/9/9/9/9/4p4/2p2K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6e6 e8f8 2. c8d8 e1e0 3. f0f1 b7b1 4. f1f2 b1b2 5. f2f1 b2b6 6. d7e7 f9e8 7. d8e8 f8f9 8. e7f7 b6b1 9. e6e1 b1e1 10. f1e1 c0b0 11. f7f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第360局 涂廪浚井"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-360"]
+[SetUp "1"]
+[FEN "5k3/1P7/2PP1a1P1/9/9/4R4/9/5p3/3p1p3/1p2K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e4e9 f9f8 2. h7h8 f1f0 3. e0f0 f7e8 4. h8g8 f8f7 5. d7e7 f7e7 6. e9i9 d1e1 7. i9i7 e8f7 8. c7d7 e7e8 9. g8f8 e8f8 10. i7i1 b0c0 11. i1e1 f7e8 12. d7e7 c0d0 13. e7e8 f8f7 14. b8c8 f2f1 15. e1f1 f7e7 16. f1e1 e7d7 17. e8f8 d0c0 18. e1f1 c0b0 19. f1f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第361局 弘羊心计"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-361"]
+[SetUp "1"]
+[FEN "5a3/3P5/4ka3/C8/9/1N7/P8/9/3pp2p1/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第362局 视死如归"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-362"]
+[SetUp "1"]
+[FEN "r2k5/9/2P6/9/6bN1/4R4/9/2np1pn2/4K4/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "1"]
+[Result "1-0"]
+
+1. e4e9 d9d8 2. c7c8 d8d7 3. e9e7 g5e7 4. h5f6 1-0
+
+[Event "适情雅趣_李浭551局新版 *第363局 拔本塞源"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-363"]
+[SetUp "1"]
+[FEN "3k1a3/2P4R1/3a5/9/9/7C1/9/9/1p2rp3/3K1c2R w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8g8 d9e9 2. h4h9 f9e8 3. c8d8 f1g1 4. i0f0 g1f1 5. f0i0 e1d1 6. d0d1 b1b0 7. g8g9 e8f9 8. i0e0 f1e1 9. e0e1 d7e8 10. e1e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第364局 从容中道"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-364"]
+[SetUp "1"]
+[FEN "3k1a3/2P4R1/3a5/9/6bR1/9/9/7C1/1p2rp3/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h2i2 d9e9 2. i2i9 f9e8 3. h8f8 e1d1 4. d0d1 b1c1 5. d1d2 g5i7 6. h5h9 i7g9 7. h9g9 e8f9 8. g9f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第365局 举直错枉"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-365"]
+[SetUp "1"]
+[FEN "4ka3/3Pa4/4P3b/9/9/9/8p/6C2/4rp3/3K2R2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g0e0 e8d7 2. g2e2 f9e8 3. e7e8 e9f9 4. e0h0 i3h3 5. h0h3 e1d1 6. d0d1 f1e1 7. d1e1 d7e8 8. d8e8 i7g5 9. h3f3 1-0
+
+[Event "适情雅趣_李浭551局新版 第366局 以恩塞责"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-366"]
+[SetUp "1"]
+[FEN "3k5/9/3a5/9/9/9/9/5R3/c2rA2p1/3C1K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f2f9 d9d8 2. f9f7 d1d0 3. e1d0 a1a7 4. f7f8 d7e8 5. f0e0 a7a8 6. e0e1 a8c8 7. f8h8 c8b8 8. h8h9 b8b5 9. h9b9 b5d5 10. b9b8 d8d9 11. b8e8 d5d1 12. e8e6 d1d7 13. e1d1 d9d8 14. e6e1 h1h0 15. e1e0 h0g0 16. e0g0 d7d2 17. g0g6 d2d7 18. g6e6 d8d9 19. d1e1 d7e7 20. e6e7 d9d8 21. e7e2 d8d7 22. e2d2 1-0
+
+[Event "适情雅趣_李浭551局新版 第367局 少见相拘"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-367"]
+[SetUp "1"]
+[FEN "3k2b2/4P4/r5c2/p5R2/8p/9/9/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g6d6 g7d7 2. d6c6 d7c7 3. c6b6 c7b7 4. b6b0 a6a5 5. b0d0 b7d7 6. e0e1 a7b7 7. d0d5 b7a7 8. d5f5 d7f7 9. f5b5 a7e7 10. e1f1 e7e8 11. b5b9 d9d8 12. b9b8 d8d9 13. b8e8 a5a4 14. e8g8 f7d7 15. g8g9 d9d8 16. f1e1 a4b4 17. g9i9 b4c4 18. i9i5 d7d6 19. i5c5 c4b4 20. c5c8 d8d9 21. c8c6 d6d7 22. e1d1 d9e9 23. c6c7 d7d6 24. c7e7 e9f9 25. d1e1 f9f8 26. e7e8 f8f9 27. e8e6 d6d8 28. e6e9 f9f8 29. e9e8 f8f9 30. e8d8 b4b3 31. d8d0 b3a3 32. d0f0 1-0
+
+[Event "适情雅趣_李浭551局新版 第368局 四门斗底"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-368"]
+[SetUp "1"]
+[FEN "4k4/9/3aP4/9/9/9/3p1p3/4R4/3p1p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e2h2 f1e1 2. e0f0 e9f9 3. h2h9 f9f8 4. h9h7 e1f1 5. f0e0 d1e1 6. e0d0 f8f9 7. h7h9 f9f8 8. h9h3 e1d1 9. d0d1 f3e3 10. h3h7 f8f9 11. e7f7 f9e9 12. f7f8 f1e1 13. d1e1 e3e2 14. e1f1 e2e1 15. f1f2 e9d9 16. h7d7 d9e9 17. d7d8 e1e0 18. f8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第369局 兔游月窟"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-369"]
+[SetUp "1"]
+[FEN "6R2/3P1k3/3a1a3/9/9/6B2/9/B1r6/5p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g9g8 f8f9 2. d8d9 f1f0 3. e0e1 c2c1 4. e1e2 c1c9 5. d9c9 f7e8 6. c9d9 e8d9 7. g8g9 f9f8 8. g9d9 d7e8 9. d9d8 f0e0 10. d8e8 f8f9 11. e8e3 e0d0 12. e3f3 1-0
+
+[Event "适情雅趣_李浭551局新版 第370局 时堪乘便"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-370"]
+[SetUp "1"]
+[FEN "4ka3/9/3a1P3/4C4/6C2/9/9/9/1p2pp3/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f7f8 e9d9 2. g5g9 d9d8 3. e6h6 e1e0 4. d0d1 b1c1 5. d1d2 e0d0 6. g9g8 d8d9 7. h6h9 f9e8 8. f8f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第371局 五老降庭"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-371"]
+[SetUp "1"]
+[FEN "4k4/9/3a5/9/9/9/6Rp1/3pp2R1/3pp4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g3e3 e9d9 2. h2h1 d9d8 3. h1g1 h3g3 4. g1i1 d1d0 5. i1e1 e2e1 6. e3e1 g3g2 7. f0f1 d8d9 8. e1e4 d9d8 9. e4g4 g2h2 10. g4g3 d0e0 11. g3h3 h2i2 12. h3d3 d2e2 13. d3a3 i2h2 14. a3a2 h2g2 15. a2e2 g2g1 16. f1e1 e0f0 17. e2e7 f0e0 18. e1e2 e0f0 19. e2d2 f0e0 20. e7d7 d8e8 21. d7d3 e0d0 22. d3e3 e8f8 23. d2e2 d0c0 24. e3f3 1-0
+
+[Event "适情雅趣_李浭551局新版 第372局 兵入其腹"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-372"]
+[SetUp "1"]
+[FEN "5k3/3P5/3a1a3/9/9/9/p3r3p/C6R1/5K3/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h2h7 e3e1 2. f1e1 f7e8 3. a2c2 a3a2 4. h7h8 i3h3 5. c2c9 a2a1 6. d8d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第373局 兵势无常"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-373"]
+[SetUp "1"]
+[FEN "8r/5k3/r8/p8/9/4R4/P8/4C3B/9/4K1B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e2f2 i9i3 2. e4f4 a7f7 3. f2f7 i3e3 4. e0f0 e3e7 5. f4f2 e7d7 6. f7f6 d7d0 7. f0f1 f8e8 8. f6b6 e8d8 9. f1e1 d0d1 10. e1e0 d1d5 11. b6b9 d5e5 12. f2e2 e5e2 13. g0e2 d8d7 14. e2g0 d7d8 15. a3a4 d8d9 16. b9b0 d9d8 17. b0a0 d8d7 18. a0a6 d7d8 19. a4a5 d8d7 20. a5b5 d7d8 21. a6a1 d8d7 22. b5c5 d7d8 23. c5d5 d8d7 24. a1d1 1-0
+
+[Event "适情雅趣_李浭551局新版 第374局 四面设网"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-374"]
+[SetUp "1"]
+[FEN "3a5/5k3/2N2a3/8P/4C4/9/9/9/1p1p2p2/1c2K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e5c5 b0d0 2. c7e6 f8f9 3. e6g7 f9f8 4. c5c9 d1e1 5. e0e1 f7e8 6. i6h6 d0d5 7. h6g6 d5e5 8. g7h9 f8f7 9. g6f6 f7e7 10. f6e6 e7d7 11. e6d6 d7d8 12. h9g7 g1f1 13. e1e2 e5e7 14. c9c3 e8d7 15. e2d2 e7f7 16. d6e6 d8e8 17. e6f6 b1b0 18. f6f7 b0a0 19. c3i3 f1f0 20. i3i9 e8d8 21. f7e7 d9e8 22. e7e8 d8d9 23. g7f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第375局 托孤寄命"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-375"]
+[SetUp "1"]
+[FEN "6b2/1R7/3kb4/9/9/9/9/4B4/pp3pp2/4K2p1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b8b4 d7d8 2. b4d4 d8e8 3. d4d1 e7c9 4. e0d0 e8e9 5. e2g4 g9e7 6. g4i2 e9e8 7. d1d8 e8e9 8. d0d1 e9f9 9. d1d2 b1c1 10. d8d9 f9f8 11. d9d6 a1b1 12. d6f6 f8e8 13. d2e2 c1d1 14. f6f9 c9a7 15. f9a9 a7c5 16. a9a8 e8e9 17. a8a6 e9e8 18. a6e6 h0i0 19. e6e5 e8f8 20. e5f5 f8e8 21. f5c5 i0h0 22. c5c7 h0g0 23. c7e7 e8f8 24. e7e6 g0f0 25. e6f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第376局 勒兵为备"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-376"]
+[SetUp "1"]
+[FEN "3a1k3/4a4/9/n7c/6P2/2C4N1/9/5A3/5r3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c4c9 f9f8 2. h4g6 f8f7 3. c9c8 f1f0 4. e0e1 e8d7 5. c8i8 f0f1 6. e1e0 f1h1 7. g5f5 h1h0 8. e0e1 h0g0 9. g6h8 g0g8 10. f5f6 f7f8 11. i8g8 i6g6 12. g8g7 d7e8 13. f6g6 a6b4 14. g7i7 b4c2 15. e1e0 e8d7 16. i7i8 1-0
+
+[Event "适情雅趣_李浭551局新版 第377局 伏兵要路"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-377"]
+[SetUp "1"]
+[FEN "9/3Pak3/5aP2/9/9/3N1p1p1/9/5p3/4p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g7g8 f8f9 2. g8g9 f9e9 3. d4f5 e1d1 4. d0d1 f2e2 5. f5h6 e2e1 6. d1e1 f4f3 7. h6f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第378局 筑坛拜帅"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-378"]
+[SetUp "1"]
+[FEN "3ak4/4a4/2R6/9/9/9/9/2C3p2/3r5/4K1c2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c7h7 e9f9 2. c2c8 d1h1 3. c8c9 f9f8 4. h7h1 g2f2 5. h1h8 f8f7 6. c9c8 e8d7 7. h8h5 g0f0 8. h5h2 f2f1 9. h2h1 f1e1 10. h1e1 f0f6 11. e1f1 d7e8 12. f1f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第379局 诸葛出庐"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-379"]
+[SetUp "1"]
+[FEN "4k4/3RaP3/4r4/9/9/9/9/9/4A4/3AK1B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d8c8 e8d9 2. c8c6 d9e8 3. c6c5 e7e3 4. c5c8 e8d9 5. c8d8 d9e8 6. d8b8 e8d9 7. b8b6 d9e8 8. b6b9 e8d9 9. b9b7 d9e8 10. b7g7 e9d9 11. g7a7 d9e9 12. a7a8 e8d9 13. a8a5 d9e8 14. g0e2 e3f3 15. a5a9 e8d9 16. a9a8 f3e3 17. a8a5 d9e8 18. a5a9 e8d9 19. e1f0 e3e2 20. d0e1 e2e6 21. a9a2 d9e8 22. a2g2 e8f9 23. g2d2 e6f6 24. d2d8 f6c6 25. e0d0 c6c0 26. d0d1 c0c1 27. d1d0 c1c9 28. d8d7 c9c0 29. d0d1 c0c1 30. d1d0 f9e8 31. d7g7 c1c0 32. d0d1 c0a0 33. g7g9 e8f9 34. g9f9 1-0
+
+[Event "适情雅趣_李浭551局新版 *第380局 二马追风"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-380"]
+[SetUp "1"]
+[FEN "5k3/7P1/9/1NN6/9/9/2p1p4/3K1p3/9/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8g8 f9e9 2. g8f8 c3d3 3. d2d1 e9d9 4. f8e8 d3d2 5. d1d0 d2d1 6. d0e0 d1e1 7. e0e1 f2e2 8. e1e0 e2e1 9. e0e1 e3e2 10. e1e2 1-0
+
+[Event "适情雅趣_李浭551局新版 第381局 退无所归"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-381"]
+[SetUp "1"]
+[FEN "6b2/9/3k5/4P1N2/2b6/9/9/9/3p2p2/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6d6 d7d8 2. g6f8 d1e1 3. e0e1 g1f1 4. e1e2 f1f0 5. d6d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第382局 举鼎争功"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-382"]
+[SetUp "1"]
+[FEN "9/4k4/4bR3/9/2b6/4r4/9/9/3KC4/3A5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第383局 胡爽扣马"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-383"]
+[SetUp "1"]
+[FEN "4k4/9/N8/9/9/9/5pp2/9/3pp4/5K1R1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a7c8 e9f9 2. h0h6 f9f8 3. c8e9 f8e8 4. h6e6 e8f8 5. e9d7 f8f7 6. e6e8 e1f1 7. f0e0 d1e1 8. e0d0 e1e0 9. d0d1 f1e1 10. d1e1 e0d0 11. d7e5 1-0
+
+[Event "适情雅趣_李浭551局新版 *第384局 剪棘开径"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-384"]
+[SetUp "1"]
+[FEN "4k4/P3a4/5r3/9/9/9/p8/7R1/4K4/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h2e2 e9f9 2. e2e8 f7f1 3. e1e2 f1f2 4. e2e1 a3b3 5. a8b8 f2f1 6. e1e0 f1f0 7. e0e1 f0a0 8. e8e3 a0a1 9. e1e0 a1f1 10. b8c8 f1f0 11. e0e1 f9f8 12. c8d8 f0f1 13. e1e0 f1f2 14. e3e9 f2f0 15. e0e1 f0e0 16. e1e0 b3b2 17. e9e5 b2b1 18. e5f5 1-0
+
+[Event "适情雅趣_李浭551局新版 第385局 投肉饲虎"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-385"]
+[SetUp "1"]
+[FEN "3k1c3/4R4/5r3/9/9/9/9/1p7/4A3C/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第386局 海底觅针"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-386"]
+[SetUp "1"]
+[FEN "5kb1R/4P2P1/6r1b/9/9/9/9/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i9h9 g7g0 2. e0e1 g0g7 3. h8i8 g7e7 4. e1d1 e7e8 5. i8h8 e8e3 6. h9g9 f9f8 7. g9g8 f8f7 8. g8g7 f7f8 9. g7i7 f8e8 10. i7d7 e3e1 11. d1d2 e1e5 12. d7d8 e8e7 13. h8g8 e5e2 14. d2d1 e2e1 15. d1d2 e1e6 16. g8f8 e6e2 17. d2d1 e2e1 18. d1d2 e7f7 19. d8e8 e1i1 20. d2e2 i1i0 21. e2e1 i0i1 22. e1e0 i1i2 23. f8g8 i2i0 24. e0e1 i0i1 25. e1e0 i1d1 26. e8e7 1-0
+
+[Event "适情雅趣_李浭551局新版 第387局 戮力一心"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-387"]
+[SetUp "1"]
+[FEN "3k5/4CP3/9/9/5R3/4r1B2/9/9/6pp1/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f5d5 d9e9 2. d5a5 e9d9 3. e8e9 g1g0 4. f0f1 h1g1 5. f1f2 e4g4 6. a5d5 d9e9 7. d5e5 e9d9 8. f2e2 g4g2 9. e2e1 g1f1 10. e1f1 g2g1 11. f1f2 g1d1 12. f2e2 d1d2 13. e2e1 d9d8 14. f8e8 d8d9 15. e5b5 d2d1 16. e1e2 d1e1 17. e2e1 g0f0 18. b5b9 1-0
+
+[Event "适情雅趣_李浭551局新版 第388局 运筹帷幄"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-388"]
+[SetUp "1"]
+[FEN "9/6P2/4k4/3Rp4/4r1b2/9/9/9/3K5/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第389局 身无所措"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-389"]
+[SetUp "1"]
+[FEN "4ka3/4a4/9/9/9/1R7/4pp3/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b4f4 e9d9 2. f4d4 d9e9 3. e0d0 e8f7 4. d4d9 e9e8 5. d9f9 e8e7 6. f9b9 e7e8 7. b9b8 e8e9 8. b8b7 e3d3 9. b7f7 f3e3 10. f7f6 e9e8 11. d0e0 e8e9 12. e0f0 e9e8 13. f6e6 e8d8 14. f0e0 d8d9 15. e6d6 d9e9 16. d6d3 e3e2 17. d3e3 e9d9 18. e3e2 d9d8 19. e2d2 1-0
+
+[Event "适情雅趣_李浭551局新版 第390局 羸羊触角"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-390"]
+[SetUp "1"]
+[FEN "4k4/3Pa4/4r4/9/9/7p1/9/5R3/5K3/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f2f4 h4h3 2. f4f3 e7d7 3. f3h3 d7f7 4. f1e1 f7e7 5. e1f1 e8f9 6. h3f3 f9e8 7. f3f8 e8f7 8. f8h8 e7e1 9. f1f0 e1e0 10. f0f1 e9f9 11. d8e8 e0e1 12. f1e1 f7e8 13. h8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第391局 以兵服人"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-391"]
+[SetUp "1"]
+[FEN "9/2P1k4/5R3/4p4/4r4/9/9/9/5K3/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第392局 驱虎离山"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-392"]
+[SetUp "1"]
+[FEN "4k4/9/9/9/9/9/9/3pp4/8R/2p1K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第393局 倾身下士"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-393"]
+[SetUp "1"]
+[FEN "9/5k3/3a5/9/9/9/9/4R3C/4K4/5r3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第394局 兵势尚强"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-394"]
+[SetUp "1"]
+[FEN "3ak4/9/4r4/5P3/9/2R6/9/9/9/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第395局 地险兵强"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-395"]
+[SetUp "1"]
+[FEN "3R5/4r4/5k3/4p4/9/8P/9/4K4/9/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d9g9 e8h8 2. g9g6 h8h2 3. e2e1 e6e5 4. g6f6 f7e7 5. f6e6 e7d7 6. e6d6 d7e7 7. i4i5 h2h1 8. e1e0 h1h0 9. e0e1 e7e8 10. d6e6 e8d8 11. i5i6 h0h1 12. e1e0 h1h5 13. i6h6 h5f5 14. h6g6 f5i5 15. e6d6 d8e8 16. g6g7 i5i0 17. e0e1 i0i1 18. e1e0 i1i7 19. d6d7 i7i0 20. e0e1 i0i1 21. e1e0 i1i8 22. g7f7 e8e9 23. e0d0 i8i0 24. d0d1 i0i1 25. d1d0 i1i7 26. d7d9 e9e8 27. d9d8 e8e9 28. f7f8 i7i0 29. d0d1 i0i1 30. d1d0 i1d1 31. d8d1 e5e4 32. d1d9 1-0
+
+[Event "适情雅趣_李浭551局新版 *第396局 引兵渡河"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-396"]
+[SetUp "1"]
+[FEN "5k3/9/b8/9/9/9/P8/4R4/5r3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第397局 一兵取功"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-397"]
+[SetUp "1"]
+[FEN "9/3P5/5k3/8R/2b1r4/9/9/9/9/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i6b6 e5e3 2. d0d1 e3e4 3. b6f6 f7e7 4. f6d6 e7f7 5. d6d7 e4e7 6. d7d5 e7b7 7. d8e8 b7b1 8. d1d2 b1b2 9. d2d1 b2e2 10. d5c5 f7e7 11. e8d8 e2e1 12. d1d2 e7f7 13. c5f5 f7e7 14. f5f9 e1e2 15. d2d1 e2h2 16. f9e9 e7f7 17. d1e1 h2h1 18. e1e2 h1h8 19. e9e7 f7f8 20. e7e8 f8f7 21. e8h8 1-0
+
+[Event "适情雅趣_李浭551局新版 第398局 将帅不忠"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-398"]
+[SetUp "1"]
+[FEN "4k4/5P3/9/9/2b1r4/5R3/9/9/5K3/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8g8 e9e8 2. f4f8 e8e7 3. f8f9 e7e8 4. g8f8 e8d8 5. f1f0 e5e4 6. f9c9 c5a7 7. c9c8 d8d7 8. c8c3 e4e2 9. c3c7 d7d8 10. f0f1 e2e5 11. c7a7 e5d5 12. a7a2 d5d1 13. f1f0 d1d4 14. a2e2 d4d0 15. f0f1 d0d1 16. f1f0 d8d7 17. f8e8 d1d0 18. f0f1 d0d3 19. f1e1 d3d1 20. e1e0 d1d0 21. e0e1 d0a0 22. e2d2 1-0
+
+[Event "适情雅趣_李浭551局新版 第399局 王母蟠桃"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-399"]
+[SetUp "1"]
+[FEN "2P2R3/4r4/3k5/9/9/9/9/9/5K3/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f1f0 e8h8 2. f9e9 h8h0 3. f0f1 h0h1 4. f1f0 h1h6 5. f0e0 h6h0 6. e0e1 h0h1 7. e1e0 h1h8 8. e9e2 h8h0 9. e0e1 h0h1 10. e1e0 h1d1 11. e2e9 d1d0 12. e0e1 d0e0 13. e1e0 d7d8 14. e9d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第400局 避难而行"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-400"]
+[SetUp "1"]
+[FEN "2b1ka3/4a4/4b4/1N2p3p/2NC5/5n3/4c1PCc/4p4/5K3/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h3h9 e7g9 2. b6c8 e9d9 3. d5d6 e2e1 4. f1f2 d9d8 5. h9h8 e8f7 6. c5b7 d8d9 7. c8b6 d9e9 8. b6d7 e9e8 9. b7c9 e8e7 10. h8c8 e7d7 11. c8c7 d7e7 12. d6d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第401局 双马饮泉"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-401"]
+[SetUp "1"]
+[FEN "4kab2/3Pa4/4b4/1N1N5/9/9/5p3/4B3n/3p4p/5K2c w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b6d7 i1h1 2. d8d9 e9d9 3. d7b8 d9e9 4. d6c8 e9d9 5. c8e7 d9d8 6. e7c6 1-0
+
+[Event "适情雅趣_李浭551局新版 *第402局 幽鸟攒阶"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-402"]
+[SetUp "1"]
+[FEN "4P4/3Pa4/4k1NN1/9/9/9/9/np2Bp3/2p6/c1BAK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g7f5 e7d7 2. d8c8 a2b4 3. h7f6 d7e7 4. f6g8 e7d7 5. e2c4 a0a6 6. g8f6 a6e6 7. f5d4 e8f7 8. d4e6 d7e7 9. e0f0 b4c6 10. e6f4 e7e8 11. f6e4 e8e9 12. e4d6 f7e8 13. d0e1 f2e2 14. c4e2 c1d1 15. e1f2 e8d7 16. f4g6 e9e8 17. g6e5 c6d4 18. e5d7 d4e6 19. e2c4 b2c2 20. d7f6 e8f8 21. f6e4 e6d4 22. c8d8 d4e6 23. d8e8 f8f7 24. e4g5 f7e7 25. g5e6 d1d0 26. e6g7 d0e0 27. f0f1 e0f0 28. g7f9 e7d7 29. d6f7 f0e0 30. f7e5 1-0
+
+[Event "适情雅趣_李浭551局新版 第403局 踏雪寻梅"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-403"]
+[SetUp "1"]
+[FEN "2ba5/4ak3/bc4PN1/2p6/8p/p8/9/9/3p5/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g7g8 f8f9 2. g8g9 f9e9 3. h7f6 b7b8 4. f6d7 b8d8 5. d7b6 d1c1 6. b6c8 c1c0 7. c8d6 c0d0 8. e0e1 d0c0 9. d6f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第404局 二郎搜山"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-404"]
+[SetUp "1"]
+[FEN "2ba1kbn1/2P6/5a3/2p3p1N/9/9/9/9/4K4/2B3B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i6h8 f9f8 2. c8c9 c6c5 3. c0a2 c5c4 4. a2c4 d9e8 5. e1e2 e8d7 6. c9d9 g6g5 7. g0i2 g5g4 8. i2g4 d7e8 9. d9e9 e8d7 10. e9f9 f7e8 11. f9g9 e8f7 12. g9h9 f7e8 13. h9g9 e8d9 14. h8g6 f8f7 15. g9f9 d7e8 16. f9e9 e8d7 17. e9d9 d7e8 18. g6i5 f7f8 19. d9e9 e8d7 20. e2e1 d7e8 21. i5h7 f8f7 22. h7g9 f7f8 23. g9e8 f8f7 24. e1e2 f7f8 25. e8d6 1-0
+
+[Event "适情雅趣_李浭551局新版 *第405局 转祸为福"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-405"]
+[SetUp "1"]
+[FEN "3a2b2/4a1PC1/5k3/2p1P4/6b1p/9/9/8B/4p4/3K3p1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h8h3 i5i4 2. h3f3 h0g0 3. i2g0 i4h4 4. f3f0 h4g4 5. f0e0 e1f1 6. e0e8 f1e1 7. e8e1 g4f4 8. d0e0 f4f3 9. g0e2 f3e3 10. e1e3 c6c5 11. e3f3 g9i7 12. e2c4 i7g9 13. e6f6 1-0
+
+[Event "适情雅趣_李浭551局新版 第406局 双鹊投林"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-406"]
+[SetUp "1"]
+[FEN "3k1a3/2P1a1P2/N8/9/9/9/9/3p4p/4p4/2B2K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. a7c6 d9e9 2. c8c9 e1f1 3. f0f1 d2d1 4. g8f8 d1e1 5. f1e1 i2i1 6. c6a7 i1i0 7. a7c8 1-0
+
+[Event "适情雅趣_李浭551局新版 *第407局 入洞捉虎*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-407"]
+[SetUp "1"]
+[FEN "2b2ab2/3PP4/5k3/4P4/9/1p7/9/C6p1/4p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6f6 f7e7 2. a2a9 f9e8 3. a9g9 e8d7 4. f6e6 e7f7 5. g9e9 h2g2 6. e9e1 g2f2 7. e1c1 b4c4 8. c1c9 f2e2 9. c9c7 f7f8 10. e6e7 f8f9 11. e7d7 e2e1 12. d7e7 e1d1 13. d0d1 c4c3 14. d8e8 c3c2 15. e7f7 c2c1 16. d1e1 c1c0 17. f7f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第408局 追风赶月"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-408"]
+[SetUp "1"]
+[FEN "1c1ak3N/4aP3/9/9/p8/9/9/9/5p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8g8 b9b8 2. g8g9 f1e1 3. e0e1 a5a4 4. i9h7 b8b3 5. h7f6 b3b8 6. f6g4 a4b4 7. g4h6 b4b3 8. h6f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第409局 得失有变"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-409"]
+[SetUp "1"]
+[FEN "4ka3/4a4/9/9/5R3/4pp3/9/9/4A4/3AK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e1f0 f4g4 2. f5f6 e9d9 3. f6d6 d9e9 4. d6g6 g4f4 5. g6f6 f4g4 6. f6f5 e4e3 7. f5e5 e3f3 8. e0e1 g4h4 9. e5c5 f3e3 10. c5c3 h4g4 11. c3b3 e3e2 12. e1e2 e9d9 13. b3d3 d9e9 14. d3d4 g4g3 15. e2e1 g3f3 16. d4d3 f3f2 17. d3a3 e9d9 18. a3a2 e8d7 19. a2f2 f9e8 20. f2c2 e8f7 21. e1d1 d9d8 22. c2c9 d8e8 23. c9c7 e8e7 24. c7d7 e7e8 25. d7f7 e8e9 26. f7f8 1-0
+
+[Event "适情雅趣_李浭551局新版 第410局 家无安堵"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-410"]
+[SetUp "1"]
+[FEN "3a2b2/3ka4/4b4/9/9/2B3R2/9/B2A5/9/3AK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. g4g8 g9i7 2. g8i8 e7g5 3. i8f8 g5e7 4. e0e1 e7g5 5. e1d1 g5e7 6. f8f3 i7g5 7. f3b3 e7c5 8. b3d3 e8d7 9. d3e3 g5e7 10. e3b3 d7e8 11. b3a3 e7g5 12. a3a8 d8d7 13. a8a6 d7d8 14. a6a5 c5e7 15. d1e1 e8f7 16. a5d5 d8e8 17. d5g5 e8f8 18. g5e5 e7c9 19. e1f1 d9e8 20. e5i5 c9e7 21. i5i8 f8f9 22. i8e8 e7c5 23. a2c0 c5a7 24. e8e7 a7c5 25. e7f7 f9e9 26. f7c7 c5a7 27. c7a7 e9e8 28. a7d7 e8e9 29. d7d8 1-0
+
+[Event "适情雅趣_李浭551局新版 第411局 威震华夷"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-411"]
+[SetUp "1"]
+[FEN "4ka3/4a4/9/9/4R4/9/pp5pp/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e5c5 e9d9 2. c5c9 d9d8 3. c9c2 d8d9 4. c2d2 d9e9 5. d2d3 h3h2 6. d3i3 h2g2 7. i3d3 g2f2 8. d3d2 f2f1 9. d2d1 f1f0 10. e0e1 b3c3 11. d1a1 c3b3 12. a1a0 e9d9 13. a0d0 d9e9 14. d0f0 b3c3 15. f0a0 c3b3 16. a0b0 e9d9 17. b0d0 d9e9 18. d0d3 a3a2 19. d3b3 e9d9 20. b3d3 d9e9 21. d3d2 a2a1 22. d2d1 a1a0 23. d1d0 a0b0 24. d0b0 e9d9 25. b0d0 e8d7 26. d0d7 1-0
+
+[Event "适情雅趣_李浭551局新版 *第412局 痛断根除"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-412"]
+[SetUp "1"]
+[FEN "2bak4/4a4/4b4/4P4/9/8R/4pp3/9/4A4/2B1K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6d6 e7g9 2. i4i9 c9e7 3. d6e6 e8f9 4. e1f2 d9e8 5. e6f6 e3d3 6. f6g6 f3e3 7. g6g7 d3d2 8. g7g8 d2d1 9. g8f8 e3e2 10. i9i5 e2f2 11. i5i1 g9i7 12. i1d1 i7g5 13. d1i1 f2g2 14. i1a1 e7c9 15. a1a5 g5e7 16. a5a2 g2g1 17. a2a1 g1g0 18. a1h1 e8f7 19. h1g1 g0f0 20. e0e1 f7e8 21. g1g9 e9d9 22. g9h9 d9d8 23. f8e8 d8e8 24. h9f9 c9a7 25. f9a9 a7c5 26. a9a2 f0g0 27. a2e2 g0f0 28. e2e5 e8f8 29. e5f5 f8e8 30. f5c5 f0e0 31. c5c7 e0d0 32. c7e7 e8f8 33. e7e5 d0c0 34. e5f5 1-0
+
+[Event "适情雅趣_李浭551局新版 第413局 残虏投降"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-413"]
+[SetUp "1"]
+[FEN "5ab2/1P1k5/3a4b/9/6p2/9/6P2/9/4K4/5C3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b8c8 d8d9 2. c8c9 d9d8 3. f0f8 g5g4 4. g3g4 i7g5 5. g4g5 g9i7 6. g5h5 i7g9 7. h5h6 g9i7 8. f8h8 1-0
+
+[Event "适情雅趣_李浭551局新版 第414局 宁静待时"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-414"]
+[SetUp "1"]
+[FEN "9/3k1P3/3a1a3/9/2b6/6B2/9/3AKA3/9/3C5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d0f0 d7e8 2. e2e1 d8d9 3. f0d0 d9e9 4. f8e8 f7e8 5. d0e0 c5a7 6. e0e8 a7c5 7. g4i2 c5a7 8. e8e3 a7c5 9. e1d1 e9f9 10. e3e0 f9e9 11. d2e1 e9f9 12. d1d2 f9f8 13. d2e2 c5e7 14. e1d2 f8e8 15. e0e7 e8e9 16. e7e8 e9f9 17. e8h8 f9f8 18. h8h0 f8f7 19. h0f0 1-0
+
+[Event "适情雅趣_李浭551局新版 第415局 私渡关津"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-415"]
+[SetUp "1"]
+[FEN "9/5k3/8r/9/9/9/4R3P/4B4/3pA4/2BAK4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第416局 私下三关"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-416"]
+[SetUp "1"]
+[FEN "4ka3/3Pa4/8b/7Cp/9/9/9/9/1p5p1/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h6h8 b1c1 2. e0e1 c1b1 3. d8c8 b1b0 4. e1e2 b0a0 5. c8c9 a0b0 6. h8h6 i7g9 7. h6b6 g9e7 8. b6e6 b0c0 9. e2d2 c0b0 10. c9d9 1-0
+
+[Event "适情雅趣_李浭551局新版 第417局 动中有静"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-417"]
+[SetUp "1"]
+[FEN "3a1k3/9/3N1a1P1/9/8C/9/9/1p3p3/4p4/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i5c5 e1d1 2. d0d1 b2b1 3. h7g7 b1c1 4. d1d2 f2e2 5. d2e2 c1c0 6. g7f7 c0b0 7. c5f5 1-0
+
+[Event "适情雅趣_李浭551局新版 第418局 蹇驽困厩"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-418"]
+[SetUp "1"]
+[FEN "3N1k3/4P4/b8/p4n3/2b6/9/9/9/4p4/5KB2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. d9b8 c5e7 2. b8c6 e7g9 3. c6e5 g9e7 4. e5g6 e1e0 5. f0f1 e0d0 6. g6h8 1-0
+
+[Event "适情雅趣_李浭551局新版 第419局 厩焚伤马"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-419"]
+[SetUp "1"]
+[FEN "3nka3/4a4/8R/4R4/9/9/9/3ppp3/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i7d7 f2g2 2. e0d0 g2f2 3. d7d8 f2f1 4. d0e0 f1g1 5. e0f0 g1g0 6. f0f1 g0h0 7. d8d7 h0i0 8. d7f7 d9e7 9. f7e7 d2d1 10. e6e2 d1c1 11. e7c7 e9d9 12. e2d2 e8d7 13. c7d7 d9e9 14. d7d9 e9e8 15. d2e2 1-0
+
+[Event "适情雅趣_李浭551局新版 第420局 独虎下山*"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-420"]
+[SetUp "1"]
+[FEN "3k5/2P1a1P2/5a3/2N6/9/9/9/9/1p1p2p2/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8c9 d9e9 2. g8f8 g1f1 3. c6e7 d1e1 4. e0d0 e1e0 5. d0e0 f1e1 6. e0e1 b1b0 7. e7c8 1-0
+
+[Event "适情雅趣_李浭551局新版 第421局 失左右手"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-421"]
+[SetUp "1"]
+[FEN "9/3R2P2/3ak4/4p4/4r1b2/9/9/4B4/9/4K1B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第422局 内攻外御"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-422"]
+[SetUp "1"]
+[FEN "C3ka3/4a4/1cC6/9/9/6B1P/p8/9/5p3/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "*"]
+
+*
+
+[Event "适情雅趣_李浭551局新版 第423局 抹马潜戈"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-423"]
+[SetUp "1"]
+[FEN "3k2b2/4P4/4b4/3cN4/9/9/9/3K5/2p1Ap3/3A5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e1f0 g9i7 2. e6f4 f1g1 3. f4g2 d6d5 4. g2e1 c1d1 5. d2d1 g1f1 6. e1f3 e7g5 7. f3h2 f1g1 8. h2i4 g5e7 9. i4g3 g1h1 10. f0e1 d5d3 11. g3e2 d3d2 12. e1d2 h1g1 13. e2d4 g1f1 14. d4e6 f1e1 15. d0e1 e7c5 16. e6c7 1-0
+
+[Event "适情雅趣_李浭551局新版 第424局 遐迩归心"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-424"]
+[SetUp "1"]
+[FEN "3k5/4CP3/2P6/9/9/5p3/9/8p/4p4/5K3 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c7d7 f4f3 2. d7e7 e1f1 3. f0f1 i2h2 4. e8b8 h2g2 5. f8e8 g2g1 6. f1e1 f3f2 7. e7d7 g1f1 8. e1e0 f1f0 9. e0f0 f2f1 10. f0f1 1-0
+
+[Event "适情雅趣_李浭551局新版 第425局 怯勇自服"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-425"]
+[SetUp "1"]
+[FEN "3cka3/4a4/9/p8/2p6/7R1/9/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h4b4 a6a5 2. e0e1 d9c9 3. b4b9 c9d9 4. b9c9 a5a4 5. c9c5 a4b4 6. c5c9 b4b3 7. e1e0 b3b2 8. e0e1 b2b1 9. c9b9 b1c1 10. e1e2 c1c0 11. e2e1 c0b0 12. b9b0 d9c9 13. b0b9 e9d9 14. e1e2 d9d8 15. b9c9 e8d7 16. c9f9 d7e8 17. f9f8 d8d9 18. f8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第426局 驱将擒胡"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-426"]
+[SetUp "1"]
+[FEN "4k1b2/9/4b4/9/7Rp/9/8P/9/4K3c/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h5d5 g9i7 2. d5a5 e9d9 3. a5a9 d9d8 4. a9a2 i1i0 5. a2d2 d8e8 6. d2g2 e8d8 7. g2i2 i0h0 8. i2d2 d8e8 9. d2d7 i7g9 10. d7d9 i5i4 11. d9g9 i4i3 12. g9i9 e8d8 13. i9i3 h0h9 14. i3d3 d8e8 15. d3d7 h9e9 16. d7d9 e9i9 17. d9i9 e8f8 18. i9i2 f8f9 19. i2i7 f9e9 20. i7e7 e9d9 21. e7d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第427局 马灵兵胜"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-427"]
+[SetUp "1"]
+[FEN "3k5/4P4/9/9/9/1n7/7c1/3A5/2C6/1N2K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c1d1 h3d3 2. b0c2 b4c2 3. d1d3 c2b0 4. d3c3 b0c2 5. e0e1 c2b0 6. c3c1 b0c2 7. c1d1 c2d4 8. d1d4 1-0
+
+[Event "适情雅趣_李浭551局新版 第428局 踊跃用兵"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-428"]
+[SetUp "1"]
+[FEN "4kab2/4a4/4b4/4P4/9/9/9/9/3K5/7C1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6e7 e8d7 2. h0h9 d7e8 3. d1d0 e8f7 4. e7f7 e9e8 5. h9h8 g9e7 6. d0e0 e8e9 7. f7e7 e9d9 8. h8h9 d9d8 9. e0e1 f9e8 10. e7e8 d8d7 11. e1e0 1-0
+
+[Event "适情雅趣_李浭551局新版 第429局 一心向火"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-429"]
+[SetUp "1"]
+[FEN "2baka3/5P3/b8/9/9/9/9/9/3K5/7C1 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h0e0 a7c5 2. e0e5 c9a7 3. d1e1 a7c9 4. e1f1 c5a7 5. e5e4 a7c5 6. e4h4 f9e8 7. f1e1 c9a7 8. h4c4 c5e7 9. c4e4 a7c5 10. e1f1 c5a7 11. f8f9 1-0
+
+[Event "适情雅趣_李浭551局新版 第430局 上陵下替"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-430"]
+[SetUp "1"]
+[FEN "3k5/5P3/3a1a2b/2N6/6b2/9/9/9/9/3K5 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c6e5 g5e7 2. e5f7 d9e9 3. f7e5 d7e8 4. e5c4 e7c5 5. d0e0 c5e7 6. c4b6 i7g9 7. e0d0 e8d7 8. b6d7 e9d9 9. f8e8 e7c5 10. d0e0 c5a7 11. d7b8 1-0
+
+[Event "适情雅趣_李浭551局新版 第431局 能为必胜"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-431"]
+[SetUp "1"]
+[FEN "3a1k3/2R1a4/b8/9/2b6/9/9/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8c7 f9f8 2. e0e1 e8f7 3. e1f1 d9e8 4. c7b7 a7c9 5. b7b5 c9a7 6. b5b9 e8d7 7. b9e9 d7e8 8. e9g9 e8d7 9. g9d9 d7e8 10. d9i9 e8d7 11. i9i8 f8f9 12. i8d8 c5e7 13. d8d7 a7c5 14. d7d9 f9f8 15. d9h9 f8e8 16. h9h7 c5a7 17. h7f7 a7c5 18. f1e1 e8e9 19. f7f8 c5a7 20. f8c8 e9d9 21. c8a8 a7c5 22. a8e8 e7g5 23. e8e5 c5e7 24. e5d5 d9e9 25. d5g5 e9f9 26. g5e5 f9e9 27. e5e7 e9d9 28. e7d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第432局 功成则退"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-432"]
+[SetUp "1"]
+[FEN "9/4aR3/3k1a2b/9/6b2/9/9/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. f8h8 g5e7 2. h8h2 d7d8 3. h2e2 i7g9 4. e2d2 e8d7 5. e0d0 f7e8 6. d2a2 e8f7 7. a2a8 d8d9 8. a8a9 d9d8 9. a9a7 d8e8 10. a7d7 g9i7 11. d0d1 i7g9 12. d7d9 g9i7 13. d1e1 e8f8 14. d9e9 i7g5 15. e9b9 e7c5 16. b9h9 c5a7 17. e1f1 f8e8 18. h9g9 g5e7 19. g9g7 e8e9 20. g7f7 a7c5 21. f7f8 c5a7 22. f1e1 a7c9 23. f8c8 e9f9 24. c8e8 e7c5 25. e8e9 f9f8 26. e9c9 c5e7 27. c9c7 f8f9 28. c7d7 f9e9 29. d7e7 e9d9 30. e7d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第433局 钳塞士口"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-433"]
+[SetUp "1"]
+[FEN "3a5/5k3/2R1ba3/9/2b6/9/9/9/5K3/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c7d7 d9e8 2. d7b7 e8f9 3. b7b4 e7g5 4. b4f4 f9e8 5. f4h4 e8d7 6. h4h7 g5e7 7. h7f7 f8e8 8. f7h7 e8d8 9. h7h6 d7e8 10. h6d6 e8d7 11. f1e1 e7g5 12. e1d1 d8e8 13. d6d7 c5e7 14. d1e1 e8e9 15. d7d8 g5i7 16. d8g8 e9d9 17. g8i8 i7g5 18. i8e8 e7c5 19. e8e5 g5e7 20. e5d5 d9e9 21. d5c5 e9f9 22. c5e5 f9e9 23. e5e7 e9d9 24. e7d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第434局 束手就系"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-434"]
+[SetUp "1"]
+[FEN "5k3/4a4/3a4b/9/6b2/9/7R1/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. h3f3 f9e9 2. f3f7 e9d9 3. f7g7 d9e9 4. g7d7 i7g9 5. d7b7 g5e7 6. b7b9 e8d9 7. e0d0 g9i7 8. b9d9 e9e8 9. d0e0 e8f8 10. d9d8 f8f9 11. d8e8 i7g5 12. e0e1 e7c5 13. e8e5 g5e7 14. e5f5 f9e9 15. f5c5 e9f9 16. c5e5 f9e9 17. e5e7 e9d9 18. e7d7 1-0
+
+[Event "适情雅趣_李浭551局新版 第435局 上下离心"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-435"]
+[SetUp "1"]
+[FEN "2bak4/2R1a4/b8/9/9/9/9/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c8c7 e9f9 2. c7h7 a7c5 3. h7h9 f9f8 4. h9h5 c5a7 5. h5d5 c9e7 6. d5f5 e8f7 7. e0f0 f8e8 8. f5f7 a7c5 9. f7f6 e8d8 10. f6d6 d8e8 11. f0e0 e8e9 12. d6a6 e9f9 13. a6a9 f9f8 14. a9d9 f8e8 15. d9a9 e8f8 16. a9e9 e7g5 17. e9e5 c5e7 18. e5f5 f8e8 19. f5g5 e8e9 20. g5g7 e9f9 21. g7e7 f9f8 22. e7e8 f8f7 23. e0e1 1-0
+
+[Event "适情雅趣_李浭551局新版 第436局 独行千里"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-436"]
+[SetUp "1"]
+[FEN "3k1ab2/4a4/8b/9/9/9/9/9/4K4/8R w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. i0i5 d9d8 2. i5d5 e8d7 3. e1d1 f9e8 4. d5a5 g9e7 5. a5a6 e8f7 6. a6a2 d8e8 7. a2d2 e8f8 8. d1e1 d7e8 9. d2b2 e7g5 10. e1f1 g5e7 11. b2a2 e8f9 12. a2h2 f9e8 13. h2h7 i7g5 14. h7h8 f8f9 15. h8e8 e7c5 16. e8e6 g5e7 17. e6f6 f9f8 18. f6f7 f8e8 19. f7f6 c5a7 20. f1e1 e8e9 21. f6c6 e9f9 22. c6c8 a7c9 23. c8e8 e7c5 24. e8e9 f9f8 25. e9c9 c5e7 26. c9c8 f8f9 27. c8c7 f9f8 28. c7e7 f8f9 29. e7f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第437局 上下失望"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-437"]
+[SetUp "1"]
+[FEN "3a5/4a4/5k2b/9/6b2/9/9/9/9/2R1K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c0c5 f7f8 2. c5f5 e8f7 3. f5e5 f7e8 4. e5d5 f8f9 5. d5f5 f9e9 6. f5e5 e9f9 7. e0e1 f9f8 8. e5f5 e8f7 9. e1f1 d9e8 10. f5a5 e8d7 11. a5a6 f8f9 12. a6a8 f9e9 13. a8a9 e9e8 14. a9f9 g5e7 15. f9f7 i7g5 16. f7f8 e8e9 17. f8f9 e9e8 18. f9d9 e7c5 19. d9d7 g5e7 20. d7c7 e8e9 21. c7c8 c5a7 22. f1e1 e9f9 23. c8e8 a7c5 24. e1e0 e7g5 25. e8e5 g5e7 26. e5f5 f9e9 27. f5c5 e9f9 28. c5e5 f9f8 29. e5e7 f8f9 30. e7f7 1-0
+
+[Event "适情雅趣_李浭551局新版 第438局 斗柄回寅"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-438"]
+[SetUp "1"]
+[FEN "5a3/4ak3/2R1b4/9/2b6/9/9/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c7c6 c5a7 2. c6i6 a7c5 3. i6h6 e8d9 4. h6h8 f8f7 5. h8h5 f7f8 6. h5f5 f8e8 7. f5c5 e8d8 8. c5d5 d8e8 9. d5d9 e8f8 10. d9d7 e7g5 11. d7g7 f9e8 12. g7g5 f8f9 13. g5g9 f9f8 14. g9g8 f8f7 15. g8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第439局 左右并攻"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-439"]
+[SetUp "1"]
+[FEN "6b2/3k5/4b4/1P7/9/6B2/9/6C2/4K4/9 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. b6c6 d8d9 2. c6d6 d9d8 3. g2d2 d8e8 4. d6d7 e8e9 5. d2h2 e9f9 6. h2h9 f9f8 7. d7e7 g9i7 8. h9h0 i7g5 9. e7e8 f8f9 10. h0e0 g5i7 11. e0g0 i7g5 12. g0g5 1-0
+
+[Event "适情雅趣_李浭551局新版 第440局 士卒威服"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-440"]
+[SetUp "1"]
+[FEN "9/3ka4/1NP2a3/9/9/8p/9/9/9/4K4 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. c7c8 d8d9 2. c8d8 d9e9 3. b7d6 e9f9 4. d6f5 i4i3 5. f5g7 f9f8 6. e0f0 e8d9 7. g7i6 i3h3 8. i6h8 h3h2 9. f0f1 h2h1 10. h8g6 f8f9 11. g6e7 f9e9 12. e7d9 h1g1 13. f1f0 g1h1 14. d9b8 h1h0 15. f0f1 h0g0 16. b8d7 g0h0 17. d7e5 f7e8 18. e5g4 h0g0 19. g4h2 e8f9 20. h2g0 f9e8 21. f1e1 e9f9 22. d8e8 1-0
+
+[Event "适情雅趣_李浭551局新版 第441局 三军夺帅"]
+[Site "Engine self-play"]
+[PuzzleIndex "shiqingyaqu-551-441"]
+[SetUp "1"]
+[FEN "5k3/9/9/4R4/9/9/3ppp3/9/9/3K2B2 w - - 0 1"]
+[MultiPV "2"]
+[MoveTimeMs "5000"]
+[UniqueSolution "0"]
+[Result "1-0"]
+
+1. e6f6 f9e9 2. d0e0 f3g3 3. f6e6 e9f9 4. e6g6 g3h3 5. g6g5 f9e9 6. g5g9 e9e8 7. g9g4 e8e9 8. e0f0 e9e8 9. g4e4 e8d8 10. f0e0 h3g3 11. e4d4 d8e8 12. d4d3 g3f3 13. d3d4 e8e9 14. e0d0 e9e8 15. d4e4 e8f8 16. d0e0 f8f7 17. e4f4 f7e7 18. f4f3 e3e2 19. g0e2 e7e8 20. e0d0 e8e7 21. f3f8 1-0

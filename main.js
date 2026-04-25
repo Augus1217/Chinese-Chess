@@ -4,7 +4,7 @@ const path = require('path');
 const { exec } = require('child_process');
 const fs = require('fs');
 
-const enginePriority = ['vnni512', 'bw512', 'avx512', 'avxvnni', 'bmi2', 'avx2', 'sse41-popcnt', 'ssse3'];
+const enginePriority = ['vnni512', 'avx512', 'avxvnni', 'bmi2', 'avx2', 'sse41-popcnt'];
 
 // 1. DEFINE getBestEngine FIRST
 function getBestEngine() {

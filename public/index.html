@@ -11,7 +11,16 @@
     <div id="game-wrapper">
         <div id="start-screen" class="screen-overlay">
             <h1 data-i18n="title">中華象棋</h1>
-            <div class="mode-selection">
+            <div id="main-entry-selection" class="entry-selection">
+                <p data-i18n="select_entry">請選擇功能</p>
+                <div class="entry-actions">
+                    <button id="entry-puzzle-btn" type="button" onclick="startRandomPuzzle()" data-i18n="entry_puzzle">謎題</button>
+                    <button type="button" onclick="showChessMenu()" data-i18n="entry_play">下棋</button>
+                    <button type="button" onclick="showAnalysisUploadScreen()" data-i18n="entry_analysis">分析</button>
+                </div>
+            </div>
+
+            <div id="chess-mode-selection" class="mode-selection hidden">
                 <p data-i18n="select_mode">請選擇遊戲模式</p>
                 <table>
                     <tr>
@@ -20,84 +29,167 @@
                         <td><button onclick="showSetupScreen()" data-i18n="custom_mode">自訂局面</button></td>
                     </tr>
                 </table>
+                <button type="button" onclick="showMainEntrySelection()" data-i18n="back">返回</button>
             </div>
-            <div id="difficulty-selection" class="hidden pve-setup">
-                <p data-i18n="select_difficulty">請選擇AI難度</p>
-                <table>
-                    <tr>
-                        <td><button onclick="selectDifficulty('easy')" data-i18n="easy">簡單</button></td>
-                        <td><button onclick="selectDifficulty('medium')" data-i18n="medium">中級</button></td>
-                        <td><button onclick="selectDifficulty('hard')" data-i18n="hard">高級</button></td>
-                        <td><button onclick="selectDifficulty('expert')" data-i18n="expert">專家</button></td>
-                        <td><button onclick="selectDifficulty('custom')" data-i18n="custom_difficulty">自訂</button></td>
-                    </tr>
-                </table>
-            </div>
-            <div id="custom-difficulty-selection" class="hidden pve-setup">
-                <p data-i18n="set_elo">請設定AI ELO (1280-3133)</p>
-                <div>
-                    <input type="range" id="elo-slider" min="1280" max="3133" value="1300" style="vertical-align: middle;">
-                    <input type="number" id="elo-input" min="1280" max="3133" value="1300" style="width: 60px;">
+
+            <div id="analysis-upload-selection" class="analysis-selection hidden">
+                <p data-i18n="analysis_upload_hint">上傳 .pgn 進行分析</p>
+                <input id="analysis-pgn-file" type="file" accept=".pgn" />
+                <div class="entry-actions">
+                    <button id="analysis-upload-run-btn" type="button" onclick="analyzeUploadedPgn()" data-i18n="analysis_start">開始分析</button>
+                    <button type="button" onclick="showMainEntrySelection()" data-i18n="back">返回</button>
                 </div>
-                <button onclick="confirmCustomDifficulty()" data-i18n="confirm">確定</button>
-            </div>
-            <div class="color-selection hidden pve-setup">
-                <label><span data-i18n="select_color">請選擇您要執行的棋子</span>: 
-                    <select id="pve-color-select">
-                        <option value="red" selected data-i18n="red_first">執紅棋 (先手)</option>
-                        <option value="black" data-i18n="black_second">執黑棋 (後手)</option>
-                    </select>
-                </label>
-                <button onclick="startPveGame()" data-i18n="start_game">開始對戰</button>
             </div>
         </div>
         <div id="checkmate-overlay" class="screen-overlay hidden">
             <h1 id="endgame-title" data-i18n="checkmate">絕殺</h1>
             <h2 id="winner-message"></h2>
+            <button id="puzzle-next-btn" type="button" class="hidden" onclick="startNextPuzzle()" data-i18n="puzzle_next">下一題</button>
+            <button id="review-start-btn" type="button">對局回顧</button>
             <button onclick="window.location.reload()" data-i18n="restart">重新開始</button>
             <button onclick="hideCheckmateOverlay()" data-i18n="show_board">顯示棋盤</button>
         </div>
-        <div id="custom-pve-overlay" class="screen-overlay hidden">
-            <h2 data-i18n="pve_settings">人機對戰設定</h2>
-            <div class="pve-setup">
-                <label><span data-i18n="your_color">您執行的棋子</span>: 
-                    <select id="custom-pve-color-select-popup">
-                        <option value="red" selected data-i18n="red_first">執紅棋 (先手)</option>
-                        <option value="black" data-i18n="black_second">執黑棋 (後手)</option>
-                    </select>
-                </label>
-                <label><span data-i18n="ai_difficulty">AI難度</span>: 
-                    <select id="custom-pve-difficulty-select-popup">
-                        <option value="easy" selected data-i18n="easy">簡單</option>
-                        <option value="medium" data-i18n="medium">中級</option>
-                        <option value="hard" data-i18n="hard">高級</option>
-                        <option value="expert" data-i18n="expert">專家</option>
-                        <option value="custom" data-i18n="custom_difficulty">自訂</option>
-                    </select>
-                </label>
-                <div id="custom-pve-elo-wrapper" class="hidden">
-                    <label><span data-i18n="custom_pve_elo">請設定AI ELO (1280-3133)</span>:</label>
-                    <div>
-                        <input type="range" id="custom-pve-elo-slider" min="1280" max="3133" value="1300" style="vertical-align: middle;">
-                        <input type="number" id="custom-pve-elo-input" min="1280" max="3133" value="1300" style="width: 60px;">
-                    </div>
+        
+        <!-- NEW AI Settings Modal -->
+        <div id="ai-settings-overlay" class="screen-overlay hidden">
+            <div id="ai-settings-panel">
+                <h2 data-i18n="ai_settings">AI 難度與設定</h2>
+                
+                <div class="settings-tabs">
+                    <button class="tab-btn active" onclick="switchAiTab('basic', event)">⚙️ 基本難度</button>
+                    <button class="tab-btn" onclick="switchAiTab('perf', event)">🚀 引擎效能</button>
+                    <button class="tab-btn" onclick="switchAiTab('rules', event)">📜 時間與規則</button>
                 </div>
-                <button onclick="confirmCustomPveStart()" data-i18n="start_pve">開始人機對戰</button>
-                <button onclick="document.getElementById('custom-pve-overlay').classList.add('hidden')" data-i18n="cancel">取消</button>
+
+                <div class="tab-content" id="tab-basic">
+                    <label><span>玩家執子 (Color)</span> 
+                        <select id="ai-player-color">
+                            <option value="red">紅方 (先手)</option>
+                            <option value="black">黑方 (後手)</option>
+                        </select>
+                    </label>
+                    <label><span>啟用實力限制 (UCI_LimitStrength)</span> <input type="checkbox" id="ai-limit-strength"></label>
+                    <label>
+                        <span>引擎棋力 (UCI_Elo)</span> 
+                        <div style="display:flex; gap:10px; align-items:center;">
+                            <input type="range" id="ai-elo-slider" min="1280" max="3133" value="1300" oninput="document.getElementById('ai-elo-input').value = this.value" disabled>
+                            <input type="number" id="ai-elo-input" min="1280" max="3133" value="1300" oninput="document.getElementById('ai-elo-slider').value = this.value" disabled>
+                        </div>
+                    </label>
+                    <label>
+                        <span>引擎讓子度 (Skill Level)</span> 
+                        <div style="display:flex; gap:10px; align-items:center;">
+                            <input type="range" id="ai-skill-slider" min="0" max="20" value="20" oninput="document.getElementById('ai-skill-input').value = this.value">
+                            <input type="number" id="ai-skill-input" min="0" max="20" value="20" oninput="document.getElementById('ai-skill-slider').value = this.value">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="tab-content hidden" id="tab-perf">
+                    <label><span>執行緒數 (Threads)</span> <input type="number" id="ai-threads" min="1" max="1024" value="1"></label>
+                    <label><span>置換表 (Hash MB)</span> <input type="number" id="ai-hash" min="1" max="33554432" value="16"></label>
+                    <label><span>最佳路線數量 (MultiPV)</span> <input type="number" id="ai-multipv" min="1" max="128" value="1"></label>
+                    <label><span>後台思考 (Ponder)</span> <input type="checkbox" id="ai-ponder"></label>
+                </div>
+
+                <div class="tab-content hidden" id="tab-rules">
+                    <label><span>AI 思考時間 (go movetime ms)</span> <input type="number" id="ai-movetime" min="100" max="30000" value="3000"></label>
+                    <label><span>網路延遲緩衝 (Move Overhead ms)</span> <input type="number" id="ai-overhead" min="0" max="5000" value="30"></label>
+                    <label><span>循環判例 (Repetition Rule)</span> 
+                        <select id="ai-repetition">
+                            <option value="AsianRule">AsianRule</option>
+                            <option value="ChineseRule">ChineseRule</option>
+                            <option value="SkyRule">SkyRule</option>
+                            <option value="ComputerRule">ComputerRule</option>
+                            <option value="YitianRule">YitianRule</option>
+                            <option value="AllowChase">AllowChase</option>
+                            <option value="NoJudgement">NoJudgement</option>
+                        </select>
+                    </label>
+                    <label><span>和局判定 (Draw Rule)</span> 
+                        <select id="ai-draw">
+                            <option value="None">None</option>
+                            <option value="DrawAsBlackWin">DrawAsBlackWin</option>
+                            <option value="DrawAsRedWin">DrawAsRedWin</option>
+                            <option value="DrawRepAsBlackWin">DrawRepAsBlackWin</option>
+                            <option value="DrawRepAsRedWin">DrawRepAsRedWin</option>
+                        </select>
+                    </label>
+                    <label><span>啟用自然限著 (Sixty Move)</span> <input type="checkbox" id="ai-sixty" checked></label>
+                    <label><span>限著步數 (Rule60MaxPly)</span> <input type="number" id="ai-ply" min="1" max="150" value="120"></label>
+                </div>
+
+                <div class="settings-actions">
+                    <button onclick="startAiGame()">開始對局</button>
+                    <button onclick="document.getElementById('ai-settings-overlay').classList.add('hidden')">取消</button>
+                </div>
             </div>
         </div>
+
+        <!-- REMOVED OLD custom-pve-overlay -->
         <div id="game-container" class="hidden">
             <div class="main-panel">
                 <div id="status"></div>
                 <div class="board-wrapper"><div id="board"></div></div>
                 <div id="controls">
                     <button id="undoBtn" onclick="undoMove()" data-i18n="undo">悔棋</button>
+                    <button id="resignBtn" onclick="resignGame()" data-i18n="resign">投降</button>
                     <button id="flipBoardBtn" data-i18n="flip_board">翻轉棋盤</button>
                     <button id="restartBtn" onclick="window.location.reload()" data-i18n="back_to_menu">返回主選單</button>
                 </div>
             </div>
             <div id="notation-panel">
                 <h3 data-i18n="notation">棋譜</h3>
+                <div id="review-summary-overlay" class="hidden">
+                    <div id="review-summary-panel">
+                        <h4 id="review-summary-title" data-i18n="game_review_title">對局回顧 (Game Review)</h4>
+
+                        <div id="review-summary-loading">
+                            <div class="review-summary-loader"></div>
+                            <p>引擎正在深度分析對局... <br><br><span id="review-summary-progress">0 / 0</span></p>
+                        </div>
+
+                        <div id="review-summary-content" class="hidden">
+                            <div class="review-summary-players">
+                                <div class="player-stats red-stats">
+                                    <h4>紅方</h4>
+                                    <div class="accuracy" id="red-accuracy">--</div>
+                                </div>
+                                <div class="review-summary-middle">對局精度</div>
+                                <div class="player-stats black-stats">
+                                    <h4>黑方</h4>
+                                    <div class="accuracy" id="black-accuracy">--</div>
+                                </div>
+                            </div>
+
+                            <div class="review-classifications" id="review-classifications">
+                                <!-- Injected by JS -->
+                            </div>
+
+                            <div class="review-summary-actions">
+                                <button id="review-play-start-btn" class="review-summary-primary-btn" onclick="startStepByStepReview()">開始回顧 (Start Review)</button>
+                                <button class="review-summary-secondary-btn" onclick="closeReviewSummary()">回到主棋盤</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="review-toolbar" class="hidden">
+                    <button id="review-exit-btn" type="button" class="hidden">退出回顧</button>
+                </div>
+                <div id="review-progress-wrap" class="hidden">
+                    <div id="review-progress-track">
+                        <div id="review-progress-bar"></div>
+                    </div>
+                    <div id="review-progress-text">0 / 0</div>
+                </div>
+                <div id="review-controls" class="hidden">
+                    <button id="review-first-btn" type="button" title="第一手">|&lt;</button>
+                    <button id="review-prev-btn" type="button" title="上一手">&lt;</button>
+                    <button id="review-play-btn" type="button" title="自動播放">▶</button>
+                    <button id="review-next-btn" type="button" title="下一手">&gt;</button>
+                    <button id="review-last-btn" type="button" title="最後一手">&gt;|</button>
+                </div>
+                <div id="review-insight" class="hidden"></div>
                 <div class="notation-tabs">
                     <button id="text-notation-btn" class="active" data-i18n="text_notation">文字</button>
                     <button id="pgn-notation-btn" data-i18n="pgn_notation">PGN</button>

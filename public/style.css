@@ -13,6 +13,54 @@
         .screen-overlay button { padding: 10px 20px; font-size: 16px; margin: 8px; cursor: pointer; background-color: #8b694b; color: white; border: 2px solid #b99976; border-radius: 5px; box-shadow: 2px 2px 5px rgba(0,0,0,0.2); transition: all 0.2s; }
         .screen-overlay button:hover { background-color: #6d543c; border-color: #fff; }
         .pve-setup { display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 10px;} 
+
+        #start-screen .entry-selection,
+        #start-screen .mode-selection,
+        #start-screen .analysis-selection {
+            width: min(720px, 90vw);
+            background: rgba(20, 12, 5, 0.35);
+            border: 1px solid rgba(255, 245, 220, 0.25);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        #start-screen p {
+            margin: 0 0 14px;
+            font-size: 20px;
+            color: #fff8dc;
+        }
+
+        .entry-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .analysis-selection input[type="file"] {
+            display: block;
+            width: min(480px, 90%);
+            margin: 0 auto 14px;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #b99976;
+            background: rgba(255, 255, 255, 0.92);
+            color: #4a382a;
+        }
+
+        #chess-mode-selection table {
+            margin: 0 auto;
+        }
+
+        #puzzle-next-btn {
+            background-color: #4CAF50;
+            border-color: #74c477;
+        }
+
+        #puzzle-next-btn:hover {
+            background-color: #3f9743;
+            border-color: #b6e4b8;
+        }
         
         /* --- Main Game & Setup Layout --- */
         #game-container, #setup-container { display: flex; align-items: flex-start; gap: 20px; }
@@ -46,6 +94,10 @@
             display: flex; 
             justify-content: center; 
             align-items: center;
+        }
+
+        .square.last-move-highlight {
+            background-color: rgba(255, 232, 120, 0.5);
         }
 
         /* --- Image-based Pieces --- */
@@ -114,6 +166,290 @@
     color: #4a382a;
     border-bottom: 1px solid #8b694b;
     padding-bottom: 5px;
+}
+
+#review-summary-overlay {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+}
+
+#review-summary-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #e4cda9;
+    border: 1px solid #8b694b;
+    border-radius: 6px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #4a382a;
+}
+
+#review-summary-title {
+    margin: 0 0 10px;
+    text-align: center;
+    color: #5a483a;
+    font-size: 18px;
+}
+
+#review-summary-loading {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.review-summary-loader {
+    margin: 0 auto 12px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #4CAF50;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: review-summary-spin 1s linear infinite;
+}
+
+@keyframes review-summary-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#review-summary-progress {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#review-summary-content {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-summary-players {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.review-summary-middle {
+    font-size: 12px;
+    color: #7a6654;
+    padding: 0 6px 4px;
+    white-space: nowrap;
+}
+
+.player-stats {
+    flex: 1;
+    text-align: center;
+}
+
+.player-stats h4 {
+    margin: 0 0 4px;
+    font-size: 14px;
+}
+
+.red-stats h4 {
+    color: #ff4d4f;
+}
+
+.black-stats h4 {
+    color: #555;
+}
+
+.accuracy {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#review-classifications {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    border-top: 1px solid #d7c3a1;
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+
+.review-classification-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 6px;
+    background: #f7ebd2;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+.review-classification-count {
+    width: 26px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.review-classification-count-red {
+    color: #ff4d4f;
+}
+
+.review-classification-count-black {
+    color: #555;
+}
+
+.review-classification-label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+    font-weight: bold;
+    color: #5a483a;
+}
+
+.review-classification-icon {
+    width: 24px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px 0;
+    color: white;
+    font-size: 12px;
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+.review-classification-text {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review-summary-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.review-summary-actions button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0;
+    box-shadow: none;
+    transition: background-color 0.2s;
+}
+
+.review-summary-primary-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.review-summary-primary-btn:hover {
+    background-color: #409a44;
+}
+
+.review-summary-secondary-btn {
+    background-color: #ddd;
+    color: #333;
+}
+
+.review-summary-secondary-btn:hover {
+    background-color: #cfcfcf;
+}
+
+#review-toolbar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+#review-toolbar button {
+    flex: 1;
+    padding: 6px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #8b694b;
+    color: white;
+}
+
+#review-toolbar button:hover {
+    background-color: #6d543c;
+}
+
+#review-progress-wrap {
+    margin-bottom: 8px;
+}
+
+#review-progress-track {
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    background: #d7c3a1;
+    border: 1px solid #8b694b;
+    overflow: hidden;
+}
+
+#review-progress-bar {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #5a9, #3a7);
+    transition: width 0.25s ease;
+}
+
+#review-progress-text {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #4a382a;
+    text-align: right;
+}
+
+#review-controls {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+#review-controls button {
+    flex: 1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #9f7a58;
+    color: white;
+    padding: 6px 0;
+    font-size: 12px;
+}
+
+#review-controls button:hover {
+    background-color: #8b694b;
+}
+
+#review-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#review-insight {
+    min-height: 42px;
+    background: #ead7b8;
+    border: 1px dashed #8b694b;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 12px;
+    color: #4a382a;
+    margin-bottom: 8px;
+    line-height: 1.4;
 }
 
 #notation-list {
@@ -224,6 +560,87 @@
     width: 80px;
 }
 
+.notation-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 4px;
+}
+
+.move-number {
+    width: 26px;
+    font-weight: bold;
+    color: #4a382a;
+}
+
+.notation-move-cell {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 74px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.notation-move-cell.active {
+    background: rgba(90, 153, 90, 0.22);
+    box-shadow: inset 0 0 0 1px #4b8b4b;
+}
+
+.notation-move-cell.disabled {
+    cursor: default;
+}
+
+.review-badge {
+    font-size: 10px;
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 999px;
+    color: white;
+    white-space: nowrap;
+}
+
+.badge-brilliant {
+    background-color: #2a3fa5;
+}
+
+.badge-great {
+    background-color: #2f7fb8;
+}
+
+.badge-book {
+    background-color: #5f7d4a;
+}
+
+.badge-best {
+    background-color: #2d8f4e;
+}
+
+.badge-excellent {
+    background-color: #1d6fb8;
+}
+
+.badge-good {
+    background-color: #4f9e4f;
+}
+
+.badge-inaccuracy {
+    background-color: #d19d2a;
+}
+
+.badge-mistake {
+    background-color: #cf6a32;
+}
+
+.badge-miss {
+    background-color: #8a5ab5;
+}
+
+.badge-blunder {
+    background-color: #c63f3f;
+}
+
 @media (max-width: 920px), (max-height: 780px) {
     #scalable-container {
         transform: scale(0.85);
@@ -250,6 +667,89 @@
 #notification.show {
     top: 50px;
     opacity: 1;
+}
+
+/* --- AI Settings Modal --- */
+#ai-settings-panel {
+    background: #e4cda9;
+    padding: 20px 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    border: 3px solid #8b694b;
+    color: #4a382a;
+    width: 600px;
+    max-width: 90vw;
+}
+
+#ai-settings-panel h2 {
+    color: #5a483a;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.settings-tabs {
+    display: flex;
+    border-bottom: 2px solid #8b694b;
+    margin-bottom: 20px;
+}
+
+.settings-tabs .tab-btn {
+    flex: 1; margin: 0; border: none; background: transparent; color: #66432d; 
+    box-shadow: none; border-radius: 0; font-size: 16px; padding: 10px;
+}
+
+.settings-tabs .tab-btn:hover {
+    background: rgba(139, 105, 75, 0.1);
+}
+
+.settings-tabs .tab-btn.active {
+    font-weight: bold; border-bottom: 3px solid #5a483a; color: #382d26; background: rgba(139, 105, 75, 0.15);
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    min-height: 220px;
+}
+
+.tab-content label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px dotted #c9a87c;
+    padding-bottom: 8px;
+}
+
+.tab-content input[type="number"], .tab-content select {
+    width: 120px;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #8b694b;
+    background-color: #f3dcb3;
+}
+
+.tab-content input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #8b694b;
+}
+
+.settings-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.settings-actions button {
+    font-size: 18px;
+    padding: 10px 30px;
 }
 
 /* --- Settings Overlay --- */
